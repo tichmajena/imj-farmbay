@@ -85,7 +85,7 @@
             positioned to broaden its fruit and vegetable production, develop
             and operate state of the art infrastructure with plans for a Pack
             House, Cooling facility, 3 more boreholes, employee infrastructure
-            and sustainable farming practises.
+            and sustainable farming practises..
           </p>
         </div>
       </div>

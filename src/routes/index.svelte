@@ -1,12 +1,12 @@
 <script>
-  import img1 from "$lib/download-1.jpg";
-  import img2 from "$lib/download.jpg";
-  import img3 from "$lib/images-1.jpg";
-  import img4 from "$lib/images-2.jpg";
-  import img5 from "$lib/images.jpg";
-  import img6 from "$lib/Vegetable-fruit-sweet-pea-seeds-Snow-peas-seed-Bonsai-plants-Seeds-for-home-garden-150-seeds.jpg";
-  import picture from "$lib/farmbay-bg-01.jpg";
-  import Animate from "$lib/Animate.svelte";
+  import img1 from "$lib/images/download-1.jpg";
+  import img2 from "$lib/images/download.jpg";
+  import img3 from "$lib/images/images-1.jpg";
+  import img4 from "$lib/images/images-2.jpg";
+  import img5 from "$lib/images/images.jpg";
+  import img6 from "$lib/images/Vegetable-fruit-sweet-pea-seeds-Snow-peas-seed-Bonsai-plants-Seeds-for-home-garden-150-seeds.jpg";
+  import picture from "$lib/images/farmbay-bg-01.jpg";
+  import Animate from "$lib/components/Animate.svelte";
 </script>
 
 <Animate>

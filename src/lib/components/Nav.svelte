@@ -1,7 +1,7 @@
 <script>
-  import logo from "$lib/logo.png";
+  import logo from "$lib/images/farm-logo.svg";
   import { page } from "$app/stores";
-  import Animate from "$lib/Animate.svelte";
+  import Animate from "$lib/components/Animate.svelte";
 </script>
 
 <Animate>

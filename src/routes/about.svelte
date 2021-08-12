@@ -35,7 +35,7 @@
             </p>
           </div>
         </div>
-        <div class="block  text-white">
+        <div class=" text-white">
           <h2 class="text-2xl text-center">Our Values</h2>
           <div class="flex flex-row space-x-4 m-8 text-white">
             <div>

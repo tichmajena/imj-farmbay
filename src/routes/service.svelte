@@ -65,69 +65,60 @@
         </div>
       </div>
 
-      <div class="flex flex-row">
-        <div class="flex flex-col pl-4 m-8">
+      <div class="md:flex md:flex-row  m-8">
+        <div class="">
+          <h2 class="text-2xl text-gray-700">Agro Processing</h2>
           <div class="">
-            <h2 class="text-2xl mb-4 text-gray-700">Agro Processing</h2>
-            <div class="pl-4 mb-4">
-              <li class="font-thin text-gray-500">Pineapple Dried fruit.</li>
-              <li class="font-thin text-gray-500">Apple dried fruit.</li>
-              <li class="font-thin text-gray-500">Mango dried fruit.</li>
-              <li class="font-thin text-gray-500">Banana Dried fruit.</li>
-            </div>
+            <li class="font-thin text-gray-500">Pineapple Dried fruit.</li>
+            <li class="font-thin text-gray-500">Apple dried fruit.</li>
+            <li class="font-thin text-gray-500">Mango dried fruit.</li>
+            <li class="font-thin text-gray-500">Banana Dried fruit.</li>
           </div>
-          <p class="mb-4 text-gray-700">Extras</p>
-          <div class=" mb-4">
-            <li class="pl-4 font-thin text-gray-500">Mawuyu</li>
-            <li class="pl-4 font-thin text-gray-500">Mopane Worms</li>
-          </div>
+        </div>
+        <div class="">
+          <p class="m-8 text-gray-700">Extras</p>
 
-          <div class="">
-            <h2 class="text-2xl mb-4 text-gray-700">Fruits</h2>
-            <div class="mb-4">
-              <li class="pl-4 font-thin text-gray-500">Strawberries</li>
-              <li class="pl-4 font-thin text-gray-500">Watermellon</li>
-              <li class="pl-4 font-thin text-gray-500">Paw Paw</li>
-              <li class="pl-4 font-thin text-gray-500">Mangos</li>
-            </div>
-          </div>
+          <li class=" text-gray-500">Mawuyu</li>
+          <li class=" text-gray-500">Mopane Worms</li>
+        </div>
 
+        <div class=" m-8">
+          <h2 class="text-2xl  text-gray-700">Fruits</h2>
           <div class="">
-            <h2 class="text-2xl mb-4 text-gray-700">Fruits</h2>
-            <div>
-              <li class="pl-4 font-thin text-gray-500">Tomatoes</li>
-              <li class="pl-4 font-thin text-gray-500">Peas</li>
-              <li class="pl-4 font-thin text-gray-500">Carrots</li>
-              <li class="pl-4 font-thin text-gray-500">Onions</li>
-              <li class="pl-4 font-thin text-gray-500">Rape</li>
-              <li class="pl-4 font-thin text-gray-500">Garlic</li>
-              <li class="pl-4 font-thin text-gray-500">Brocccoli</li>
-              <li class="pl-4 font-thin text-gray-500">Cauflower</li>
-              <li class="pl-4 font-thin text-gray-500">Potatoes</li>
-              <li class="pl-4 font-thin text-gray-500">Green Beans</li>
-            </div>
+            <li class=" text-gray-500">Strawberries</li>
+            <li class=" text-gray-500">Watermellon</li>
+            <li class=" text-gray-500">Paw Paw</li>
+            <li class=" text-gray-500">Mangos</li>
           </div>
         </div>
 
-        <div class="flex space-y-5  m-8 flex-col">
-          <img src={pic} alt="" />
-          <img src={pic} alt="" />
-          <img src={pic} alt="" />
+        <div class="">
+          <h2 class="text-2xl mb-4 text-gray-700">Fruits</h2>
+          <div>
+            <li class=" text-gray-500">Tomatoes</li>
+            <li class=" text-gray-500">Peas</li>
+            <li class=" text-gray-500">Carrots</li>
+            <li class=" text-gray-500">Onions</li>
+            <li class=" text-gray-500">Rape</li>
+            <li class=" text-gray-500">Garlic</li>
+            <li class=" text-gray-500">Brocccoli</li>
+            <li class=" text-gray-500">Cauflower</li>
+            <li class=" text-gray-500">Potatoes</li>
+            <li class=" text-gray-500">Green Beans</li>
+          </div>
         </div>
       </div>
 
-      <div>
-        <div class="text-center">
-          <h2 class="text-2xl mb-4 text-gray-700">Certification</h2>
-          <p class="font-thin text-gray-500 mb-4 mt-2">
-            Our Agro-Business aspiring to being a BRC Global Standards (version
-            7) & Global Gap Standards accredited. It will also adhere to USFDA
-            FSMA regulations. BRC certification is expected by 2022.We are also
-            targeting the Kosher & Organic certification to be attained by March
-            2022
-          </p>
-        </div>
-      </div>
+      <div />
+    </div>
+    <div class="text-center m-8">
+      <h2 class="text-2xl mb-4 text-gray-700">Certification</h2>
+      <p class="font-thin text-gray-500 mb-4 mt-2">
+        Our Agro-Business aspiring to being a BRC Global Standards (version 7) &
+        Global Gap Standards accredited. It will also adhere to USFDA FSMA
+        regulations. BRC certification is expected by 2022.We are also targeting
+        the Kosher & Organic certification to be attained by March 2022
+      </p>
     </div>
   </section>
 </Animate>

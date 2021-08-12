@@ -1,5 +1,5 @@
 <script>
-  import logo from "$lib/logo.png";
+  import logo from "$lib/farm-bay-logo (1).svg";
   import { page } from "$app/stores";
   import Animate from "$lib/Animate.svelte";
 </script>
@@ -12,7 +12,7 @@
           <!--logo-->
           <div>
             <a href="#" class="flex items-center py-5 px-3 text-gray-700">
-              <img src={logo} class="mr-1" alt="" />
+              <img src={logo} class="mr-1 w-28 h-20" alt="" />
             </a>
           </div>
 

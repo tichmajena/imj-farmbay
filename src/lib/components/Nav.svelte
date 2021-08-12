@@ -25,7 +25,7 @@
             <a class="" href="/">
               <li
                 class:text-red-500={$page.path === "/"}
-                class="lg:inline-flex py-6 px-3 lg:w-3"
+                class="mr-5 hover:text-gray-900 py-6 px-2 font-medium"
               >
                 Home
               </li></a
@@ -33,7 +33,7 @@
             <a class="" href="/about">
               <li
                 class:text-red-500={$page.path === "/about"}
-                class="mr-5 hover:text-gray-900 py-6 px-3 "
+                class="mr-5 hover:text-gray-900 py-6 px-2 font-medium "
               >
                 About
               </li></a
@@ -41,7 +41,7 @@
             <a class="" href="/service">
               <li
                 class:text-red-500={$page.path === "/service"}
-                class="mr-5 hover:text-gray-900 py-6 px-3"
+                class="mr-5 hover:text-gray-900 py-6 px-2 font-medium"
               >
                 Service
               </li></a
@@ -49,7 +49,7 @@
             <a class="" href="/team">
               <li
                 class:text-red-500={$page.path === "/team"}
-                class="mr-5 hover:text-gray-900 py-6 px-3 "
+                class="mr-5 hover:text-gray-900 py-6 px-2 font-medium "
               >
                 Team
               </li></a
@@ -58,7 +58,7 @@
             <a class="" href="/contact">
               <li
                 class:text-red-500={$page.path === "/contact"}
-                class="mr-5 hover:text-gray-900 py-6 px-3"
+                class="mr-5 hover:text-gray-900 py-6 px-2 font-medium"
               >
                 Contact
               </li></a

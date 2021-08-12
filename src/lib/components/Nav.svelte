@@ -25,7 +25,7 @@
             <a class="" href="/">
               <li
                 class:text-red-500={$page.path === "/"}
-                class="lg:inline-flex py-6 px-3 lg:w-3"
+                class="mr-5 hover:text-gray-900 py-6 px-3 "
               >
                 Home
               </li></a

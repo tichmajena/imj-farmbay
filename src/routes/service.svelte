@@ -10,12 +10,12 @@
         <img src={pic} alt="" />
       </div>
 
-      <div class="flex flex-row">
-        <div>
+      <div class="flex  flex-row">
+        <div class="m-8">
           <img src={pic} alt="" />
         </div>
 
-        <div>
+        <div class="m-7">
           <h2 class="text-2xl text-gray-700">Operations</h2>
           <p class="font-thin text-gray-500">
             Farm Bay is uniquely situated 35km from Harare...Our operations are
@@ -24,17 +24,16 @@
           </p>
         </div>
       </div>
-      <div class="">LINE</div>
-      <div class="flex flex-row">
+      <div class="flex flex-row m-8">
         <div>
-          <h2 class="text-2xl text-gray-700">Production</h2>
+          <h2 class="text-2xl mb-4 text-gray-700">Production</h2>
           <p class="font-thin text-gray-500">
             Farm Bay produces peas, fresh & dried tomatoes on a sizeable
             hectarage and a further 30ha is strategically set aside and
             projected to produce garlic, ginger, shelling & export peas, all
             pepper varieties, courgettes, red and yellow onions and watermelons.
           </p>
-          <p class="font-thin text-gray-500">
+          <p class="font-thin text-gray-500 mt-2">
             We have also embarked on a project that has seen 15 hectares being
             dedicated for floriculture, such as chrysanthemums production which
             is on a small scale as a pilot project. As a member of the Export
@@ -44,7 +43,90 @@
             Asters, Burplerium and Leatrice
           </p>
         </div>
+        <div class="flex space-y-5 flex-col">
+          <img src={pic} alt="" />
+          <img src={pic} alt="" />
+          <img src={pic} alt="" />
+        </div>
+      </div>
+      <div class="flex  flex-row">
+        <div class="m-8">
+          <img src={pic} alt="" />
+        </div>
 
+        <div class="m-5 ">
+          <h2 class="text-2xl text-gray-700">Sustainability</h2>
+          <p class="font-thin text-gray-500">
+            We have and are still reinforcing our Sustainable horticultural
+            practices in order to reduce production input, reduce environmental
+            impact, increase resource use efficiency, and improve water body and
+            soil biodiversity
+          </p>
+        </div>
+      </div>
+
+      <div class="flex flex-row">
+        <div class="flex flex-col pl-4 m-8">
+          <div class="">
+            <h2 class="text-2xl mb-4 text-gray-700">Agro Processing</h2>
+            <div class="pl-4 mb-4">
+              <li class="font-thin text-gray-500">Pineapple Dried fruit.</li>
+              <li class="font-thin text-gray-500">Apple dried fruit.</li>
+              <li class="font-thin text-gray-500">Mango dried fruit.</li>
+              <li class="font-thin text-gray-500">Banana Dried fruit.</li>
+            </div>
+          </div>
+          <p class="mb-4 text-gray-700">Extras</p>
+          <div class=" mb-4">
+            <li class="pl-4 font-thin text-gray-500">Mawuyu</li>
+            <li class="pl-4 font-thin text-gray-500">Mopane Worms</li>
+          </div>
+
+          <div class="">
+            <h2 class="text-2xl mb-4 text-gray-700">Fruits</h2>
+            <div class="mb-4">
+              <li class="pl-4 font-thin text-gray-500">Strawberries</li>
+              <li class="pl-4 font-thin text-gray-500">Watermellon</li>
+              <li class="pl-4 font-thin text-gray-500">Paw Paw</li>
+              <li class="pl-4 font-thin text-gray-500">Mangos</li>
+            </div>
+          </div>
+
+          <div class="">
+            <h2 class="text-2xl mb-4 text-gray-700">Fruits</h2>
+            <div>
+              <li class="pl-4 font-thin text-gray-500">Tomatoes</li>
+              <li class="pl-4 font-thin text-gray-500">Peas</li>
+              <li class="pl-4 font-thin text-gray-500">Carrots</li>
+              <li class="pl-4 font-thin text-gray-500">Onions</li>
+              <li class="pl-4 font-thin text-gray-500">Rape</li>
+              <li class="pl-4 font-thin text-gray-500">Garlic</li>
+              <li class="pl-4 font-thin text-gray-500">Brocccoli</li>
+              <li class="pl-4 font-thin text-gray-500">Cauflower</li>
+              <li class="pl-4 font-thin text-gray-500">Potatoes</li>
+              <li class="pl-4 font-thin text-gray-500">Green Beans</li>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex space-y-5  m-8 flex-col">
+          <img src={pic} alt="" />
+          <img src={pic} alt="" />
+          <img src={pic} alt="" />
+        </div>
+      </div>
+
+      <div>
+        <div class="text-center">
+          <h2 class="text-2xl mb-4 text-gray-700">Certification</h2>
+          <p class="font-thin text-gray-500 mb-4 mt-2">
+            Our Agro-Business aspiring to being a BRC Global Standards (version
+            7) & Global Gap Standards accredited. It will also adhere to USFDA
+            FSMA regulations. BRC certification is expected by 2022.We are also
+            targeting the Kosher & Organic certification to be attained by March
+            2022
+          </p>
+        </div>
       </div>
     </div>
   </section>

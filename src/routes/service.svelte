@@ -60,7 +60,7 @@
             We have and are still reinforcing our Sustainable horticultural
             practices in order to reduce production input, reduce environmental
             impact, increase resource use efficiency, and improve water body and
-            soil biodiversity
+            soil biodiversity.
           </p>
         </div>
       </div>
@@ -117,7 +117,7 @@
         Our Agro-Business aspiring to being a BRC Global Standards (version 7) &
         Global Gap Standards accredited. It will also adhere to USFDA FSMA
         regulations. BRC certification is expected by 2022.We are also targeting
-        the Kosher & Organic certification to be attained by March 2022
+        the Kosher & Organic certification to be attained by March 2022.
       </p>
     </div>
   </section>

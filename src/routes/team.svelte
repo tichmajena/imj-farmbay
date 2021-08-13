@@ -55,27 +55,7 @@
         <p class="text-gray-400 text-center m-8">
           An experienced management team leads our operations
         </p>
-        <div class="flex  space-x-4 m-8 w-28">
-          <div>
-            <img src={ronnie} alt="" />
-            <h2 class=" text-gray-700">RonnieChigombe</h2>
-            <p class="text-gray-500 text-center font-thin">Agronomist</p>
-          </div>
-          <div>
-            <img src={hazel} alt="" />
-            <h2 class=" text-gray-700">Hazel Masvinhise</h2>
-            <p class="text-gray-500 text-center font-thin">
-              International Commodity Trade Facilitation
-            </p>
-          </div>
-          <div>
-            <img src={callifinos} alt="" />
-            <h2 class=" text-gray-700">Callifinos K Guvi</h2>
-            <p class="text-gray-500 text-center font-thin">
-              Corporate Legal Affairs
-            </p>
-          </div>
-        </div>
+        <div class="flex  space-x-4 m-8 w-28" />
         <div class="flex flex-row-3 space-x-4 m-8 w-28">
           <div>
             <img src={yeukai} alt="" />
@@ -89,230 +69,107 @@
           </div>
         </div>
       </div>
-
-      <!-- <div class="flex flex-row">
-        <div class="bg-brandblue m-8 w-1/6">
-          <div class="lg:w-1/4 md:w-1/2 w-full m-8">
-            <span
-              class="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start"
+      <section class="text-gray-600 body-font">
+        <div class="container px-5 py-24 mx-auto">
+          <div class="flex flex-col text-center w-full mb-20">
+            <h1
+              class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900"
             >
-              <a class="text-white">
-                <svg
-                  fill="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  class="w-5 h-5"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"
-                  />
-                </svg>
-              </a>
-              <a class="ml-3 text-white">
-                <svg
-                  fill="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  class="w-5 h-5"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"
-                  />
-                </svg>
-              </a>
-              <a class="ml-3 text-white">
-                <svg
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  class="w-5 h-5"
-                  viewBox="0 0 24 24"
-                >
-                  <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
-                  <path
-                    d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"
-                  />
-                </svg>
-              </a>
-              <a class="ml-3 text-white">
-                <svg
-                  fill="currentColor"
-                  stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="0"
-                  class="w-5 h-5"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    stroke="none"
-                    d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"
-                  />
-                  <circle cx="4" cy="4" r="2" stroke="none" />
-                </svg>
-              </a>
-            </span>
+              Our Team
+            </h1>
+            <p class="lg:w-2/3 mx-auto leading-relaxed text-base">
+              An experienced management team leads our operations
+            </p>
           </div>
-          <h2 class="text-4xl text-center m-8 text-white">Our Team</h2>
-
-          <div
-            class="text-brandgold border font-bold m-8 border-b-4 text-center w-2 border-brandgold"
-          />
-          <p class="text-gray-400 text-center m-8">
-            An experienced management team leads our operations
-          </p>
-        </div>
-        <div class="w-5/6">
-          <div>
-            <div class="lg:w-1/3 sm:w-1/2 p-4">
-              <div class="flex relative">
+          <div class="flex flex-wrap -m-2">
+            <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+              <div
+                class="h-full flex items-center border-gray-200 border p-4 rounded-lg"
+              >
                 <img
-                  alt="gallery"
-                  class="absolute inset-0 w-full h-full object-cover object-center"
+                  alt="team"
+                  class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4"
                   src={ronnie}
                 />
-                <div
-                  class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100"
-                >
-                  <h2
-                    class="tracking-widest text-3xl title-font font-medium text-indigo-500 mb-1"
-                  >
-                    Ronnie Chigombe
+                <div class="flex-grow">
+                  <h2 class="text-gray-900 title-font font-medium">
+                    RonnieChigombe
                   </h2>
-                  <h1
-                    class="title-font text-2xl font-medium text-gray-900 mb-3"
-                  >
-                    Agronomist
-                  </h1>
+                  <p class="text-gray-500">Agronomist</p>
                 </div>
               </div>
             </div>
-
-            <div class="lg:w-1/3 sm:w-1/2 p-4">
-              <div class="flex relative">
+            <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+              <div
+                class="h-full flex items-center border-gray-200 border p-4 rounded-lg"
+              >
                 <img
-                  alt="gallery"
-                  class="absolute inset-0 w-full h-full object-cover object-center"
+                  alt="team"
+                  class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4"
+                  src={hazel}
+                />
+                <div class="flex-grow">
+                  <h2 class="text-gray-900 title-font font-medium">
+                    Hazel Masvinhise
+                  </h2>
+                  <p class="text-gray-500">
+                    International Commodity Trade Facilitation
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+              <div
+                class="h-full flex items-center border-gray-200 border p-4 rounded-lg"
+              >
+                <img
+                  alt="team"
+                  class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4"
                   src={callifinos}
                 />
-                <div
-                  class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100"
-                >
-                  <h2
-                    class="tracking-widest text-3xl title-font font-medium text-indigo-500 mb-1"
-                  >
+                <div class="flex-grow">
+                  <h2 class="text-gray-900 title-font font-medium">
                     Callifinos K Guvi
                   </h2>
-                  <h1
-                    class="title-font text-2xl font-medium text-gray-900 mb-3"
-                  >
-                    Corporate Legal Affairs
-                  </h1>
+                  <p class="text-gray-500">Corporate Legal Affairs</p>
                 </div>
               </div>
             </div>
-
-            <div class="lg:w-1/3 sm:w-1/2 p-4">
-              <div class="flex relative">
-                <img
-                  alt="gallery"
-                  class="absolute inset-0 w-full h-full object-cover object-center"
-                  src={farai}
-                />
-                <div
-                  class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100"
-                >
-                  <h2
-                    class="tracking-widest text-3xl title-font font-medium text-indigo-500 mb-1"
-                  >
-                    Farai R Chinomona
-                  </h2>
-                  <h1
-                    class="title-font text-2xl font-medium text-gray-900 mb-3"
-                  >
-                    Founder/Director
-                  </h1>
-                </div>
-              </div>
-            </div>
-            <img src="" alt="" />
-
-            <div class="lg:w-1/3 sm:w-1/2 p-4">
-              <div class="flex relative">
-                <img
-                  alt="gallery"
-                  class="absolute inset-0 w-full h-full object-cover object-center"
-                  src={tino}
-                />
-                <div
-                  class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100"
-                >
-                  <h2
-                    class="tracking-widest text-3xl title-font font-medium text-indigo-500 mb-1"
-                  >
-                    Tinotenda Feshete
-                  </h2>
-                  <h1
-                    class="title-font text-2xl font-medium text-gray-900 mb-3"
-                  >
-                    Technical
-                  </h1>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="lg:w-1/3 sm:w-1/2 p-4">
-            <div class="flex relative">
-              <img
-                alt="gallery"
-                class="absolute inset-0 w-full h-full object-cover object-center"
-                src={hazel}
-              />
+            <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
               <div
-                class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100"
+                class="h-full flex items-center border-gray-200 border p-4 rounded-lg"
               >
-                <h2
-                  class="tracking-widest text-3xl title-font font-medium text-indigo-500 mb-1"
-                >
-                  Hazel Masvinhise
-                </h2>
-                <h1 class="title-font text-2xl font-medium text-gray-900 mb-3">
-                  International Commodity Trade Facilitation
-                </h1>
+                <img
+                  alt="team"
+                  class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4"
+                  src={yeukai}
+                />
+                <div class="flex-grow">
+                  <h2 class="text-gray-900 title-font font-medium">John Doe</h2>
+                  <p class="text-gray-500">DevOps</p>
+                </div>
               </div>
             </div>
-          </div>
-
-          <div class="lg:w-1/3 sm:w-1/2 p-4">
-            <div class="flex relative">
-              <img
-                alt="gallery"
-                class="absolute inset-0 w-full h-full object-cover object-center"
-                src={yeukai}
-              />
+            <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
               <div
-                class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100"
+                class="h-full flex items-center border-gray-200 border p-4 rounded-lg"
               >
-                <h2
-                  class="tracking-widest text-3xl title-font font-medium text-indigo-500 mb-1"
-                >
-                  Yeukai Chikakano
-                </h2>
-                <h1 class="title-font text-2xl font-medium text-gray-900 mb-3">
-                  Strategy
-                </h1>
+                <img
+                  alt="team"
+                  class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4"
+                  src="https://dummyimage.com/94x94"
+                />
+                <div class="flex-grow">
+                  <h2 class="text-gray-900 title-font font-medium">
+                    Martin Eden
+                  </h2>
+                  <p class="text-gray-500">Software Engineer</p>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div> -->
+      </section>
     </div>
   </section>
 </Animate>

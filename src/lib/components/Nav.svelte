@@ -11,8 +11,8 @@
         <div class="flex space-x-4">
           <!--logo-->
           <div>
-            <a href="#" class="flex items-center py-5 px-3 text-gray-700">
-              <img src={logo} class="mr-1 w-28 h-20" alt="" />
+            <a href="#" class="flex items-center py-2 px-3 text-gray-700">
+              <img src={logo} class="mr-1 w-100 h-12" alt="" />
             </a>
           </div>
 

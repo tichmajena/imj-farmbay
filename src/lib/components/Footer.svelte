@@ -9,7 +9,7 @@
 </script>
 
 <Animate>
-  <footer class="text-white body-font bg-brandgold">
+  <footer class="text-white body-font bg-brandblue">
     <div class="container px-5 py-24 mx-auto">
       <div class="flex flex-wrap md:text-left text-center order-first">
         <div class="lg:w-1/4 md:w-1/2 w-full px-4">
@@ -38,7 +38,7 @@
               >
               <a class="" href="/service">
                 <li
-                  class:text-red-500={$page.path === "/service"}
+                  class:text-brandgold={$page.path === "/service"}
                   class="mr-5 hover:text-gray-900 py-3 px-2"
                 >
                   Service

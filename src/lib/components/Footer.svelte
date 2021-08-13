@@ -14,7 +14,7 @@
       <div class="flex flex-wrap md:text-left text-center order-first">
         <div class="lg:w-1/4 md:w-1/2 w-full px-4">
           <h2
-            class="title-font font-medium text-gray-900 tracking-widest  text-sm mb-3"
+            class="title-font font-medium text-white tracking-widest  text-3xl mb-3"
           >
             Menu
           </h2>
@@ -22,16 +22,16 @@
             <ul class="flex flex-col">
               <a class="" href="/">
                 <li
-                  class:text-red-500={$page.path === "/"}
-                  class="mr-5 hover:text-gray-900 py-3 px-2 "
+                  class:text-brandgold={$page.path === "/"}
+                  class="mr-5 hover:text-brandgold "
                 >
                   Home
                 </li></a
               >
               <a class="" href="/about">
                 <li
-                  class:text-red-500={$page.path === "/about"}
-                  class="mr-5 hover:text-gray-900 py-3 px-2 "
+                  class:text-brandgold={$page.path === "/about"}
+                  class="mr-5 hover:text-brandgold "
                 >
                   About
                 </li></a
@@ -39,15 +39,15 @@
               <a class="" href="/service">
                 <li
                   class:text-brandgold={$page.path === "/service"}
-                  class="mr-5 hover:text-gray-900 py-3 px-2"
+                  class="mr-5 hover:text-brandgold"
                 >
                   Service
                 </li></a
               >
               <a class="" href="/team">
                 <li
-                  class:text-red-500={$page.path === "/team"}
-                  class="mr-5 hover:text-gray-900 py-3 px-2 "
+                  class:text-brandgold={$page.path === "/team"}
+                  class="mr-5 hover:text-brandgold "
                 >
                   Team
                 </li></a
@@ -55,8 +55,8 @@
 
               <a class="" href="/contact">
                 <li
-                  class:text-red-500={$page.path === "/contact"}
-                  class="mr-5 hover:text-gray-900 py-3 px-2"
+                  class:text-brandgold={$page.path === "/contact"}
+                  class="mr-5 hover:text-brandgold"
                 >
                   Contact
                 </li></a
@@ -66,35 +66,22 @@
         </div>
         <div class="lg:w-1/4 md:w-1/2 w-full px-4">
           <h2
-            class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3"
+            class="title-font font-medium text-white text-3xl tracking-widest mb-3"
           >
             Contact
           </h2>
           <nav class="list-none mb-10">
-            <li>
-              <a class="text-white hover:text-gray-800">Farm Bay</a>
-            </li>
-            <li>
-              <a class="text-white hover:text-gray-800">Reedbuck Farm</a>
-            </li>
-            <li>
-              <a class="text-white hover:text-gray-800">Acturus, Goromonzi</a>
-            </li>
-            <li>
-              <a class="text-white hover:text-gray-800">+263 773 516 700</a>
-            </li>
-            <li>
-              <a class="text-white hover:text-gray-800">+263719 516 700</a>
-            </li>
+            <h2 class="text-white">Farm Bay</h2>
+
+            <h2 class="text-white">Reedbuck Farm</h2>
+
+            <h2 class="text-white">Acturus, Goromonzi</h2>
+            <h2 class="text-white">+263 773 516 700</h2>
+            <h2 class="text-white">+263719 516 700</h2>
           </nav>
         </div>
 
         <div class="lg:w-1/4 md:w-1/2 w-full px-4">
-          <h2
-            class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3"
-          >
-            Details
-          </h2>
           <div
             class="flex xl:flex-nowrap md:flex-nowrap lg:flex-wrap flex-wrap justify-center items-end md:justify-start"
           >
@@ -107,7 +94,7 @@
                 type="text"
                 id="footer-field"
                 name="footer-field"
-                class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:bg-transparent focus:ring-2 focus:ring-indigo-200 focus:border-indigo-500 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:bg-transparent focus:ring-2 focus:ring-indigo-200 focus:border-brandgold text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
               />
               <label for="footer-field" class="leading-7 text-sm text-white"
                 >Phone Number</label
@@ -123,18 +110,19 @@
               <label for="footer-field" class="leading-7 text-sm text-white"
                 >Message</label
               >
+
               <textarea
-                class="leading-7 text-sm text-white"
-                name="message"
                 id="message"
+                name="message"
                 cols="20"
                 rows="5"
-              >
-                Message
-              </textarea>
+                class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
+              />
             </div>
+          </div>
+          <div>
             <button
-              class="lg:mt-2 xl:mt-0 flex-shrink-0 inline-flex text-white bg-brandblue border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded"
+              class="lg:mt-2 xl:mt-0 flex-shrink-0 inline-flex text-white bg-brandgold border-0 py-2 px-6 focus:outline-none hover:text-brandblue rounded"
               >Send</button
             >
           </div>

@@ -25,11 +25,7 @@
             <a class="" href="/">
               <li
                 class:text-red-500={$page.path === "/"}
-<<<<<<< HEAD
-                class="mr-5 hover:text-gray-900 py-6 px-3 "
-=======
                 class="mr-5 hover:text-gray-900 py-6 px-2 font-medium"
->>>>>>> 6497faa3dc7cc9cae7512f77d82c2df5af3f1ef0
               >
                 Home
               </li></a

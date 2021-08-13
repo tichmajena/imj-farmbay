@@ -68,8 +68,8 @@
         <h2 class="text-2xl text-center text-gray-700">Our History</h2>
       </div>
       <div class="flex flex-row space-x-4 m-8">
-        <div>
-          <h2 class="font-bold text-gray-700">Market Gardening</h2>
+        <div class="w-1/2 pr-5">
+          <h2 class="font-bold  text-gray-700">Market Gardening</h2>
           <p class="font-thin text-gray-500">
             What started out as a passion project doing peas and tomatoes by our
             then full time employed Director took time to set out a vision and a
@@ -77,8 +77,8 @@
             Bay.
           </p>
         </div>
-        <div>
-          <h2 class="font-bold text-gray-700">Farm Bay</h2>
+        <div class="w-1/2">
+          <h2 class="font-bold  text-gray-700">Farm Bay</h2>
           <p class="font-thin text-gray-500">
             With a bigger vision to contributing to food security production, be
             a global export market player for Zimbabwe. Farm Bay is now being

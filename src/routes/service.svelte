@@ -11,11 +11,11 @@
       </div>
 
       <div class="flex  flex-row">
-        <div class="m-8">
+        <div class="m-8 w-1/2">
           <img src={pic} alt="" />
         </div>
 
-        <div class="m-7">
+        <div class="m-7 w-1/2">
           <h2 class="text-2xl text-gray-700">Operations</h2>
           <p class="font-thin text-gray-500">
             Farm Bay is uniquely situated 35km from Harare...Our operations are
@@ -25,7 +25,7 @@
         </div>
       </div>
       <div class="flex flex-row m-8">
-        <div>
+        <div class="w-1/2 pr-10">
           <h2 class="text-2xl mb-4 text-gray-700">Production</h2>
           <p class="font-thin text-gray-500">
             Farm Bay produces peas, fresh & dried tomatoes on a sizeable
@@ -43,10 +43,10 @@
             Asters, Burplerium and Leatrice
           </p>
         </div>
-        <div class="flex space-y-5 flex-col">
-          <img src={pic} alt="" />
-          <img src={pic} alt="" />
-          <img src={pic} alt="" />
+        <div class="flex space-y-5 w-1/2 flex-col">
+          <img src={pic} alt="" class="w-50" />
+          <img src={pic} alt="" class="w-50" />
+          <img src={pic} alt="" class="w-50" />
         </div>
       </div>
       <div class="flex  flex-row">

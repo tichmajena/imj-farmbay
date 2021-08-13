@@ -24,52 +24,32 @@
           <ul class="flex">
             <a class="" href="/">
               <li
-<<<<<<< HEAD
-                class:text-red-500={$page.path === "/"}
-                class="mr-5 hover:text-gray-900 py-6 px-2 font-medium"
-=======
                 class:text-brandgold={$page.path === "/"}
-                class="mr-5 hover:text-brandgold py-6 px-3 "
->>>>>>> berlin
+                class="mr-5 hover:text-gray-900 py-6 px-2 font-medium"
               >
                 Home
               </li></a
             >
             <a class="" href="/about">
               <li
-<<<<<<< HEAD
-                class:text-red-500={$page.path === "/about"}
-                class="mr-5 hover:text-gray-900 py-6 px-2 font-medium "
-=======
                 class:text-brandgold={$page.path === "/about"}
                 class="mr-5 hover:text-brandgold py-6 px-3 "
->>>>>>> berlin
               >
                 About
               </li></a
             >
             <a class="" href="/service">
               <li
-<<<<<<< HEAD
-                class:text-red-500={$page.path === "/service"}
-                class="mr-5 hover:text-gray-900 py-6 px-2 font-medium"
-=======
                 class:text-brandgold={$page.path === "/service"}
                 class="mr-5 hover:text-brandgold py-6 px-3"
->>>>>>> berlin
               >
                 Service
               </li></a
             >
             <a class="" href="/team">
               <li
-<<<<<<< HEAD
-                class:text-red-500={$page.path === "/team"}
-                class="mr-5 hover:text-gray-900 py-6 px-2 font-medium "
-=======
                 class:text-brandgold={$page.path === "/team"}
                 class="mr-5 hover:text-brandgold py-6 px-3 "
->>>>>>> berlin
               >
                 Team
               </li></a
@@ -77,13 +57,8 @@
 
             <a class="" href="/contact">
               <li
-<<<<<<< HEAD
-                class:text-red-500={$page.path === "/contact"}
-                class="mr-5 hover:text-gray-900 py-6 px-2 font-medium"
-=======
                 class:text-brandgold={$page.path === "/contact"}
                 class="mr-5 hover:text-brandgold py-6 px-3"
->>>>>>> berlin
               >
                 Contact
               </li></a

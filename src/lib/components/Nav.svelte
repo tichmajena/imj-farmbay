@@ -1,7 +1,7 @@
 <script>
   import logo from "$lib/farm-bay-logo (1).svg";
   import { page } from "$app/stores";
-  import Animate from "$lib/Animate.svelte";
+  import Animate from "$lib/components/Animate.svelte";
 </script>
 
 <Animate>
@@ -25,7 +25,11 @@
             <a class="" href="/">
               <li
                 class:text-red-500={$page.path === "/"}
+<<<<<<< HEAD
                 class="mr-5 hover:text-gray-900 py-6 px-3 "
+=======
+                class="mr-5 hover:text-gray-900 py-6 px-2 font-medium"
+>>>>>>> 6497faa3dc7cc9cae7512f77d82c2df5af3f1ef0
               >
                 Home
               </li></a
@@ -33,7 +37,7 @@
             <a class="" href="/about">
               <li
                 class:text-red-500={$page.path === "/about"}
-                class="mr-5 hover:text-gray-900 py-6 px-3 "
+                class="mr-5 hover:text-gray-900 py-6 px-2 font-medium "
               >
                 About
               </li></a
@@ -41,7 +45,7 @@
             <a class="" href="/service">
               <li
                 class:text-red-500={$page.path === "/service"}
-                class="mr-5 hover:text-gray-900 py-6 px-3"
+                class="mr-5 hover:text-gray-900 py-6 px-2 font-medium"
               >
                 Service
               </li></a
@@ -49,7 +53,7 @@
             <a class="" href="/team">
               <li
                 class:text-red-500={$page.path === "/team"}
-                class="mr-5 hover:text-gray-900 py-6 px-3 "
+                class="mr-5 hover:text-gray-900 py-6 px-2 font-medium "
               >
                 Team
               </li></a
@@ -58,7 +62,7 @@
             <a class="" href="/contact">
               <li
                 class:text-red-500={$page.path === "/contact"}
-                class="mr-5 hover:text-gray-900 py-6 px-3"
+                class="mr-5 hover:text-gray-900 py-6 px-2 font-medium"
               >
                 Contact
               </li></a

@@ -1,6 +1,6 @@
 <script>
-  import Animate from "$lib/Animate.svelte";
-  import pic from "$lib/farmbay-bg-01.jpg";
+  import Animate from "$lib/components/Animate.svelte";
+  import pic from "$lib/images/farmbay-bg-01.jpg";
 </script>
 
 <Animate>

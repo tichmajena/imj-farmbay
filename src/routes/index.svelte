@@ -188,7 +188,7 @@
                   <h2
                     class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1"
                   >
-                    THE SUBTITLE
+                    Farm Bay
                   </h2>
                   <h1 class="title-font text-lg font-medium text-gray-900 mb-3">
                     Alper Kamu

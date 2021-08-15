@@ -12,17 +12,25 @@
   import farai from "/FaraiRChinomona.jpg";
 
   import picture from "/media/image1.jpeg";
-  import Animate from "$lib/Animate.svelte";
+  import Animate from "$lib/components/Animate.svelte";
   import ProductInsights from "$lib/components/ProductInsights.svelte";
+  import IconCard from "$lib/components/IconCard.svelte";
 </script>
 
 <Animate>
   <section class="w-full bg-gray-200">
-    <div>
-      <img src={picture} alt="" />
+    <div class="hero bg-blend-overlay relative z-0 overflow-hidden">
+      <img
+        class="relative z-0 h-full w-full object-cover"
+        src={picture}
+        alt=""
+      />
+      <div class="absolute h-full w-full inset-0 z-10 bg-black opacity-60" />
     </div>
-    <div class="w-full max-w-screen-xl  mx-auto">
-      <div class="bg-white py-10  px-24 text-center">
+    <div class="w-full relative z-10 -m-24 max-w-screen-xl  mx-auto">
+      <div
+        class="bg-white pt-8 pb-24 px-4 text-center w-9/12 mx-auto rounded-lg shadow-md"
+      >
         <h1
           class="text-brandblue sm:text-4xl text-3xl font-medium title-font mb-4"
         >
@@ -34,11 +42,13 @@
           & global export produce & processing.
         </p>
       </div>
-      <div class="bg-brandblue flex  h-64 rounded-lg">
+      <div
+        class="bg-brandblue flex md:flex-row flex-col w-8/12 mx-auto items-center -mt-8 py-8 rounded-lg"
+      >
         <div
-          class="sm:w-1/3 text-center sm:pr-8 sm:py-8 rounded-full flex flex-col h-full  mb-4"
+          class="sm:w-1/3 text-center sm:pr-8 sm:py-8 rounded-full flex flex-col justify-center h-full"
         >
-          <div class="w-24 h-24  ">
+          <div class="-mt-20 md:mt-0 mb-4 md:mb-0 md:-ml-10 w-24 h-24  ">
             <img
               alt="gallery"
               class=" inset-0 w-full  rounded-full h-full items-center"
@@ -75,14 +85,10 @@
                   Produce Insight
                 </h1>
                 <div
-                  class="flex flex-wrap sm:-m-4 -mx-4 mb-10 -mt-4 md:space-y-0 space-y-6"
+                  class="flex flex-col md:flex-row flex-wrap sm:-m-4 -mx-4 mb-10 -mt-4 md:space-y-0 space-y-6"
                 >
-                  <div
-                    class="p-4 md:w-1/3 flex flex-col text-center items-center"
-                  >
-                    <div
-                      class="w-20 h-20 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-5 flex-shrink-0"
-                    >
+                  <IconCard>
+                    <span slot="icon">
                       <svg
                         fill="none"
                         stroke="currentColor"
@@ -94,36 +100,11 @@
                       >
                         <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
                       </svg>
-                    </div>
-
-                    <div class="flex-grow">
-                      <h2
-                        class="text-gray-900 text-lg title-font font-medium mb-3"
-                      >
-                        Agro Processing
-                      </h2>
-                      <a class="mt-3 text-indigo-500 inline-flex items-center"
-                        >Learn More
-                        <svg
-                          fill="none"
-                          stroke="currentColor"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="2"
-                          class="w-4 h-4 ml-2"
-                          viewBox="0 0 24 24"
-                        >
-                          <path d="M5 12h14M12 5l7 7-7 7" />
-                        </svg>
-                      </a>
-                    </div>
-                  </div>
-                  <div
-                    class="p-4 md:w-1/3 flex flex-col text-center items-center"
-                  >
-                    <div
-                      class="w-20 h-20 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-5 flex-shrink-0"
-                    >
+                    </span>
+                    <span slot="title">Agro-Processing</span>
+                  </IconCard>
+                  <IconCard>
+                    <span slot="icon">
                       <svg
                         fill="none"
                         stroke="currentColor"
@@ -133,41 +114,13 @@
                         class="w-10 h-10"
                         viewBox="0 0 24 24"
                       >
-                        <circle cx="6" cy="6" r="3" />
-                        <circle cx="6" cy="18" r="3" />
-                        <path
-                          d="M20 4L8.12 15.88M14.47 14.48L20 20M8.12 8.12L12 12"
-                        />
+                        <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
                       </svg>
-                    </div>
-                    <div class="flex-grow">
-                      <h2
-                        class="text-gray-900 text-lg title-font font-medium mb-3"
-                      >
-                        Fruits
-                      </h2>
-                      <a class="mt-3 text-indigo-500 inline-flex items-center"
-                        >Learn More
-                        <svg
-                          fill="none"
-                          stroke="currentColor"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="2"
-                          class="w-4 h-4 ml-2"
-                          viewBox="0 0 24 24"
-                        >
-                          <path d="M5 12h14M12 5l7 7-7 7" />
-                        </svg>
-                      </a>
-                    </div>
-                  </div>
-                  <div
-                    class="p-4 md:w-1/3 flex flex-col text-center items-center"
-                  >
-                    <div
-                      class="w-20 h-20 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-5 flex-shrink-0"
-                    >
+                    </span>
+                    <span slot="title">Agro-Processing</span>
+                  </IconCard>
+                  <IconCard>
+                    <span slot="icon">
                       <svg
                         fill="none"
                         stroke="currentColor"
@@ -177,36 +130,25 @@
                         class="w-10 h-10"
                         viewBox="0 0 24 24"
                       >
-                        <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2" />
-                        <circle cx="12" cy="7" r="4" />
+                        <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
                       </svg>
-                    </div>
-                    <div class="flex-grow">
-                      <h2
-                        class="text-gray-900 text-lg title-font font-medium mb-3"
-                      >
-                        Vegetables
-                      </h2>
-                      <a class="mt-3 text-indigo-500 inline-flex items-center"
-                        >Learn More
-                        <svg
-                          fill="none"
-                          stroke="currentColor"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="2"
-                          class="w-4 h-4 ml-2"
-                          viewBox="0 0 24 24"
-                        >
-                          <path d="M5 12h14M12 5l7 7-7 7" />
-                        </svg>
-                      </a>
-                    </div>
-                  </div>
+                    </span>
+                    <span slot="title">Agro-Processing</span>
+                  </IconCard>
                 </div>
                 <button
                   class="flex mx-auto mt-16 text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg"
-                  >Button</button
+                  >Button <svg
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    class="w-4 h-4 ml-2"
+                    viewBox="0 0 24 24"
+                  >
+                    <path d="M5 12h14M12 5l7 7-7 7" />
+                  </svg></button
                 >
               </div>
             </section>
@@ -228,68 +170,76 @@
         </div>
       </div>
     </div>
-    <div class="bg-brandblue w-full">
-      <div class="w-1/2 p-8">
-        <h2 class="text-white text-2xl">2020 Produce Insight</h2>
-        <p class="text-white">
-          Due to the Covid 19 Pandemic which ensured lockdowns and an uptake in
-          fresh produce consumption and production. Farm Bay produced
-          considerable fresh produce, mainly peas, onions, and tomatoes
-        </p>
-      </div>
-      <div class="grid grid-cols-5 mb-1 gap-4">
-        <ProductInsights img_src={fresh_tomatoes}>
-          <span class="text-brandgold" slot="statistic">5000kg</span>
-          <span slot="produce" class="text-white">Fresh Tomatoes</span>
-        </ProductInsights>
+    <div class="bg-brandblue py-24 w-full">
+      <div class="w-full relative z-10 -m-24 max-w-screen-xl  mx-auto">
+        <div class="w-full md:w-9/12 lg:w-6/12 p-8 mx-auto">
+          <h2 class="text-white md:text-4xl text-3xl text-center mb-6">
+            2020 Produce Insight
+          </h2>
+          <p class="text-white text-center mb-6">
+            Due to the Covid 19 Pandemic which ensured lockdowns and an uptake
+            in fresh produce consumption and production. Farm Bay produced
+            considerable fresh produce, mainly peas, onions, and tomatoes
+          </p>
+        </div>
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 mb-1 gap-4">
+          <ProductInsights img_src={fresh_tomatoes}>
+            <span class="text-brandgold" slot="statistic">5000kg</span>
+            <span slot="produce" class="text-white">Fresh Tomatoes</span>
+          </ProductInsights>
 
-        <ProductInsights img_src={dried_tomatoes}>
-          <span class="text-brandgold" slot="statistic">3000kg</span>
-          <span slot="produce" class="text-white">Dried Tomatoes</span>
-        </ProductInsights>
+          <ProductInsights img_src={dried_tomatoes}>
+            <span class="text-brandgold" slot="statistic">3000kg</span>
+            <span slot="produce" class="text-white">Dried Tomatoes</span>
+          </ProductInsights>
 
-        <ProductInsights img_src={broccoli}>
-          <span class="text-brandgold" slot="statistic">5 000 kgs</span>
-          <span slot="produce" class="text-white">Broccoli</span>
-        </ProductInsights>
+          <ProductInsights img_src={broccoli}>
+            <span class="text-brandgold" slot="statistic">5 000 kgs</span>
+            <span slot="produce" class="text-white">Broccoli</span>
+          </ProductInsights>
 
-        <ProductInsights img_src={cauliflower}>
-          <span class="text-brandgold" slot="statistic"
-            >r 5 class="text-white"000 kgs
-          </span>
-          <span slot="produce">Cauliflower</span>
-        </ProductInsights>
+          <ProductInsights img_src={cauliflower}>
+            <span class="text-brandgold" slot="statistic">5000 kgs </span>
+            <span slot="produce">Cauliflower</span>
+          </ProductInsights>
 
-        <ProductInsights img_src={red_onion}>
-          <span class="text-brandgold" slot="statistic">25 000 kgs</span>
-          <span slot="produce">Red Onions</span>
-        </ProductInsights>
+          <ProductInsights img_src={red_onion}>
+            <span class="text-brandgold" slot="statistic">25 000 kgs</span>
+            <span slot="produce">Red Onions</span>
+          </ProductInsights>
 
-        <ProductInsights img_src={peas}>
-          <span class="text-brandgold" slot="statistic">35 000kgs</span>
-          <span slot="produce" class="text-white">Shelled green peas </span>
-        </ProductInsights>
+          <ProductInsights img_src={peas}>
+            <span class="text-brandgold" slot="statistic">35 000kgs</span>
+            <span slot="produce" class="text-white">Shelled green peas </span>
+          </ProductInsights>
 
-        <ProductInsights img_src={mangetout}>
-          <span class="text-brandgold" slot="statistic">10 000 kgs</span>
-          <span slot="produce">Mangetout</span>
-        </ProductInsights>
+          <ProductInsights img_src={mangetout}>
+            <span class="text-brandgold" slot="statistic">10 000 kgs</span>
+            <span slot="produce">Mangetout</span>
+          </ProductInsights>
 
-        <ProductInsights img_src={sugarsnap}>
-          <span class="text-brandgold" slot="statistic">7 000 kgs</span>
-          <span slot="produce" class="text-white">Sugarsnap </span>
-        </ProductInsights>
+          <ProductInsights img_src={sugarsnap}>
+            <span class="text-brandgold" slot="statistic">7 000 kgs</span>
+            <span slot="produce" class="text-white">Sugarsnap </span>
+          </ProductInsights>
 
-        <ProductInsights img_src={carrots}>
-          <span class="text-brandgold" slot="statistic">5 000kgs</span>
-          <span slot="produce" class="text-white">Carrots</span>
-        </ProductInsights>
+          <ProductInsights img_src={carrots}>
+            <span class="text-brandgold" slot="statistic">5 000kgs</span>
+            <span slot="produce" class="text-white">Carrots</span>
+          </ProductInsights>
 
-        <ProductInsights img_src={watermelons}>
-          <span class="text-brandgold" slot="statistic">6 tons</span>
-          <span slot="produce" class="text-white">Watermelons </span>
-        </ProductInsights>
+          <ProductInsights img_src={watermelons}>
+            <span class="text-brandgold" slot="statistic">6 tons</span>
+            <span slot="produce" class="text-white">Watermelons </span>
+          </ProductInsights>
+        </div>
       </div>
     </div>
   </section>
 </Animate>
+
+<style>
+  .hero {
+    height: 92vh;
+  }
+</style>

@@ -90,7 +90,6 @@
                   stroke-linejoin="round"
                   stroke-width="2"
                   class="w-5 h-5"
-                  on:click={onTwitter}
                   viewBox="0 0 24 24"
                 >
                   <path

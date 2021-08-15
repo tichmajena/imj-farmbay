@@ -1,5 +1,5 @@
 <script>
-  import Animate from "$lib/Animate.svelte";
+  import Animate from "$lib/components/Animate.svelte";
 </script>
 
 <Animate>

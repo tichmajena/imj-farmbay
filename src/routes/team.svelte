@@ -1,20 +1,21 @@
 <script>
-  import Animate from "$lib/Animate.svelte";
+  import Animate from "$lib/components/Animate.svelte";
   import ronnie from "/RonnieChigombe.jpg";
   import callifinos from "/CallifinosKGuvi.jpg";
   import farai from "/FaraiRChinomona.jpg";
   import tino from "/TinotendaFeshete.jpg";
   import hazel from "/HazelMasvinhise.jpeg";
   import yeukai from "/YeukaiChikakano.jpeg";
-  import image from "$lib/farmbay-bg-01.jpg";
+  import image from "$lib/images/farmbay-bg-01.jpg";
+  import Header from "$lib/components/Header.svelte";
 </script>
 
 <Animate>
   <section class="w-full">
+    <Header background={image}>Leadership & Expertise</Header>
+  </section>
+  <section class="w-full">
     <div class="w-full max-w-screen-xl mx-auto">
-      <div class="w-full h-full">
-        <img src={image} alt="" />
-      </div>
       <div class="w-1/2 m-8">
         <h2 class="text-2xl text-gray-700">Our Commitment</h2>
         <p class="font-thin text-gray-500">
@@ -28,10 +29,10 @@
 
       <div>
         <div class="p-4">
-          <div class="w-28 grid grid-flow-row-dense">
+          <div class="w-28 mx-auto">
             <img
               alt="gallery"
-              class=" inset-0 w-full  rounded-full h-full items-center"
+              class=" inset-0 w-full  rounded-full h-full "
               src={farai}
             />
           </div>

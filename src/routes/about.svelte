@@ -1,17 +1,18 @@
 <script>
   import Animate from "$lib/components/Animate.svelte";
+  import Header from "$lib/components/Header.svelte";
   import pic from "$lib/images/farmbay-bg-01.jpg";
 </script>
 
 <Animate>
   <section class="w-full">
+    <Header background={pic}>About</Header>
+  </section>
+  <section class="w-full py-16">
     <div class="w-full max-w-screen-xl mx-auto">
       <div>
-        <img src={pic} alt="" />
-      </div>
-      <div class="bg-brandblue">
         <div class="flex flex-row ">
-          <div class="text-white m-8">
+          <div class=" m-8">
             <p class="font-thin">
               Farm Bay aspires to be an agri-business of note contributing to
               the global food and nutrition security. Special diets and Organics
@@ -23,21 +24,27 @@
           </div>
 
           <div class="m-8">
-            <h2 class="text-white text-xl mb-4 ">Vision</h2>
-            <p class="text-white font-thin mt-8">
+            <h2 class=" text-xl mb-4 ">Vision</h2>
+            <p class=" font-thin mt-8">
               To be positioned as a first choice agro business for our partners
             </p>
-            <h2 class="text-white mt-4 mb-4  text-xl">Mission</h2>
-            <p class="text-white font-thin">
+            <h2 class=" mt-4 mb-4  text-xl">Mission</h2>
+            <p class=" font-thin">
               Farm Bay is uniquely positioned to evolve into a leading premier
               exporter of premium fruits & vegetables to the global market under
               global certification standards.
             </p>
           </div>
         </div>
-        <div class=" text-white">
+      </div>
+    </div>
+  </section>
+  <section class="bg-brandblue text-white py-16">
+    <div class="w-full max-w-screen-xl mx-auto">
+      <div>
+        <div class=" ">
           <h2 class="text-2xl text-center">Our Values</h2>
-          <div class="flex flex-row space-x-4 m-8 text-white">
+          <div class="flex flex-row space-x-4 m-8 ">
             <div>
               <h2 class="font-bold">Sustainability</h2>
               <p class="font-thin">
@@ -64,6 +71,10 @@
           </div>
         </div>
       </div>
+    </div>
+  </section>
+  <section class="py-16">
+    <div class="w-full max-w-screen-xl mx-auto">
       <div>
         <h2 class="text-2xl text-center text-gray-700">Our History</h2>
       </div>

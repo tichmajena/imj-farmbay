@@ -1,5 +1,5 @@
 <script>
-  import Animate from "$lib/Animate.svelte";
+  import Animate from "$lib/components/Animate.svelte";
   import pic from "$lib/farmbay-bg-01.jpg";
 </script>
 

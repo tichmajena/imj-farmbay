@@ -43,6 +43,7 @@
             Asters, Burplerium and Leatrice
           </p>
         </div>
+<<<<<<< HEAD
         <div class="flex space-y-5 w-1/2 flex-col">
           <img src={pic} alt="" class="w-50" />
           <img src={pic} alt="" class="w-50" />
@@ -63,6 +64,8 @@
             soil biodiversity.
           </p>
         </div>
+=======
+>>>>>>> ticha
       </div>
 
       <div class="md:flex md:flex-row  m-8">

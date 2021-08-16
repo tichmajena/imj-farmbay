@@ -1,17 +1,23 @@
-<script>
-  import fresh_tomatoes from "/fresh_tomatoes.jpg";
-  import dried_tomatoes from "/dried_tomatoes.jpg";
-  import broccoli from "/broccoli.jpg";
-  import cauliflower from "/cauliflower.jpg";
-  import red_onion from "/red_onions.jpg";
-  import peas from "/peas.jpg";
-  import mangetout from "/mangetout.jpg";
-  import sugarsnap from "/sugarsnap-1.jpg";
-  import carrots from "/carrots.jpg";
-  import watermelons from "/watermelon.jpg";
-  import farai from "/FaraiRChinomona.jpg";
+<script context="module">
+  import { browser, dev } from "$app/env";
+  export const prerender = true;
+  export const router = browser;
+</script>
 
-  import picture from "/media/image1.jpeg";
+<script>
+  import fresh_tomatoes from "$lib/media/fresh_tomatoes.jpg";
+  import dried_tomatoes from "$lib/media/dried_tomatoes.jpg";
+  import broccoli from "$lib/media/broccoli.jpg";
+  import cauliflower from "$lib/media/cauliflower.jpg";
+  import red_onion from "$lib/media/red_onions.jpg";
+  import peas from "$lib/media/peas.jpg";
+  import mangetout from "$lib/media/mangetout.jpg";
+  import sugarsnap from "$lib/media/sugarsnap-1.jpg";
+  import carrots from "$lib/media/carrots.jpg";
+  import watermelons from "$lib/media/watermelon.jpg";
+  import farai from "$lib/media/FaraiRChinomona.jpg";
+
+  import picture from "$lib/media/image1.jpeg";
   import Animate from "$lib/components/Animate.svelte";
   import ProductInsights from "$lib/components/ProductInsights.svelte";
   import IconCard from "$lib/components/IconCard.svelte";

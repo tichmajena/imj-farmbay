@@ -1,3 +1,9 @@
+<script context="module">
+  import { browser, dev } from "$app/env";
+  export const prerender = true;
+  export const router = browser;
+</script>
+
 <script>
   import Animate from "$lib/components/Animate.svelte";
   import Header from "$lib/components/Header.svelte";

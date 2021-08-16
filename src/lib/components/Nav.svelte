@@ -20,7 +20,7 @@
         </div>
 
         <!-- secondary nav -->
-        <div class="hidden md:flex text-center space-x-1">
+        <div class="hidden md:flex items-center stext-center space-x-1">
           <ul class="flex">
             <a class="" href="/">
               <li
@@ -69,7 +69,7 @@
             <span
               class="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start"
             >
-              <a class="text-white">
+              <a href class="ml-3 text-brandblue">
                 <svg
                   fill="currentColor"
                   stroke-linecap="round"
@@ -83,7 +83,7 @@
                   />
                 </svg>
               </a>
-              <a class="ml-3 text-white">
+              <a href class="ml-3 text-brandblue">
                 <svg
                   fill="currentColor"
                   stroke-linecap="round"
@@ -97,7 +97,7 @@
                   />
                 </svg>
               </a>
-              <a class="ml-3 text-white">
+              <a href class="ml-3 text-brandblue">
                 <svg
                   fill="none"
                   stroke="currentColor"
@@ -113,7 +113,7 @@
                   />
                 </svg>
               </a>
-              <a class="ml-3 text-white">
+              <a href class="ml-3 text-brandblue">
                 <svg
                   fill="currentColor"
                   stroke="currentColor"

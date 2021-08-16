@@ -8,6 +8,10 @@
   import Animate from "$lib/components/Animate.svelte";
   import Header from "$lib/components/Header.svelte";
   import pic from "$lib/images/farmbay-bg-01.jpg";
+  import tractor_ic from "$lib/icons/farm-tractor.svg";
+  import farm_ic from "$lib/icons/farm.svg";
+  import certification_ic from "$lib/icons/certificate-medal-quality.svg";
+  import irrigation_ic from "$lib/icons/agriculture-irrigation.svg";
 </script>
 
 <Animate>
@@ -20,19 +24,9 @@
         class="flex items-center lg:w-3/5 mx-auto border-b pb-10 mb-10 border-gray-200 sm:flex-row flex-col"
       >
         <div
-          class="sm:w-32 sm:h-32 h-20 w-20 sm:mr-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 flex-shrink-0"
+          class="sm:w-32 sm:h-32 h-20 w-20 sm:mr-10 inline-flex items-center justify-center rounded-full bg-brandgold text-indigo-500 flex-shrink-0"
         >
-          <svg
-            fill="none"
-            stroke="currentColor"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-            class="sm:w-16 sm:h-16 w-10 h-10"
-            viewBox="0 0 24 24"
-          >
-            <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
-          </svg>
+          <img src={farm_ic} class="sm:w-16 sm:h-16 w-10 h-10" alt="" />
         </div>
         <div class="flex-grow sm:text-left text-center mt-6 sm:mt-0">
           <h2 class="text-gray-900 text-lg title-font font-medium mb-2">
@@ -69,39 +63,16 @@
           </p>
         </div>
         <div
-          class="sm:w-32 sm:order-none order-first sm:h-32 h-20 w-20 sm:ml-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 flex-shrink-0"
+          class="sm:w-32 sm:order-none order-first sm:h-32 h-20 w-20 sm:ml-10 inline-flex items-center justify-center rounded-full bg-brandgold text-indigo-500 flex-shrink-0"
         >
-          <svg
-            fill="none"
-            stroke="currentColor"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-            class="sm:w-16 sm:h-16 w-10 h-10"
-            viewBox="0 0 24 24"
-          >
-            <circle cx="6" cy="6" r="3" />
-            <circle cx="6" cy="18" r="3" />
-            <path d="M20 4L8.12 15.88M14.47 14.48L20 20M8.12 8.12L12 12" />
-          </svg>
+          <img src={tractor_ic} class="sm:w-16 sm:h-16 w-10 h-10" alt="" />
         </div>
       </div>
       <div class="flex items-center lg:w-3/5 mx-auto sm:flex-row flex-col">
         <div
-          class="sm:w-32 sm:h-32 h-20 w-20 sm:mr-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 flex-shrink-0"
+          class="sm:w-32 sm:h-32 h-20 w-20 sm:mr-10 inline-flex items-center justify-center rounded-full bg-brandgold text-indigo-500 flex-shrink-0"
         >
-          <svg
-            fill="none"
-            stroke="currentColor"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-            class="sm:w-16 sm:h-16 w-10 h-10"
-            viewBox="0 0 24 24"
-          >
-            <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2" />
-            <circle cx="12" cy="7" r="4" />
-          </svg>
+          <img src={irrigation_ic} class="sm:w-16 sm:h-16 w-10 h-10" alt="" />
         </div>
         <div class="flex-grow sm:text-left text-center mt-6 sm:mt-0">
           <h2 class="text-gray-900 text-lg title-font font-medium mb-2">
@@ -186,6 +157,9 @@
   <section class="bg-brandgold p-8">
     <div class="w-full max-w-screen-xl mx-auto">
       <div class="text-center md:w-8/12 mx-auto m-8">
+        <div class="h-16 w-16 mx-auto mb-8 text-red-400">
+          <img src={certification_ic} alt="" />
+        </div>
         <h2 class="text-2xl mb-4 text-brandblue">Certification</h2>
         <p class="text-brandblue mb-4 mt-2">
           Our Agro-Business aspiring to being a BRC Global Standards (version 7)

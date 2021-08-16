@@ -21,6 +21,9 @@
   import Animate from "$lib/components/Animate.svelte";
   import ProductInsights from "$lib/components/ProductInsights.svelte";
   import IconCard from "$lib/components/IconCard.svelte";
+
+  import tomato_ic from "$lib/icons/tomato-vegetable.svg";
+  import mango_ic from "$lib/icons/mango.svg";
 </script>
 
 <Animate>
@@ -86,75 +89,47 @@
             <section class="text-gray-600 body-font">
               <div class="container px-5 py-24 mx-auto">
                 <h1
-                  class="text-3xl md:text-5xl sm:text-3xl  font-medium title-font mb-4 text-gray-500"
+                  class="text-3xl md:text-4xl sm:text-3xl  font-medium title-font mb-32 text-gray-500"
                 >
-                  Produce Insight
+                  Our Agro-Business
                 </h1>
                 <div
                   class="flex flex-col md:flex-row flex-wrap sm:-m-4 -mx-4 mb-10 -mt-4 md:space-y-0 space-y-6"
                 >
                   <IconCard>
                     <span slot="icon">
-                      <svg
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
-                        class="w-10 h-10"
-                        viewBox="0 0 24 24"
-                      >
-                        <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
-                      </svg>
+                      <img src={mango_ic} class="w-16 h-16" alt="" />
                     </span>
                     <span slot="title">Agro-Processing</span>
                   </IconCard>
                   <IconCard>
                     <span slot="icon">
-                      <svg
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
-                        class="w-10 h-10"
-                        viewBox="0 0 24 24"
-                      >
-                        <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
-                      </svg>
+                      <img src={tomato_ic} class="w-16 h-16" alt="" />
                     </span>
-                    <span slot="title">Agro-Processing</span>
+                    <span slot="title">Vegetables</span>
                   </IconCard>
                   <IconCard>
                     <span slot="icon">
-                      <svg
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
-                        class="w-10 h-10"
-                        viewBox="0 0 24 24"
-                      >
-                        <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
-                      </svg>
+                      <img src={mango_ic} class="w-16 h-16" alt="" />
                     </span>
-                    <span slot="title">Agro-Processing</span>
+                    <span slot="title">Fruits</span>
                   </IconCard>
                 </div>
-                <button
-                  class="flex mx-auto mt-16 text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg"
-                  >Button <svg
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    class="w-4 h-4 ml-2"
-                    viewBox="0 0 24 24"
-                  >
-                    <path d="M5 12h14M12 5l7 7-7 7" />
-                  </svg></button
+                <a href="/service">
+                  <button
+                    class="flex items-center mx-auto mt-16 text-white bg-brandblue border-0 py-2 px-8 focus:outline-none hover:text-brandgold rounded text-lg"
+                    >Learm more <svg
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      class="w-4 h-4 ml-2"
+                      viewBox="0 0 24 24"
+                    >
+                      <path d="M5 12h14M12 5l7 7-7 7" />
+                    </svg></button
+                  ></a
                 >
               </div>
             </section>

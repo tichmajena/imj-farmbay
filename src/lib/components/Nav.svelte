@@ -43,7 +43,7 @@
                 class:text-brandgold={$page.path === "/service"}
                 class="mr-5 hover:text-brandgold py-6 px-3"
               >
-                Service
+                Agro-Business
               </li></a
             >
             <a class="" href="/team">
@@ -55,14 +55,14 @@
               </li></a
             >
 
-            <a class="" href="/contact">
+            <!-- <a class="" href="/contact">
               <li
                 class:text-brandgold={$page.path === "/contact"}
                 class="mr-5 hover:text-brandgold py-6 px-3"
               >
                 Contact
               </li></a
-            >
+            > -->
           </ul>
 
           <div class="lg:w-1/4 md:w-1/2 w-full px-4">

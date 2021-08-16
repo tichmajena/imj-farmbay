@@ -1,6 +1,6 @@
 <div class="p-4 md:w-1/3 flex flex-col text-center items-center">
   <div
-    class="w-20 h-20 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-5 flex-shrink-0"
+    class="w-32 h-32 inline-flex items-center justify-center rounded-full bg-brandgold text-indigo-500 mb-5 flex-shrink-0"
   >
     <slot name="icon" />
   </div>

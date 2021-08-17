@@ -16,7 +16,9 @@
 
 <Animate>
   <section>
-    <Header background={pic}>Agro-Business</Header>
+    <Header background={pic}
+      ><span class="text-gray-200">AGRO BUSINESS</span></Header
+    >
   </section>
   <section class="bg-gray-200 text-gray-600 body-font">
     <div class="container px-5 py-24 mx-auto">

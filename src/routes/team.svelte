@@ -21,13 +21,23 @@
 
 <Animate>
   <section class="w-full">
-    <Header background={image}>Leadership & Expertise</Header>
+    <Header background={image}
+      ><span class="text-white">LEADERSHIP & EXPERTISE</span></Header
+    >
   </section>
   <section class="w-full">
     <div class="w-full max-w-screen-xl mx-auto">
-      <div class="w-1/2 m-8">
-        <h2 class="text-2xl text-gray-700">Our Commitment</h2>
-        <p class="text-gray-500">
+      <div
+        class="flex flex-col md:items-center md:flex-row lg:w-10/12 md:w-2/3 w-full p-8 m-8 mx-auto"
+      >
+        <h2
+          class="text-2xl w-1/2 md:text-right text-left md:mb-0 mb-2 text-gray-700 pr-4"
+        >
+          Our Commitment
+        </h2>
+        <p
+          class="text-gray-500 lg:w-1/3 md:w-1/2 border-l-4 border-solid border-brandgold py-2 px-4"
+        >
           As part of our commitment to deliver a functional agro business our
           team which forms the overall management, has the necessary commitment
           and expertise to lead Farm Bay to performance based profitability and

@@ -30,90 +30,83 @@
     </div>
     <div class="container px-5 py-24 mx-auto flex">
       <div
-        class="lg:w-1/3 md:w-1/2 bg-white rounded-lg p-8 flex flex-col md:ml-auto w-full mt-10 md:mt-0 relative z-10 shadow-md"
+        class="lg:w-1/3 md:w-1/2 bg-white rounded-lg px-8 pt-4 pb-8 flex flex-col md:ml-auto w-full mt-10 md:mt-0 relative z-10 shadow-md"
       >
-        <h2 class="text-gray-900 text-lg mb-1 font-medium title-font">
-          Feedback
+        <h2 class="text-gray-900 text-xl mb-3 font-medium title-font">
+          Get intouch
         </h2>
         <p class="leading-relaxed text-gray-600" />
-        <div class="div-block-13">
+        <div class="mb-3">
           <div class="flex">
-            <div class="h-5 w-5">
-              <img
-                src="images/phone-solid.svg"
-                loading="lazy"
-                alt=""
-                class="w-full"
-              />
+            <div class="h-4 w-4 pt-1">
+              <img src={phone_ic} loading="lazy" alt="" class="w-full" />
             </div>
-            <div class="div-block-16">
-              <a href="tel:+263242668026" class="link">(024) 2668026 / </a>
-              <a href="tel:+263242668096" class="link">2668096/ </a>
-              <a href="tel:+263242668543" class="link">2668543</a>
+            <div class="flex flex-wrap mb-2">
+              <a href="tel:+263773516700" class="link ml-3 text-sm"
+                >+26377 351 6700,</a
+              >
+              <a href="tel:+263719516700" class="link ml-3 text-sm"
+                >+26371 951 6700</a
+              >
+              <a href="tel:+263779480896" class="link ml-3 text-sm"
+                >+26377 948 0896</a
+              >
             </div>
           </div>
           <div class="flex">
-            <div class="h-5 w-5">
-              <img
-                src="images/mail-solid.svg"
-                loading="lazy"
-                alt=""
-                class="w-full"
-              />
+            <div class="h-4 w-4 pt-1">
+              <img src={mail_ic} loading="lazy" alt="" class="w-full" />
             </div>
-            <div class="div-block-16">
-              <a href="mailto:info@farmbay.co.zw" class="link"
+            <div class="flex flex-col mb-2">
+              <a href="mailto:info@farmbay.co.zw" class="link ml-3 text-sm"
                 >info@farmbay.co.zw</a
               >
-              <a href="mailto:info@farmbay.co.zw" class="link"
+              <a href="mailto:finance@farmbay.co.zw" class="link ml-3 text-sm"
                 >finance@farmbay.co.zw</a
               >
-              <a href="mailto:info@farmbay.co.zw" class="link"
+              <a href="mailto:sales@farmbay.co.zw" class="link ml-3 text-sm"
                 >sales@farmbay.co.zw</a
               >
-              <a href="mailto:info@farmbay.co.zw" class="link"
-                >procurement@farmbay.co.zw</a
+              <a
+                href="mailto:procurement@farmbay.co.zw"
+                class="link ml-3 text-sm">procurement@farmbay.co.zw</a
               >
-              <a href="mailto:info@farmbay.co.zw" class="link"
+              <a href="mailto:marketing@farmbay.co.zw" class="link ml-3 text-sm"
                 >marketing@farmbay.co.zw</a
               >
             </div>
           </div>
-          <div class="flex">
-            <div class="h-5 w-5">
-              <img
-                src="images/place-solid.svg"
-                loading="lazy"
-                alt=""
-                class="w-full"
-              />
+          <div class="hidden">
+            <div class="h-4 w-4 pt-1">
+              <img src={place_ic} loading="lazy" alt="" class="w-full" />
             </div>
-            <div class="div-block-16">
-              <a href="mailto:info@zimkings.com" class="link"
+            <div class="flex flex-col">
+              <a href="" class="link ml-3 text-sm"
                 >Farm Bay Pvt Reedbuck Farm Acturus, Goromonzi.</a
               >
             </div>
           </div>
         </div>
-        <p class="leading-relaxed mb-5 text-gray-600">Acturus, Goromonzi</p>
         <div class="relative mb-4">
-          <label for="email" class="leading-7 text-sm text-gray-600"
+          <label for="email" class="hidden leading-7 text-sm text-gray-600"
             >Email</label
           >
           <input
             type="email"
             id="email"
             name="email"
+            placeholder="Your email"
             class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
           />
         </div>
         <div class="relative mb-4">
-          <label for="message" class="leading-7 text-sm text-gray-600"
+          <label for="message" class="hidden leading-7 text-sm text-gray-600"
             >Message</label
           >
           <textarea
             id="message"
             name="message"
+            placeholder="Your message"
             class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
           />
         </div>

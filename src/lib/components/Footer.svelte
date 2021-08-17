@@ -9,13 +9,13 @@
       <div class="flex flex-wrap md:text-left order-first">
         <div class="lg:w-1/4 md:w-1/2 w-full px-4">
           <h2
-            class="title-font font-medium text-white tracking-widest  text-3xl mb-3"
+            class="title-font font-medium text-white tracking-widest  text-xl mb-3"
           >
             Menu
           </h2>
-          <nav class="list-none mb-10">
+          <nav class="list-none mb-10 text-gray-500">
             <ul class="flex flex-col">
-              <a class="" href="/">
+              <a class="font-light" href="/">
                 <li
                   class:text-brandgold={$page.path === "/"}
                   class="mr-5 hover:text-brandgold "
@@ -23,7 +23,7 @@
                   Home
                 </li></a
               >
-              <a class="" href="/about">
+              <a class="font-light" href="/about">
                 <li
                   class:text-brandgold={$page.path === "/about"}
                   class="mr-5 hover:text-brandgold "
@@ -31,7 +31,7 @@
                   About
                 </li></a
               >
-              <a class="" href="/service">
+              <a class="font-light" href="/service">
                 <li
                   class:text-brandgold={$page.path === "/service"}
                   class="mr-5 hover:text-brandgold"
@@ -39,7 +39,7 @@
                   Service
                 </li></a
               >
-              <a class="" href="/team">
+              <a class="font-light" href="/team">
                 <li
                   class:text-brandgold={$page.path === "/team"}
                   class="mr-5 hover:text-brandgold "
@@ -48,7 +48,7 @@
                 </li></a
               >
 
-              <a class="" href="/contact">
+              <a class="font-light" href="/contact">
                 <li
                   class:text-brandgold={$page.path === "/contact"}
                   class="mr-5 hover:text-brandgold"
@@ -61,19 +61,20 @@
         </div>
         <div class="lg:w-1/4 md:w-1/2 w-full px-4">
           <h2
-            class="title-font font-medium text-white text-3xl tracking-widest mb-3"
+            class="title-font font-medium text-white text-xl tracking-widest mb-3"
           >
             Contact
           </h2>
-          <nav class="list-none mb-10">
-            <h2 class="text-white">Farm Bay</h2>
+          <div class="list-none mb-10 font-light">
+            <h2 class="text-gray-500">Farm Bay</h2>
 
-            <h2 class="text-white">Reedbuck Farm</h2>
+            <h2 class="text-gray-500">Reedbuck Farm</h2>
 
-            <h2 class="text-white">Acturus, Goromonzi</h2>
-            <h2 class="text-white">+263 773 516 700</h2>
-            <h2 class="text-white">+263719 516 700</h2>
-          </nav>
+            <h2 class="text-gray-500">Acturus, Goromonzi</h2>
+            <h2 class="text-gray-500">+263 773 516 700</h2>
+            <h2 class="text-gray-500">+263719 516 700 +26377 948 0896</h2>
+            <h2 class="text-gray-500">+263779 480 896</h2>
+          </div>
         </div>
 
         <div class="lg:w-1/4 md:w-1/2 w-full px-4 mb-8">

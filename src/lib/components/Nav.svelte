@@ -2,16 +2,22 @@
   import logo from "$lib/images/farm-bay-logo.svg";
   import { page } from "$app/stores";
   import Animate from "$lib/components/Animate.svelte";
+
+  let mobile_menu = false;
+
+  function menuToggle() {
+    mobile_menu = !mobile_menu;
+  }
 </script>
 
 <Animate>
-  <nav class="bg-gray-100">
+  <nav class="bg-gray-100 fixed z-50 h-16 w-full">
     <div class="px-8 mx-auto ">
       <div class="flex justify-between">
         <div class="flex space-x-4">
           <!--logo-->
           <div>
-            <a href="#" class="flex items-center py-2 px-3 text-gray-700">
+            <a href="/" class="flex items-center py-2 px-3 text-gray-700">
               <img src={logo} class="mr-1 h-12 w-100" alt="" />
             </a>
           </div>
@@ -69,7 +75,10 @@
             <span
               class="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start"
             >
-              <a href class="ml-3 text-brandblue">
+              <a
+                href="https://www.facebook.com/Farm.BayZw/"
+                class="ml-3 text-brandblue hover:text-brandgold"
+              >
                 <svg
                   fill="currentColor"
                   stroke-linecap="round"
@@ -83,7 +92,10 @@
                   />
                 </svg>
               </a>
-              <a href class="ml-3 text-brandblue">
+              <a
+                href="https://twitter.com/FBayzw"
+                class="ml-3 text-brandblue hover:text-brandgold"
+              >
                 <svg
                   fill="currentColor"
                   stroke-linecap="round"
@@ -97,7 +109,10 @@
                   />
                 </svg>
               </a>
-              <a href class="ml-3 text-brandblue">
+              <a
+                href="https://www.instagram.com/farm_bayzw/"
+                class="ml-3 text-brandblue hover:text-brandgold"
+              >
                 <svg
                   fill="none"
                   stroke="currentColor"
@@ -113,22 +128,25 @@
                   />
                 </svg>
               </a>
-              <a href class="ml-3 text-brandblue">
+              <a
+                href="https://www.tiktok.com/@farm_bayzw"
+                class="ml-3 text-brandblue hover:text-brandgold"
+              >
                 <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 2859 3333"
+                  class="w-5 h-5"
                   fill="currentColor"
                   stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="0"
-                  class="w-5 h-5"
-                  viewBox="0 0 24 24"
+                  shape-rendering="geometricPrecision"
+                  text-rendering="geometricPrecision"
+                  image-rendering="optimizeQuality"
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  ><path
+                    d="M2081 0c55 473 319 755 778 785v532c-266 26-499-61-770-225v995c0 1264-1378 1659-1932 753-356-583-138-1606 1004-1647v561c-87 14-180 36-265 65-254 86-398 247-358 531 77 544 1075 705 992-358V1h551z"
+                  /></svg
                 >
-                  <path
-                    stroke="none"
-                    d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"
-                  />
-                  <circle cx="4" cy="4" r="2" stroke="none" />
-                </svg>
               </a>
             </span>
           </div>
@@ -136,7 +154,7 @@
 
         <!-- mobile button goes here -->
         <div class="md:hidden flex items-center">
-          <button class="mobile-menu-button">
+          <button on:click={menuToggle} class="mobile-menu-button">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               class="h-5 w-5"
@@ -155,9 +173,23 @@
     </div>
 
     <!-- mobile menu -->
-    <div class="mobile-menu hidden md:hidden">
-      <a href="#" class="block py-2 px-4 text-sm hover:bg-gray-200">Features</a>
-      <a href="#" class="block py-2 px-4 text-sm hover:bg-gray-200">Pricing</a>
+    <div
+      class:hidden={!mobile_menu}
+      class="mobile-menu  md:hidden bg-brandgold"
+    >
+      <a href="/" class="block py-2 px-4 text-sm hover:bg-yellow-500">Home</a>
+      <a href="/about" class="block py-2 px-4 text-sm hover:bg-yellow-500"
+        >About</a
+      >
+      <a href="/service" class="block py-2 px-4 text-sm hover:bg-yellow-500"
+        >Agro-Business</a
+      >
+      <a href="/team" class="block py-2 px-4 text-sm hover:bg-yellow-500"
+        >Team</a
+      >
+      <a href="/contact" class="block py-2 px-4 text-sm hover:bg-yellow-500"
+        >Contact</a
+      >
     </div>
   </nav>
 </Animate>

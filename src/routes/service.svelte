@@ -108,6 +108,8 @@
             <ul class="text-2xl">
               <li class=" text-gray-500">Mawuyu</li>
               <li class=" text-gray-500">Mopane Worms</li>
+              <li class=" text-gray-500">Macademia Nuts</li>
+              <li class=" text-gray-500">Tumeric</li>
             </ul>
           </div>
         </div>
@@ -146,6 +148,8 @@
               <li class=" text-gray-500">Cauflower</li>
               <li class=" text-gray-500">Potatoes</li>
               <li class=" text-gray-500">Green Beans</li>
+              <li class=" text-gray-500">Ginger</li>
+              <li class=" text-gray-500">Yellow Green Red Peppers</li>
             </ul>
           </div>
         </div>

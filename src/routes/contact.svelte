@@ -6,11 +6,16 @@
 
 <script>
   import Animate from "$lib/components/Animate.svelte";
+  import picture from "$lib/media/image1.jpeg";
+  import mail_ic from "$lib/icons/mail-solid.svg";
+  import phone_ic from "$lib/icons/phone-solid.svg";
+  import place_ic from "$lib/icons/place-solid.svg";
 </script>
 
 <Animate>
   <section class="text-gray-600  body-font relative">
-    <div class="absolute inset-0 bg-gray-300">
+    <img class="absolute z-0 h-full w-full object-cover" src={picture} alt="" />
+    <div class="absolute inset-0 bg-black bg-opacity-50 z-10">
       <!-- <iframe
         width="100%"
         height="100%"
@@ -30,9 +35,67 @@
         <h2 class="text-gray-900 text-lg mb-1 font-medium title-font">
           Feedback
         </h2>
-        <p class="leading-relaxed mb-5 text-gray-600">
-          Post-ironic portland shabby chic echo park, banjo fashion axe
-        </p>
+        <p class="leading-relaxed text-gray-600" />
+        <div class="div-block-13">
+          <div class="flex">
+            <div class="h-5 w-5">
+              <img
+                src="images/phone-solid.svg"
+                loading="lazy"
+                alt=""
+                class="w-full"
+              />
+            </div>
+            <div class="div-block-16">
+              <a href="tel:+263242668026" class="link">(024) 2668026 / </a>
+              <a href="tel:+263242668096" class="link">2668096/ </a>
+              <a href="tel:+263242668543" class="link">2668543</a>
+            </div>
+          </div>
+          <div class="flex">
+            <div class="h-5 w-5">
+              <img
+                src="images/mail-solid.svg"
+                loading="lazy"
+                alt=""
+                class="w-full"
+              />
+            </div>
+            <div class="div-block-16">
+              <a href="mailto:info@farmbay.co.zw" class="link"
+                >info@farmbay.co.zw</a
+              >
+              <a href="mailto:info@farmbay.co.zw" class="link"
+                >finance@farmbay.co.zw</a
+              >
+              <a href="mailto:info@farmbay.co.zw" class="link"
+                >sales@farmbay.co.zw</a
+              >
+              <a href="mailto:info@farmbay.co.zw" class="link"
+                >procurement@farmbay.co.zw</a
+              >
+              <a href="mailto:info@farmbay.co.zw" class="link"
+                >marketing@farmbay.co.zw</a
+              >
+            </div>
+          </div>
+          <div class="flex">
+            <div class="h-5 w-5">
+              <img
+                src="images/place-solid.svg"
+                loading="lazy"
+                alt=""
+                class="w-full"
+              />
+            </div>
+            <div class="div-block-16">
+              <a href="mailto:info@zimkings.com" class="link"
+                >Farm Bay Pvt Reedbuck Farm Acturus, Goromonzi.</a
+              >
+            </div>
+          </div>
+        </div>
+        <p class="leading-relaxed mb-5 text-gray-600">Acturus, Goromonzi</p>
         <div class="relative mb-4">
           <label for="email" class="leading-7 text-sm text-gray-600"
             >Email</label
@@ -55,13 +118,9 @@
           />
         </div>
         <button
-          class="text-white bg-brandgold border-0 py-2 px-6 focus:outline-none hover:text-brandblue rounded text-lg"
+          class="text-white bg-brandblue border-0 py-2 px-6 focus:outline-none hover:text-brandgold rounded text-lg"
           >Send</button
         >
-        <p class="text-xs text-gray-500 mt-3">
-          Chicharrones blog helvetica normcore iceland tousled brook viral
-          artisan.
-        </p>
       </div>
     </div>
   </section>

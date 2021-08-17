@@ -27,12 +27,11 @@
     <div class="w-full max-w-screen-xl mx-auto">
       <div class="w-1/2 m-8">
         <h2 class="text-2xl text-gray-700">Our Commitment</h2>
-        <p class="font-thin text-gray-500">
-          As part of our commitment to deliver a functional agro business that
-          will thrive for the farm management and operational services our team
-          which forms the overall management team has the necessary commitment
-          expertise to lead Farm Bay to growth and performance absed
-          profitability.
+        <p class="text-gray-500">
+          As part of our commitment to deliver a functional agro business our
+          team which forms the overall management, has the necessary commitment
+          and expertise to lead Farm Bay to performance based profitability and
+          growth.
         </p>
       </div>
     </div>

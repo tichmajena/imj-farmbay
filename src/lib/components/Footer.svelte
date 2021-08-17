@@ -1,11 +1,6 @@
 <script>
   import { page } from "$app/stores";
   import Animate from "$lib/components/Animate.svelte";
-  let twitter;
-
-  function onTwitter() {
-    twitter = "https://twitter.com/FBayzw";
-  }
 </script>
 
 <Animate>
@@ -138,7 +133,7 @@
             class="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start"
           >
             <a
-              href="https://faceboom.com"
+              href="https://www.facebook.com/Farm.BayZw/"
               class="ml-3 text-white hover:text-brandgold"
             >
               <svg
@@ -154,7 +149,10 @@
                 />
               </svg>
             </a>
-            <a href="/#" class="ml-3 text-white  hover:text-brandgold">
+            <a
+              href="https://twitter.com/FBayzw"
+              class="ml-3 text-white  hover:text-brandgold"
+            >
               <svg
                 fill="currentColor"
                 stroke-linecap="round"
@@ -168,7 +166,10 @@
                 />
               </svg>
             </a>
-            <a href="/#" class="ml-3 text-white  hover:text-brandgold">
+            <a
+              href="https://www.instagram.com/farm_bayzw/"
+              class="ml-3 text-white  hover:text-brandgold"
+            >
               <svg
                 fill="none"
                 stroke="currentColor"
@@ -184,22 +185,25 @@
                 />
               </svg>
             </a>
-            <a href="/#" class="ml-3 text-white hover:text-brandgold">
+            <a
+              href="https://www.tiktok.com/@farm_bayzw"
+              class="ml-3 text-white hover:text-brandgold"
+            >
               <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 2859 3333"
+                class="w-5 h-5"
                 fill="currentColor"
                 stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="0"
-                class="w-5 h-5"
-                viewBox="0 0 24 24"
+                shape-rendering="geometricPrecision"
+                text-rendering="geometricPrecision"
+                image-rendering="optimizeQuality"
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                ><path
+                  d="M2081 0c55 473 319 755 778 785v532c-266 26-499-61-770-225v995c0 1264-1378 1659-1932 753-356-583-138-1606 1004-1647v561c-87 14-180 36-265 65-254 86-398 247-358 531 77 544 1075 705 992-358V1h551z"
+                /></svg
               >
-                <path
-                  stroke="none"
-                  d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"
-                />
-                <circle cx="4" cy="4" r="2" stroke="none" />
-              </svg>
             </a>
           </span>
         </div>

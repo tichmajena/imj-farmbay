@@ -1,5 +1,5 @@
 <script context="module">
-  import { browser, dev } from "$app/env";
+  import { browser } from "$app/env";
   export const prerender = true;
   export const router = browser;
 </script>
@@ -17,13 +17,20 @@
   import watermelons from "$lib/media/watermelon.jpg";
   import farai from "$lib/media/FaraiRChinomona.jpg";
 
-  import picture from "$lib/media/image1.jpeg";
+  import picture from "$lib/media/farm-bay-hero.jpg";
   import Animate from "$lib/components/Animate.svelte";
   import ProductInsights from "$lib/components/ProductInsights.svelte";
   import IconCard from "$lib/components/IconCard.svelte";
 
   import tomato_ic from "$lib/icons/tomato-vegetable.svg";
   import mango_ic from "$lib/icons/mango.svg";
+  import motif from "$lib/icons/farm-bay-motif-white-01.svg";
+  import TeamCard from "$lib/components/TeamCard.svelte";
+
+  import farmec from "$lib/media/Farmec-Logo.svg";
+  import freshco from "$lib/media/Fresh-co.png";
+  import mlambo from "$lib/media/Mlambo-holdings.png";
+  import zfc from "$lib/media/ZFC-ltd-logo.png";
 </script>
 
 <Animate>
@@ -34,7 +41,11 @@
         src={picture}
         alt=""
       />
-      <div class="absolute h-full w-full inset-0 z-10 bg-black opacity-60" />
+      <div
+        class="absolute h-full w-full flex justify-center items-center inset-0 z-10 bg-black opacity-60"
+      >
+        <img src={motif} class="hidden lg:w-3/12 w-8/12 opacity-10" alt="" />
+      </div>
     </div>
     <div class="w-full relative z-10 -m-24 max-w-screen-xl  mx-auto">
       <div
@@ -46,9 +57,9 @@
           Welcome
         </h1>
         <p class="text-brandblue lg:w-2/3 mx-auto leading-relaxed text-base">
-          Farm Bay is an exclusive business situated 40km North East of Harare,
-          in Goromonzi, Mashonaland East. Farm Bay has vested interests in local
-          & global export produce & processing.
+          Farm Bay is an exclusive Agro-business situated 40km North East of
+          Harare, in Goromonzi, Mashonaland East. Farm Bay has vested interests
+          in local & global export produce & processing.
         </p>
       </div>
       <div
@@ -72,13 +83,17 @@
             Our Director's Message
           </h2>
 
-          <p class="text-white mx-8 lg:w-2/3 leading-relaxed text-base">
-            Farm Bay aspires to be an agri-business of note contributing to the
-            global food and nutrition security.Special diets and Organics are
-            the new norm due to new different diseases and illnesses there is
-            need to supply the market with untainted nutrition for the general
-            wellness of the planet. consumers are now conscious of what they eat
-            so its intergral to offer
+          <p class="text-white mx-8 lg:w-10/12 leading-relaxed text-base">
+            Farmbay aspires to be an agri-business of note contributing to the
+            global food security and nutrition. Farm Bay Pvt recognized that
+            specialized diets and organic foods are the new norm due to new
+            different diseases and illnesses that are affecting our nutrition
+            hence there is a huge need to supply the market with untainted
+            nutrition from organically farmed produce for the general wellness
+            of our societies. We believe our societies are what they eat so its
+            integral for us as Farm Bay Pvt to offer produce that ensure a
+            healthy and nutritionally enriched world. As Farmbay we do it right.
+            Your nutrition & wellness is our business through our agro business.
           </p>
         </div>
       </div>
@@ -137,15 +152,15 @@
           <div>
             <div>
               <!-- <div class="flex flex-col text-center w-full mb-20">
-      <h1 class="text-2xl font-medium title-font mb-4 text-gray-900">
-        OUR TEAM
-      </h1>
-      <p class="lg:w-2/3 mx-auto leading-relaxed text-base">
-        Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical
-        gentrify, subway tile poke farm-to-table. Franzen you probably haven't
-        heard of them.
-      </p>
-    </div> -->
+              <h1 class="text-2xl font-medium title-font mb-4 text-gray-900">
+                OUR TEAM
+              </h1>
+              <p class="lg:w-2/3 mx-auto leading-relaxed text-base">
+                Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical
+                gentrify, subway tile poke farm-to-table. Franzen you probably haven't
+                heard of them.
+              </p>
+            </div> -->
             </div>
           </div>
         </div>
@@ -213,6 +228,30 @@
             <span class="text-brandgold" slot="statistic">6 tons</span>
             <span slot="produce" class="text-white">Watermelons </span>
           </ProductInsights>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="w-full relative z-10 max-w-screen-xl  mx-auto">
+      <h1
+        class="text-3xl md:text-4xl sm:text-3xl text-center font-medium title-font my-16 text-gray-500"
+      >
+        Our Partners
+      </h1>
+      <div class="flex md:flex-row flex-col items-center w-full mx-auto mb-16">
+        <!--  -->
+        <div class="md:w-1/4 w-full p-5 flex justify-center">
+          <img src={farmec} alt="" class="h-16" />
+        </div>
+        <div class="md:w-1/4 w-full p-5 flex justify-center">
+          <img src={freshco} alt="" class="h-16" />
+        </div>
+        <div class="md:w-1/4 w-full p-5 flex justify-center">
+          <img src={zfc} alt="" class="h-16" />
+        </div>
+        <div class="md:w-1/4 w-full p-5 flex justify-center">
+          <img src={mlambo} alt="" class="h-32 -mt-8" />
         </div>
       </div>
     </div>

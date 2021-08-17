@@ -30,7 +30,7 @@
           </div>
 
           <div class="m-8">
-            <h2 class=" text-xl mb-4 ">Vision</h2>
+            <h2 class=" text-xl mb-4">Vision</h2>
             <p class=" font-thin mt-8">
               To be positioned as a first choice agro business for our partners
             </p>
@@ -86,7 +86,7 @@
       </div>
       <div class="flex flex-row space-x-4 m-8">
         <div class="w-1/2 pr-5">
-          <h2 class="font-bold  text-gray-700">Market Gardening</h2>
+          <h2 class="font-bold text-gray-700">Market Gardening</h2>
           <p class="font-thin text-gray-500">
             What started out as a passion project doing peas and tomatoes by our
             then full time employed Director took time to set out a vision and a
@@ -102,7 +102,7 @@
             positioned to broaden its fruit and vegetable production, develop
             and operate state of the art infrastructure with plans for a Pack
             House, Cooling facility, 3 more boreholes, employee infrastructure
-            and sustainable farming practises..
+            and sustainable farming practises.
           </p>
         </div>
       </div>

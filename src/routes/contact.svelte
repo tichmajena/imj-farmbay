@@ -37,6 +37,7 @@
         </h2>
         <p class="leading-relaxed text-gray-600" />
         <div class="mb-3">
+          <div />
           <div class="flex">
             <div class="h-4 w-4 pt-1">
               <img src={phone_ic} loading="lazy" alt="" class="w-full" />

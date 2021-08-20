@@ -1,6 +1,52 @@
 <script>
   import { page } from "$app/stores";
   import Animate from "$lib/components/Animate.svelte";
+
+  let email;
+  let message;
+  let sending = false;
+  let ready = true;
+  let success = false;
+  let failed = false;
+  let msg = "";
+
+  $: body = {
+    email,
+    message,
+    name: "Name",
+    subject: "From Farmbay Website",
+  };
+
+  let apiURL =
+    "https://cms.farmbay.co.zw/wp-json/contact-form-7/v1/contact-forms/5/feedback";
+
+  async function sendForm() {
+    ready = false;
+    sending = true;
+
+    let formData = new FormData();
+
+    formData.append("your-name", body.name);
+    formData.append("your-email", body.email);
+    formData.append("your-subject", body.subject);
+    formData.append("your-message", body.message);
+
+    let res = await fetch(apiURL, {
+      body: formData,
+      method: "post",
+    });
+
+    let message = await res.json();
+    if (message.status === "mail_sent") {
+      sending = false;
+      success = true;
+    } else {
+      sending = false;
+      failed = true;
+      console.log(message);
+      msg = message.message;
+    }
+  }
 </script>
 
 <Animate>
@@ -67,9 +113,7 @@
           </h2>
           <div class="list-none mb-10 font-light">
             <h2 class="text-gray-500">Farm Bay</h2>
-
             <h2 class="text-gray-500">Reedbuck Farm</h2>
-
             <h2 class="text-gray-500">Acturus, Goromonzi</h2>
             <h2 class="text-gray-500">+263 773 516 700</h2>
             <h2 class="text-gray-500">+263719 516 700 +26377 948 0896</h2>
@@ -79,7 +123,7 @@
 
         <div class="lg:w-1/4 md:w-1/2 w-full px-4 mb-8">
           <div
-            class="flex xl:flex-nowrap md:flex-nowrap lg:flex-wrap flex-wrap justify-center items-end md:justify-start"
+            class="flex xl:flex-nowrap md:flex-nowrap lg:flex-wrap flex-wrap justify-start items-end md:justify-start"
           >
             <div class="relative sm:w-auto xl:mr-4 lg:mr-0 sm:mr-4 mr-2">
               <label
@@ -87,8 +131,9 @@
                 class="leading-7 hidden text-sm text-white">Email</label
               >
               <input
-                label="name"
+                label="email"
                 type="email"
+                bind:value={email}
                 id="footer-field"
                 name="footer-field"
                 placeholder="Your email"
@@ -99,34 +144,55 @@
                 class="leading-7 hidden text-sm text-white">Phone Number</label
               >
 
-              <!-- <input
-                label="name"
-                type="text"
-                id="footer-field"
-                name="footer-field"
-                placeholder="Your name"
-                class="w-full mb-2 bg-gray-700 bg-opacity-50 rounded border border-gray-500 focus:bg-transparent focus:ring-2 focus:ring-brandgold focus:border-brandgold text-base outline-none text-gray-300 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
-              />
-              <label
-                for="footer-field"
-                class="leading-7 hidden text-sm text-white">Message</label
-              > -->
-
               <textarea
                 id="message"
                 name="message"
                 placeholder="Your message"
+                bind:value={message}
                 cols="20"
                 rows="3"
-                class="w-full bg-gray-700 bg-opacity-50 rounded border border-gray-500 focus:border-brandgold focus:ring-2 focus:ring-brandgold text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
+                class="w-full bg-gray-700 bg-opacity-50 rounded border border-gray-500 focus:border-brandgold focus:ring-2 focus:ring-brandgold text-base outline-none text-gray-300 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
               />
             </div>
           </div>
+          <div class="text-gray-300 text-sm py-2">
+            {#if failed}
+              {msg}
+            {/if}
+          </div>
           <div>
             <button
-              class="lg:mt-2 xl:mt-0 flex-shrink-0 inline-flex text-brandblue bg-brandgold border-0 py-2 px-6 focus:outline-none hover:text-brandblue rounded"
-              >Send</button
+              on:click={sendForm}
+              class:bg-brandgold={ready}
+              class:bg-green-400={success}
+              class:bg-red-400={failed}
+              class:bg-yellow-600={sending}
+              class="lg:mt-2 xl:mt-0 flex-shrink-0 inline-flex text-brandblue border-0 py-2 px-6 focus:outline-none hover:text-brandblue rounded"
             >
+              {#if sending}
+                <svg class="animate-spin h-5 w-5 mr-3" viewBox="0 0 24 24">
+                  <circle
+                    class="opacity-25"
+                    cx="12"
+                    cy="12"
+                    r="10"
+                    stroke="currentColor"
+                    stroke-width="4"
+                  />
+                  <path
+                    class="opacity-75"
+                    fill="currentColor"
+                    d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
+                  />
+                </svg> Processing
+              {:else if success}
+                Received, thank you!
+              {:else if failed}
+                Somthing went wrong
+              {:else if ready}
+                Send
+              {/if}
+            </button>
           </div>
         </div>
         <div class="lg:w-1/4 md:w-1/2 w-full px-4 flex flex-col h-full">

@@ -10,6 +10,52 @@
   import mail_ic from "$lib/icons/mail-solid.svg";
   import phone_ic from "$lib/icons/phone-solid.svg";
   import place_ic from "$lib/icons/place-solid.svg";
+
+  let email;
+  let message;
+  let sending = false;
+  let ready = true;
+  let success = false;
+  let failed = false;
+  let msg = "";
+
+  $: body = {
+    email,
+    message,
+    name: "Name",
+    subject: "From Farmbay Website",
+  };
+
+  let apiURL =
+    "https://cms.farmbay.co.zw/wp-json/contact-form-7/v1/contact-forms/5/feedback";
+
+  async function sendForm() {
+    ready = false;
+    sending = true;
+
+    let formData = new FormData();
+
+    formData.append("your-name", body.name);
+    formData.append("your-email", body.email);
+    formData.append("your-subject", body.subject);
+    formData.append("your-message", body.message);
+
+    let res = await fetch(apiURL, {
+      body: formData,
+      method: "post",
+    });
+
+    let message = await res.json();
+    if (message.status === "mail_sent") {
+      sending = false;
+      success = true;
+    } else {
+      sending = false;
+      failed = true;
+      console.log(message);
+      msg = message.message;
+    }
+  }
 </script>
 
 <Animate>
@@ -96,6 +142,7 @@
             type="email"
             id="email"
             name="email"
+            bind:value={email}
             placeholder="Your email"
             class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
           />
@@ -108,12 +155,45 @@
             id="message"
             name="message"
             placeholder="Your message"
+            bind:value={message}
             class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
           />
         </div>
+        <div class="text-red-700 text-center text-sm py-2">
+          {#if failed}
+            {msg}
+          {/if}
+        </div>
         <button
-          class="text-white bg-brandblue border-0 py-2 px-6 focus:outline-none hover:text-brandgold rounded text-lg"
-          >Send</button
+          on:click={sendForm}
+          class:bg-brandblue={ready}
+          class:bg-green-600={success}
+          class:bg-red-600={failed}
+          class:bg-yellow-600={sending}
+          class="text-white bg-brandblue border-0 py-2 px-6 focus:outline-none hover:text-brandgold rounded text-lg flex justify-center items-center"
+          >{#if sending}
+            <svg class="animate-spin h-5 w-5 mr-3" viewBox="0 0 24 24">
+              <circle
+                class="opacity-25"
+                cx="12"
+                cy="12"
+                r="10"
+                stroke="currentColor"
+                stroke-width="4"
+              />
+              <path
+                class="opacity-75"
+                fill="currentColor"
+                d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
+              />
+            </svg> Processing
+          {:else if success}
+            Received, thank you!
+          {:else if failed}
+            Somthing went wrong
+          {:else if ready}
+            Send
+          {/if}</button
         >
       </div>
     </div>

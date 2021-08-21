@@ -1,11 +1,12 @@
 <script context="module">
-  import { browser, dev } from "$app/env";
+  import { browser } from "$app/env";
   export const prerender = true;
   export const router = browser;
 </script>
 
 <script>
   import Animate from "$lib/components/Animate.svelte";
+  import Gallery from "$lib/components/Gallery.svelte";
   import Header from "$lib/components/Header.svelte";
   import pic from "$lib/images/farmbay-bg-01.jpg";
 </script>
@@ -105,6 +106,9 @@
             and sustainable farming practises.
           </p>
         </div>
+      </div>
+      <div class="h-96 w-full">
+        <Gallery />
       </div>
     </div>
   </section>

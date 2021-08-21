@@ -1,5 +1,5 @@
 <script context="module">
-  import { browser, dev } from "$app/env";
+  import { browser } from "$app/env";
   export const prerender = true;
   export const router = browser;
 </script>

@@ -116,7 +116,7 @@
             <h2 class="text-gray-500">Reedbuck Farm</h2>
             <h2 class="text-gray-500">Acturus, Goromonzi</h2>
             <h2 class="text-gray-500">+263 773 516 700</h2>
-            <h2 class="text-gray-500">+263719 516 700 +26377 948 0896</h2>
+            <h2 class="text-gray-500">+263719 516 700</h2>
             <h2 class="text-gray-500">+263779 480 896</h2>
           </div>
         </div>

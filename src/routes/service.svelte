@@ -12,6 +12,9 @@
   import farm_ic from "$lib/icons/farm.svg";
   import certification_ic from "$lib/icons/certificate-medal-quality.svg";
   import irrigation_ic from "$lib/icons/agriculture-irrigation.svg";
+  import id from "$lib/icons/id-icon.svg";
+  import org from "$lib/icons/org-icon.svg";
+  import IconCard from "$lib/components/IconCard.svelte";
 </script>
 
 <Animate>
@@ -26,9 +29,9 @@
         class="flex items-center lg:w-3/5 mx-auto border-b pb-10 mb-10 border-gray-200 sm:flex-row flex-col"
       >
         <div
-          class="sm:w-32 sm:h-32 h-20 w-20 sm:mr-10 inline-flex items-center justify-center rounded-full bg-brandgold text-indigo-500 flex-shrink-0"
+          class="sm:w-32 sm:h-32 h-32 w-32 sm:mr-10 inline-flex items-center justify-center rounded-full bg-brandgold text-indigo-500 flex-shrink-0"
         >
-          <img src={farm_ic} class="sm:w-16 sm:h-16 w-10 h-10" alt="" />
+          <img src={farm_ic} class="sm:w-16 sm:h-16 w-16 h-16" alt="" />
         </div>
         <div class="flex-grow sm:text-left text-center mt-6 sm:mt-0">
           <h2 class="text-gray-900 text-lg title-font font-medium mb-2">
@@ -65,16 +68,18 @@
           </p>
         </div>
         <div
-          class="sm:w-32 sm:order-none order-first sm:h-32 h-20 w-20 sm:ml-10 inline-flex items-center justify-center rounded-full bg-brandgold text-indigo-500 flex-shrink-0"
+          class="sm:w-32 sm:order-none order-first sm:h-32 h-32 w-32 sm:ml-10 inline-flex items-center justify-center rounded-full bg-brandgold text-indigo-500 flex-shrink-0"
         >
-          <img src={tractor_ic} class="sm:w-16 sm:h-16 w-10 h-10" alt="" />
+          <img src={tractor_ic} class="sm:w-16 sm:h-16 w-16 h-16" alt="" />
         </div>
       </div>
-      <div class="flex items-center lg:w-3/5 mx-auto sm:flex-row flex-col">
+      <div
+        class="flex items-center mb-32 lg:w-3/5 mx-auto sm:flex-row flex-col"
+      >
         <div
-          class="sm:w-32 sm:h-32 h-20 w-20 sm:mr-10 inline-flex items-center justify-center rounded-full bg-brandgold text-indigo-500 flex-shrink-0"
+          class="sm:w-32 sm:h-32 h-32 w-32 sm:mr-10 inline-flex items-center justify-center rounded-full bg-brandgold text-indigo-500 flex-shrink-0"
         >
-          <img src={irrigation_ic} class="sm:w-16 sm:h-16 w-10 h-10" alt="" />
+          <img src={irrigation_ic} class="sm:w-16 sm:h-16 w-16 h-16" alt="" />
         </div>
         <div class="flex-grow sm:text-left text-center mt-6 sm:mt-0">
           <h2 class="text-gray-900 text-lg title-font font-medium mb-2">
@@ -160,6 +165,58 @@
       <div />
     </div>
   </section>
+
+  <section class="w-full bg-brandblue">
+    <div class="container px-5 py-24 mx-auto">
+      <div
+        class="flex items-center  mb-32 lg:w-3/5 mx-auto sm:flex-row flex-col"
+      >
+        <div
+          class="sm:w-32 sm:h-32 h-20 w-20 sm:mr-10 inline-flex items-center justify-center rounded-full bg-brandgold text-indigo-500 flex-shrink-0"
+        >
+          <IconCard>
+            <span slot="icon"><img src={org} alt="" class="w-16 h-16" /></span>
+          </IconCard>
+        </div>
+        <div class="flex-grow sm:text-left text-center mt-6 sm:mt-0">
+          <h2 class="text-gray-900 text-lg title-font font-medium mb-2">
+            Market
+          </h2>
+          <p class="leading-relaxed text-base">
+            We used the value chain development approach of starting from
+            understanding what the market wants then using information gathered
+            to inform the Farm Bay Strategy of the horticultural produce for
+            production and processing This approach is underpinned by market
+            -led production concept . Our study results highlighted
+            opportunities for Farm Bay to be a competitive agro business in
+            Zimbabwe .
+          </p>
+        </div>
+      </div>
+
+      <div class="flex items-center lg:w-3/5 mx-auto sm:flex-row flex-col">
+        <div
+          class="sm:w-32 sm:h-32 h-20 w-20 sm:mr-10 inline-flex items-center justify-center rounded-full bg-brandgold text-indigo-500 flex-shrink-0"
+        >
+          <IconCard>
+            <span slot="icon"><img src={id} alt="" class="w-16 h-16" /></span>
+          </IconCard>
+        </div>
+        <div class="flex-grow sm:text-left text-center mt-6 sm:mt-0">
+          <h2 class="text-gray-900 text-lg title-font font-medium mb-2">
+            Quality Control
+          </h2>
+          <p class="leading-relaxed text-base">
+            Our Crop Production serves as the first port of call in our Value
+            Chain hence mechanisms such as Pesticide Control, use of Control
+            Charts, Crop Production and Processing guidelines are essential to
+            Farm Bay .
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <section class="bg-brandgold p-8">
     <div class="w-full max-w-screen-xl mx-auto">
       <div class="text-center md:w-8/12 mx-auto m-8">

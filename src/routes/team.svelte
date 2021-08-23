@@ -15,6 +15,9 @@
   import image from "$lib/images/farmbay-bg-01.jpg";
   import Header from "$lib/components/Header.svelte";
   import TeamCard from "$lib/components/TeamCard.svelte";
+  import IconCard from "$lib/components/IconCard.svelte";
+  import brain from "$lib/icons/Brain-icon.svg";
+  import people from "$lib/icons/threepeople-icon.svg";
 
   let pic = "https://dummyimage.com/200x200";
 </script>
@@ -116,6 +119,56 @@
               ></TeamCard
             >
           </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="w-full">
+    <div class="w-full max-w-screen-xl p-8 mx-auto">
+      <div class="flex items-center lg:w-3/5 mx-auto sm:flex-row flex-col">
+        <div
+          class=" h-20 w-20 sm:mr-10 inline-flex items-center justify-center rounded-full bg-brandgold text-indigo-500 flex-shrink-0"
+        >
+          <IconCard>
+            <span slot="icon"><img src={brain} alt="" class="w-16 h-16" /></span
+            >
+          </IconCard>
+        </div>
+        <div class="flex-grow sm:text-left text-center mt-6 sm:mt-0">
+          <h2 class="text-gray-900 text-lg title-font font-medium mb-2">
+            Employee Value Creation
+          </h2>
+          <p class="leading-relaxed text-base">
+            A new employee culture value proposition with key elements such as
+            creativity, service delivery and transparency is currently being
+            implemented .
+          </p>
+        </div>
+      </div>
+
+      <div
+        class="flex items-center mt-16 lg:w-3/5 mx-auto sm:flex-row flex-col"
+      >
+        <div
+          class=" h-20 w-20 sm:mr-10  inline-flex items-center justify-center rounded-full bg-brandgold text-indigo-500 flex-shrink-0"
+        >
+          <IconCard>
+            <span slot="icon"><img src={brain} alt="" class="w-16 h-16" /></span
+            >
+          </IconCard>
+        </div>
+        <div class="flex-grow sm:text-left text-center mt-6 sm:mt-0">
+          <h2 class="text-gray-900 text-lg title-font font-medium mb-2">
+            Human Capital
+          </h2>
+          <p class="leading-relaxed text-base">
+            The high quality of human capital on the market as Zimbabwe is an
+            agricultural economy enables us to be in a competitive sector of
+            crop production and processing . We intend to bolster our human
+            capital by equipping them with the necessary skills for productivity
+            .
+          </p>
         </div>
       </div>
     </div>

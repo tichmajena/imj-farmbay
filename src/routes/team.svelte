@@ -104,19 +104,24 @@
               ></TeamCard
             >
             <TeamCard pic={callifinos}
-              ><span slot="name">Callifinos K Guvi</span><span slot="position"
+              ><span slot="name">Califinos K Guvi</span><span slot="position"
                 >Corporate Legal Affairs</span
               ></TeamCard
             >
             <TeamCard pic={yeukai}
               ><span slot="name">Yeukai Chikakano</span><span slot="position"
-                >Strategy</span
+                >Strategy and Marketing</span
               ></TeamCard
             >
             <TeamCard pic={tino}
-              ><span slot="name">Tinotenda Fashete</span><span slot="position"
-                >Technical</span
+              ><span slot="name">Tinotenda Feshete</span><span slot="position"
+                >Non-Executive Director</span
               ></TeamCard
+            >
+            <TeamCard
+              ><span slot="name">Rutendo Mahute</span><span slot="position"
+                >Product Development and Export
+              </span></TeamCard
             >
           </div>
         </div>

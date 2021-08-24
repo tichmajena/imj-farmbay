@@ -169,7 +169,7 @@
   <section class="w-full bg-brandblue">
     <div class="container px-5 py-24 mx-auto">
       <div
-        class="flex items-center  mb-32 lg:w-3/5 mx-auto sm:flex-row flex-col"
+        class="flex items-center text-white mb-32 lg:w-3/5 mx-auto sm:flex-row flex-col"
       >
         <div
           class="sm:w-32 sm:h-32 h-20 w-20 sm:mr-10 inline-flex items-center justify-center rounded-full bg-brandgold text-indigo-500 flex-shrink-0"
@@ -194,9 +194,11 @@
         </div>
       </div>
 
-      <div class="flex items-center lg:w-3/5 mx-auto sm:flex-row flex-col">
+      <div
+        class="flex items-center text-white lg:w-3/5 mx-auto sm:flex-row flex-col"
+      >
         <div
-          class="sm:w-32 sm:h-32 h-20 w-20 sm:mr-10 inline-flex items-center justify-center rounded-full bg-brandgold text-indigo-500 flex-shrink-0"
+          class="sm:w-32 sm:h-32  h-20 w-20 sm:mr-10 inline-flex items-center justify-center rounded-full bg-brandgold text-indigo-500 flex-shrink-0"
         >
           <IconCard>
             <span slot="icon"><img src={id} alt="" class="w-16 h-16" /></span>

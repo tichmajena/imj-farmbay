@@ -7,7 +7,7 @@
 <script>
   import Animate from "$lib/components/Animate.svelte";
   import ronnie from "$lib/media/RonnieChigombe.jpg";
-  import callifinos from "$lib/media/CallifinosKGuvi.jpg";
+  import califinos from "$lib/media/CallifinosKGuvi.jpg";
   import farai from "$lib/media/FaraiRChinomona.jpg";
   import tino from "$lib/media/TinotendaFeshete.jpg";
   import hazel from "$lib/media/HazelMasvinhise.jpeg";
@@ -103,8 +103,8 @@
                 >International Commodity Trade Facilitation</span
               ></TeamCard
             >
-            <TeamCard pic={callifinos}
-              ><span slot="name">Califinos K Guvi</span><span slot="position"
+            <TeamCard pic={califinos}
+              ><span slot="name">Califinos K. Guvi</span><span slot="position"
                 >Corporate Legal Affairs</span
               ></TeamCard
             >
@@ -114,8 +114,8 @@
               ></TeamCard
             >
             <TeamCard pic={tino}
-              ><span slot="name">Tinotenda Feshete</span><span slot="position"
-                >Non-Executive Director</span
+              ><span slot="name">Tinotenda B. H. Feshete</span><span
+                slot="position">Non-Executive Director</span
               ></TeamCard
             >
             <TeamCard

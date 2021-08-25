@@ -3,15 +3,15 @@
   let index;
 
   const local = [
-    { id: 1, src: "gallery/gal-01.jpeg" },
-    { id: 2, src: "gallery/gal-02.jpeg" },
-    { id: 3, src: "gallery/gal-03.jpeg" },
-    { id: 4, src: "gallery/gal-04.jpeg" },
-    { id: 5, src: "gallery/gal-05.jpeg" },
-    { id: 6, src: "gallery/gal-06.jpeg" },
-    { id: 7, src: "gallery/gal-07.jpeg" },
-    { id: 9, src: "gallery/gal-09.jpeg" },
-    { id: 10, src: "gallery/gal-10.jpeg" },
+    { id: 1, src: "$lib/gallery/gal-01.jpeg" },
+    { id: 2, src: "$lib/gallery/gal-02.jpeg" },
+    { id: 3, src: "$lib/gallery/gal-03.jpeg" },
+    { id: 4, src: "$lib/gallery/gal-04.jpeg" },
+    { id: 5, src: "$lib/gallery/gal-05.jpeg" },
+    { id: 6, src: "$lib/gallery/gal-06.jpeg" },
+    { id: 7, src: "$lib/gallery/gal-07.jpeg" },
+    { id: 9, src: "$lib/gallery/gal-09.jpeg" },
+    { id: 10, src: "$lib/gallery/gal-10.jpeg" },
   ]; // slides items
 
   $: slidy_default = {

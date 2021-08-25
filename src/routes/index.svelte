@@ -83,17 +83,26 @@
             Our Director's Message
           </h2>
 
+          <p class="text-white mx-8 lg:w-10/12 mb-4 leading-relaxed text-base">
+            Our Director’s Message Farmbay aspires to be an agri-business of
+            note contributing to the global food and nutrition security. Our
+            major drivers are export crops fruits, vegetables and oil-seeds
+            among others : Tomatoes (fresh & dried), Peas, Asparagus, Melons,
+            Strawberries, Citrus, Passion fruit and Sesame seeds with hope to
+            expand our produce as we grow. We are commited to healthy living and
+            our goal is to provide the freshest, healthiest and nutritious foods
+            whilst sustaining our farm environment, employee welfare and the
+            community at large.
+          </p>
+          <p class="text-white mx-8 lg:w-10/12 mb-4 leading-relaxed text-base">
+            We adhere to a SIP value system:
+            Sustainability-Integrity-Partnerships
+          </p>
+
           <p class="text-white mx-8 lg:w-10/12 leading-relaxed text-base">
-            Farmbay aspires to be an agri-business of note contributing to the
-            global food security and nutrition. Farm Bay Pvt recognized that
-            specialized diets and organic foods are the new norm due to new
-            different diseases and illnesses that are affecting our nutrition
-            hence there is a huge need to supply the market with untainted
-            nutrition from organically farmed produce for the general wellness
-            of our societies. We believe our societies are what they eat so its
-            integral for us as Farm Bay Pvt to offer produce that ensure a
-            healthy and nutritionally enriched world. As Farmbay we do it right.
-            Your nutrition & wellness is our business through our agro business.
+            At Farm Bay, we believe that we are what we eat, hence our primary
+            motivation to provide fresh, healthy and nutritious farm fresh
+            produce for the global community.
           </p>
         </div>
       </div>

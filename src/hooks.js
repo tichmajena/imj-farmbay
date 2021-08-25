@@ -1,22 +1,40 @@
-import cookie from 'cookie';
-import { v4 as uuid } from '@lukeed/uuid';
+import cookie from "cookie";
 
-export const handle = async ({ request, resolve }) => {
-	const cookies = cookie.parse(request.headers.cookie || '');
-	request.locals.userid = cookies.userid || uuid();
+import { v4 as uuid } from "@lukeed/uuid";
 
-	// TODO https://github.com/sveltejs/kit/issues/1046
-	if (request.query.has('_method')) {
-		request.method = request.query.get('_method').toUpperCase();
-	}
+let days = 86400000 * 30;
 
-	const response = await resolve(request);
+/** @type {import('@sveltejs/kit').GetSession} */
+export function getSession(request) {
+  return JSON.parse(cookie.parse(request.headers.cookie || "").session || null);
+}
 
-	if (!cookies.userid) {
-		// if this is the first time the user has visited this app,
-		// set a cookie so that we recognise them when they return
-		response.headers['set-cookie'] = `userid=${request.locals.userid}; Path=/; HttpOnly`;
-	}
+export async function handle({ request, resolve }) {
+  /** @type {import('@sveltejs/kit').Handle} */
+  request.locals = await JSON.parse(
+    cookie.parse(request.headers.cookie || "").session || null
+  );
 
-	return response;
-};
+  if (request.query.has("_method")) {
+    request.method = request.query.get("_method").toUpperCase();
+  }
+
+  if (request.locals) {
+    const response = await resolve(request);
+
+    let cookieStr = JSON.stringify(request.locals);
+
+    console.log("R-PATH", request.path);
+    //console.log("R-HEADERS", request.headers);
+    return {
+      ...response,
+      headers: {
+        ...response.headers,
+        "set-cookie": `session=${cookieStr}; Path=/; HttpOnly; Secure; SameSite=Strict; Expires=${
+          new Date().getTime() + days
+        };`,
+      },
+    };
+  }
+  return resolve(request);
+}

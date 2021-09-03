@@ -29,7 +29,11 @@
 <script>
   import FHeader from "$lib/components/Header.svelte";
 
+  import { getPosts, createPosts, editPost, removePost } from "$lib/js/utils";
+
   import { onMount } from "svelte";
+
+  getPosts();
 
   export let post;
   console.log(post);
@@ -100,7 +104,13 @@
     </div>
     <div id="editorjs" />
     <div>
-      <button class="bg-brandgold">Update</button>
+      <button on:click={createPosts} class="bg-brandgold">Create</button>
+    </div>
+    <div>
+      <button on:click={editPost} class="bg-brandgold">Update</button>
+    </div>
+    <div>
+      <button on:click={removePost} class="bg-brandgold">Delete</button>
     </div>
   </div>
 </section>

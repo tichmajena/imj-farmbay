@@ -27,7 +27,7 @@ export async function getJSON(request, resource, data) {
     return {
       status: 303,
       headers: {
-        location: "/blog",
+        location: "/about",
       },
       body: "", // TODO https://github.com/sveltejs/kit/issues/1047
     };

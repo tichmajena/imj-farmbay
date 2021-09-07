@@ -94,6 +94,15 @@
                 </li></a
               >
 
+              <a class="font-light" href="/blog">
+                <li
+                  class:text-brandgold={$page.path === "/blog"}
+                  class="mr-5 hover:text-brandgold "
+                >
+                  Blog
+                </li></a
+              >
+
               <a class="font-light" href="/contact">
                 <li
                   class:text-brandgold={$page.path === "/contact"}

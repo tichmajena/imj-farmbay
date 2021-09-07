@@ -2,11 +2,42 @@
   import { browser } from "$app/env";
   export const prerender = true;
   export const router = browser;
+
+  export const load = async ({ fetch }) => {
+    //! This should be the name of the route, in this case  it's 'blog'
+    const res = await fetch("/service.json");
+
+    const json = await res.json();
+
+    if (res.ok) {
+      //const jsonData = await res.json();
+      let rawArray = json.pictures;
+      console.log(rawArray);
+      // .map works like for each
+      const images = rawArray.map((imageObj) => {
+        return { id: imageObj.ID, src: imageObj.guid };
+      });
+      console.log(images);
+
+      // When you return a prop the name should be the same as the one in "export let ..." in the script section
+      return {
+        props: { images },
+      };
+    }
+
+    const { message } = await res.json();
+
+    return {
+      error: new Error(message),
+    };
+  };
 </script>
 
 <script>
   import Animate from "$lib/components/Animate.svelte";
   import Header from "$lib/components/Header.svelte";
+  import Gallery from "$lib/components/Gallery.svelte";
+
   import pic from "$lib/images/farmbay-bg-01.jpg";
   import tractor_ic from "$lib/icons/farm-tractor.svg";
   import farm_ic from "$lib/icons/farm.svg";
@@ -15,6 +46,7 @@
   import id from "$lib/icons/id-icon.svg";
   import org from "$lib/icons/org-icon.svg";
   import IconCard from "$lib/components/IconCard.svelte";
+  export let images;
 </script>
 
 <Animate>
@@ -216,6 +248,12 @@
           </p>
         </div>
       </div>
+    </div>
+  </section>
+
+  <section class=" p-8">
+    <div class="h-96 w-full">
+      <Gallery pictures={images} />
     </div>
   </section>
 

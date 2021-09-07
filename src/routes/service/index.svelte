@@ -37,7 +37,6 @@
   import Animate from "$lib/components/Animate.svelte";
   import Header from "$lib/components/Header.svelte";
   import Gallery from "$lib/components/Gallery.svelte";
-
   import pic from "$lib/images/farmbay-bg-01.jpg";
   import tractor_ic from "$lib/icons/farm-tractor.svg";
   import farm_ic from "$lib/icons/farm.svg";

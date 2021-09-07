@@ -3,18 +3,19 @@
   export const prerender = true;
   export const router = browser;
 
-  export const load = async ({ page, fetch }) => {
-    const res = await fetch(`/gallery/${page.params.slug}.json`);
+  export const load = async ({ fetch }) => {
+    //! This should be the name of the route, in this case  it's 'blog'
+    const res = await fetch("/blog.json");
+
+    const json = await res.json();
 
     if (res.ok) {
-      console.log("res is ok");
-      const data = await res.json();
-      const gallery = await data[0];
+      //const jsonData = await res.json();
+      const posts = json;
 
-      console.log(gallery);
-
+      // When you return a prop the name should be the same as the one in "export let ..." in the script section
       return {
-        props: { gallery },
+        props: { posts },
       };
     }
 
@@ -23,7 +24,6 @@
     return {
       error: new Error(message),
     };
-  };
 </script>
 
 <script>

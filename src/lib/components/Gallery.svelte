@@ -1,8 +1,10 @@
+
 <script>
   import { Slidy } from "svelte-slidy"; // import component
+  
   let index;
 
-  const local = [
+  export let  pictures = [
     { id: 1, src: "$lib/gallery/gal-01.jpeg" },
     { id: 2, src: "$lib/gallery/gal-02.jpeg" },
     { id: 3, src: "$lib/gallery/gal-03.jpeg" },
@@ -16,7 +18,7 @@
 
   $: slidy_default = {
     // any name you like
-    slides: local, // new name "slides" for arr yours slides elements in 2.0
+    slides: pictures, // new name "slides" for arr yours slides elements in 2.0
     wrap: {
       id: "slidy_default", // customize this instance Slidy by #id
       width: "100%",

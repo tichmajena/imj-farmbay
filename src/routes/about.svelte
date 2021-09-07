@@ -2,6 +2,28 @@
   import { browser } from "$app/env";
   export const prerender = true;
   export const router = browser;
+
+  export const load = async ({ page, fetch }) => {
+    const res = await fetch(`/gallery/${page.params.slug}.json`);
+
+    if (res.ok) {
+      console.log("res is ok");
+      const data = await res.json();
+      const gallery = await data[0];
+
+      console.log(gallery);
+
+      return {
+        props: { gallery },
+      };
+    }
+
+    const { message } = await res.json();
+
+    return {
+      error: new Error(message),
+    };
+  };
 </script>
 
 <script>
@@ -9,6 +31,7 @@
   import Gallery from "$lib/components/Gallery.svelte";
   import Header from "$lib/components/Header.svelte";
   import pic from "$lib/images/farmbay-bg-01.jpg";
+  export let gallery;
 </script>
 
 <Animate>
@@ -108,7 +131,7 @@
         </div>
       </div>
       <div class="h-96 w-full">
-        <Gallery />
+        <Gallery pictures="" />
       </div>
     </div>
   </section>

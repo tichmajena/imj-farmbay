@@ -1,4 +1,7 @@
 <script context="module">
+  import { browser } from "$app/env";
+  export const prerender = true;
+  export const router = browser;
   // see https://kit.svelte.dev/docs#loading
   import { goto, prefetch, invalidate } from "$app/navigation";
 
@@ -29,7 +32,7 @@
 <script>
   import FHeader from "$lib/components/Header.svelte";
 
-  import { getPosts, createPosts, editPost, removePost } from "$lib/js/utils";
+  // import { getPosts, createPosts, editPost, removePost } from "$lib/js/utils";
 
   import { onMount } from "svelte";
 
@@ -42,6 +45,15 @@
   let editor;
   let Header;
   let SimpleImage;
+
+  const creater = {
+    title: "",
+    content: "",
+    status: "",
+    author: "",
+  };
+
+  const editer = creater;
 
   onMount(async () => {
     EditorJS = (await import("@editorjs/editorjs")).default;
@@ -82,6 +94,28 @@
       console.log(savedData);
     });
   }
+
+  async function createPosts() {
+    const res = await fetch(`/blog/${page.params.slug}.json`, {
+      body: JSON.stringify(creater),
+      method: "PUT",
+    });
+    const data = await res.json();
+
+    console.log(res);
+    console.log(data);
+  }
+
+  async function editPost() {
+    const res = await fetch(`/blog/${page.params.slug}.json`, {
+      body: JSON.stringify(editer),
+      method: "PUT",
+    });
+    const data = await res.json();
+
+    console.log(res);
+    console.log(data);
+  }
 </script>
 
 <section>
@@ -109,8 +143,8 @@
     <div>
       <button on:click={editPost} class="bg-brandgold">Update</button>
     </div>
-    <div>
+    <!-- <div>
       <button on:click={removePost} class="bg-brandgold">Delete</button>
-    </div>
+    </div> -->
   </div>
 </section>

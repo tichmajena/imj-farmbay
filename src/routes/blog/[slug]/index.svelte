@@ -1,4 +1,7 @@
 <script context="module">
+    import { browser } from "$app/env";
+  export const prerender = true;
+  export const router = browser;
   // see https://kit.svelte.dev/docs#loading
   import { goto, prefetch, invalidate } from "$app/navigation";
 
@@ -38,11 +41,11 @@
 </section>
 <section class="w-full">
   <div class="container max-screen-md mx-auto">
-    <div class="flex flex-wrap -m-12">
+    <div class="flex flex-wrap m-12">
       <div class="p-12 md:w-full flex flex-col items-start">
         <span
           class="inline-block py-1 px-2 rounded bg-indigo-50 text-indigo-500 text-xs font-medium tracking-widest"
-          >CATEGORY</span
+          >{post._embedded["wp:term"][0][0].name}</span
         >
         <h2
           class="sm:text-3xl text-2xl title-font font-medium text-gray-900 mt-4 mb-4"
@@ -53,7 +56,7 @@
           {@html post.excerpt.rendered}
         </p>
         <div
-          class="flex items-center flex-wrap pb-4 mb-4 border-b-2 border-gray-100 mt-auto w-full"
+          class="flex items-center flex-wrap pb-4 mb-4 border-b-2 border-gray-100 mt-10 w-full"
         >
           <span
             class="text-gray-400 mr-3 inline-flex items-center ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-200"
@@ -97,10 +100,11 @@
           />
           <span class="flex-grow flex flex-col pl-4">
             <span class="title-font font-medium text-gray-900"
-              >Holden Caulfield</span
+              >{post._embedded["author"][0].name}</span
             >
-            <span class="text-gray-400 text-xs tracking-widest mt-0.5"
-              >UI DEVELOPER</span
+            <span
+              class="text-gray-400 text-xs capitalize tracking-widest mt-0.5"
+              >{post._embedded["author"][0].description}</span
             >
           </span>
         </a>

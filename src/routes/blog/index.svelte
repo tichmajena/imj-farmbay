@@ -1,7 +1,12 @@
 <script context="module">
+  import { browser } from "$app/env";
+  export const prerender = true;
+  export const router = browser;
   export const load = async ({ fetch }) => {
     //! This should be the name of the route, in this case  it's 'blog'
     const res = await fetch("/blog.json");
+
+    console.log(res);
 
     const json = await res.json();
 
@@ -27,12 +32,14 @@
   import Header from "$lib/components/Header.svelte";
   import pic from "$lib/images/farmbay-bg-01.jpg";
 
+  //import format from "date-fns/format/index";
+
   // This should be the same as name of the prop in the script module above
   export let posts;
 </script>
 
 <section class="w-full">
-  <Header background={pic}><span class="text-white">Blog</span></Header>
+  <Header background={pic}><span class="text-white">BLOG</span></Header>
 </section>
 
 <section class="w-full">
@@ -43,7 +50,7 @@
           <div class="py-8 flex flex-wrap md:flex-nowrap">
             <div class="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
               <span class="font-semibold title-font text-gray-700"
-                >CATEGORY</span
+                >{post._embedded["wp:term"][0][0].name}</span
               >
               <span class="text-sm text-gray-500">{post.date}</span>
             </div>

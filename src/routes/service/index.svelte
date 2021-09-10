@@ -127,7 +127,7 @@
     </div>
   </section>
   <section class="w-full ">
-    <div class="w-full max-w-screen-xl mx-auto">
+    <div class="w-full max-w-screen-xl mx-auto ">
       <div class="flex flex-col md:w-8/12 my-8 mx-auto p-8">
         <div class="mb-14">
           <h2
@@ -136,35 +136,132 @@
             Agro Processing
           </h2>
           <div class="pl-24">
-            <ul class="text-2xl">
-              <li class="text-gray-500">Pineapple Dried fruit.</li>
-              <li class="text-gray-500">Apple dried fruit.</li>
-              <li class="text-gray-500">Mango dried fruit.</li>
-              <li class="text-gray-500">Banana Dried fruit.</li>
-            </ul>
-            <h3 class=" text-gray-700 text-lg font-medium mt-4">EXTRAS</h3>
+            <h3 class=" text-gray-300 sm:text-4xl md:text-6xl  mt-4">EXTRAS</h3>
             <ul class="text-2xl">
               <li class=" text-gray-500">Mawuyu</li>
               <li class=" text-gray-500">Mopane Worms</li>
-              <li class=" text-gray-500">Macademia Nuts</li>
               <li class=" text-gray-500">Tumeric</li>
             </ul>
-          </div>
-        </div>
 
-        <div class="mb-14">
-          <h2
-            class="lg:text-8xl  md:text-7xl sm:text-6xl text-5xl font-bold mb-4 text-gray-300"
-          >
-            Fruits
-          </h2>
-          <div class="pl-24">
+            <h3 class=" text-gray-300 sm:text-3xl md:text-3xl mt-4">
+              ORGANIC & NATURAL PRODUCTS
+            </h3>
+
+            <h3 class=" text-gray-700 text-lg font-medium mt-4">TEAS</h3>
             <ul class="text-2xl">
-              <li class=" text-gray-500">Strawberries</li>
-              <li class=" text-gray-500">Watermellon</li>
-              <li class=" text-gray-500">Paw Paw</li>
-              <li class=" text-gray-500">Mangos</li>
+              <li class=" text-gray-500">Ressurection Herbal Tea</li>
+              <li class=" text-gray-500">Rosella Tea</li>
+              <li class=" text-gray-500">Zumbani Tea</li>
             </ul>
+
+            <h3 class=" text-gray-700 text-lg font-medium mt-4">
+              HERBS AND SPICES
+            </h3>
+            <ul class="text-2xl">
+              <li class=" text-gray-500">Lavender fresh or dried</li>
+              <li class=" text-gray-500">Lemon grass fresh or dried</li>
+              <li class=" text-gray-500">ZLemon flakes or powder</li>
+              <li class=" text-gray-500">Ginger flakes or powder or fresh</li>
+              <li class=" text-gray-500">Rosemary fresh or dried</li>
+              <li class=" text-gray-500">Marjorum fresh or dried</li>
+              <li class=" text-gray-500">Mallow fresh or dried</li>
+              <li class=" text-gray-500">Artemisia fresh or dried</li>
+              <li class=" text-gray-500">Fever few fresh or dried</li>
+              <li class=" text-gray-500">Mint fresh or dried</li>
+              <li class=" text-gray-500">Catnip fresh or dried</li>
+              <li class=" text-gray-500">Gotu kola fresh or dried</li>
+              <li class=" text-gray-500">Oregano fresh or dried</li>
+              <li class=" text-gray-500">Cayenne pepper raw dried or powder</li>
+              <li class=" text-gray-500">ZGreat plantain fresh or dried</li>
+              <li class=" text-gray-500">Milk thistle fresh or dried</li>
+              <li class=" text-gray-500">Thyme fresh or dried</li>
+              <li class=" text-gray-500">Nettle fresh or dried</li>
+              <li class=" text-gray-500">Worm wood fresh or dried</li>
+              <li class=" text-gray-500">Soap wort fresh or dried</li>
+              <li class=" text-gray-500">Basil fresh or dried</li>
+              <li class=" text-gray-500">Alfafa fresh or dried</li>
+              <li class=" text-gray-500">Tarragon fresh or dried</li>
+              <li class=" text-gray-500">Garlic flakes or powder</li>
+              <li class=" text-gray-500">Resurrection bush powder</li>
+              <li class=" text-gray-500">Makoni bush flakes</li>
+              <li class=" text-gray-500">Avocado seed powder</li>
+              <li class=" text-gray-500">Sorrel fresh</li>
+              <li class=" text-gray-500">Dandelion fresh or dried</li>
+              <li class=" text-gray-500">Moringa bark powder</li>
+              <li class=" text-gray-500">Chilli flakes and powder</li>
+              <li class=" text-gray-500">Aloe fresh and dried</li>
+              <li class=" text-gray-500">Onion powder</li>
+              <li class=" text-gray-500">Carrot flakes or powder</li>
+              <li class=" text-gray-500">Parsley fresh and dried</li>
+              <li class=" text-gray-500">Celery fresh and dried</li>
+              <li class=" text-gray-500">French marigold fresh and dried</li>
+              <li class=" text-gray-500">Calendula fresh and dried</li>
+              <li class=" text-gray-500">Rosella</li>
+              <li class=" text-gray-500">Garlic chive fresh</li>
+            </ul>
+            <h3 class=" text-gray-300 sm:text-3xl md:text-3xl mt-4">
+              BAOBAB PRODUCTS
+            </h3>
+            <ul class="text-2xl">
+              <li class=" text-gray-500">Baobab Juice</li>
+              <li class=" text-gray-500">Baobab Powder</li>
+              <li class=" text-gray-500">Baobab Fruits</li>
+            </ul>
+
+            <h2 class="text-gray-300 sm:text-3xl md:text-3xl mt-4">BUTTER</h2>
+            <ul class="text-2xl">
+              <li class=" text-gray-500">Peanut Butter</li>
+              <li class=" text-gray-500">Tahini Butter</li>
+            </ul>
+
+            <h2 class="text-gray-300 sm:text-3xl md:text-3xl mt-4">
+              SESAME PRODUCTS
+            </h2>
+            <ul class="text-2xl">
+              <li class=" text-gray-500">Sesame Oil</li>
+              <li class=" text-gray-500">Sesame Seeds Black and White</li>
+              <li class=" text-gray-500">Sesame Natural seed</li>
+              <li class=" text-gray-500">Sesame Dehulled Seed</li>
+            </ul>
+
+            <h2 class="text-gray-300 sm:text-3xl md:text-3xl mt-4">
+              MACADAMIA
+            </h2>
+            <ul class="text-2xl">
+              <li class=" text-gray-500">Macadamia nuts</li>
+              <li class=" text-gray-500">Macadamia oil</li>
+              <li class=" text-gray-500">Macademia Nuts</li>
+            </ul>
+          </div>
+
+          <div class="mb-14">
+            <h2
+              class="lg:text-8xl  md:text-7xl sm:text-6xl text-5xl font-bold mb-4 text-gray-300"
+            >
+              Fruits
+            </h2>
+            <div class="pl-24">
+              <ul class="text-2xl">
+                <li class=" text-gray-500">Strawberries</li>
+                <li class=" text-gray-500">Watermellon</li>
+                <li class=" text-gray-500">Paw Paw</li>
+                <li class=" text-gray-500">Mangos</li>
+                <li class=" text-gray-500">Granadilla (Passion Fruit)</li>
+                <li class=" text-gray-500">Berries</li>
+              </ul>
+              <h3 class=" text-gray-700 text-lg font-medium mt-4">
+                DRIED FRUITS
+              </h3>
+              <ul class="text-2xl">
+                <li class=" text-gray-500">Dried Pineapple.</li>
+                <li class=" text-gray-500">Dried Bananas.</li>
+                <li class=" text-gray-500">Flavored Banana Chips.</li>
+                <li class="text-gray-500">Pineapple Dried fruit.</li>
+                <li class="text-gray-500">Apple dried fruit.</li>
+                <li class="text-gray-500">Mango dried fruit.</li>
+                <li class="text-gray-500">Banana Dried fruit.</li>
+              </ul>
+            </div>
           </div>
         </div>
 
@@ -188,12 +285,11 @@
               <li class=" text-gray-500">Green Beans</li>
               <li class=" text-gray-500">Ginger</li>
               <li class=" text-gray-500">Yellow Green Red Peppers</li>
+              <li class=" text-gray-500">Asparagus</li>
             </ul>
           </div>
         </div>
       </div>
-
-      <div />
     </div>
   </section>
 
@@ -210,9 +306,7 @@
           </IconCard>
         </div>
         <div class="flex-grow sm:text-left text-center mt-6 sm:mt-0">
-          <h2 class="text-gray-900 text-lg title-font font-medium mb-2">
-            Market
-          </h2>
+          <h2 class="text-white text-lg title-font font-medium mb-2">Market</h2>
           <p class="leading-relaxed text-base">
             We used the value chain development approach of starting from
             understanding what the market wants then using information gathered
@@ -236,7 +330,7 @@
           </IconCard>
         </div>
         <div class="flex-grow sm:text-left text-center mt-6 sm:mt-0">
-          <h2 class="text-gray-900 text-lg title-font font-medium mb-2">
+          <h2 class="text-white text-lg title-font font-medium mb-2">
             Quality Control
           </h2>
           <p class="leading-relaxed text-base">

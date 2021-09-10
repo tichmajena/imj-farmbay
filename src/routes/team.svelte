@@ -10,7 +10,7 @@
   import califinos from "$lib/media/CallifinosKGuvi.jpg";
   import farai from "$lib/media/FaraiRChinomona.jpg";
   import tino from "$lib/media/TinotendaFeshete.jpg";
-  import hazel from "$lib/media/HazelMasvinhise.jpeg";
+  import hazel from "$lib/media/HazelMasvanhise.jpeg";
   import yeukai from "$lib/media/YeukaiChikakano.jpeg";
   import image from "$lib/images/farmbay-bg-01.jpg";
   import Header from "$lib/components/Header.svelte";
@@ -99,7 +99,7 @@
               ></TeamCard
             >
             <TeamCard pic={hazel}
-              ><span slot="name">Hazel Masvinhise</span><span slot="position"
+              ><span slot="name">Hazel Masvanhise</span><span slot="position"
                 >International Commodity Trade Facilitation</span
               ></TeamCard
             >

@@ -1,6 +1,12 @@
 export const BASE = import.meta.env.VITE_BASE;
 const base = BASE;
 
+
+
+
+
+
+
 const url = base + "/wp/v2/posts";
 const token =
   "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvY21zLmZhcm1iYXkuY28uenciLCJpYXQiOjE2MzA2NjExMDQsIm5iZiI6MTYzMDY2MTEwNCwiZXhwIjoxNjMxMjY1OTA0LCJkYXRhIjp7InVzZXIiOnsiaWQiOiIxIn19fQ.8i9iORT9Ty1sCUoFY6Dw7tQEQYVzU-z1TT5GcwdNXrc";

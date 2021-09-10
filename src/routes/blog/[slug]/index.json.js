@@ -1,12 +1,12 @@
 import { getJSON } from "../_api";
-import { api } from ".../api/_rest";
+import { api } from "./_rest";
 
 export const get = async (request) => {
   console.log("", request.params.slug);
   //const response = await getJSON(request, `tutor/v1/quiz-question-answer/11/`);
   const response = await getJSON(
     request,
-    `wp/v2/posts/?slug=${request.params.slug}`
+    `wp/v2/posts/?slug=${request.params.slug}&_embed=1`
   );
 
   if (response.status === 404) {

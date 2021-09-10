@@ -9,7 +9,9 @@ export const get = async (request) => {
   //   }
 
   //const response = await getJSON(request, `tutor/v1/quiz-question-answer/11/`);
-  const response = await getJSON(request, `wp/v2/posts`);
+  const response = await getJSON(request, `wp/v2/posts?_embed=1`);
+
+  console.log("MY:", response);
 
   if (response.status === 404) {
     console.log("404 panoo");

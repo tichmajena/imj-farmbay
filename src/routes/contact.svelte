@@ -26,8 +26,11 @@
     subject: "From Farmbay Website",
   };
 
+  // let apiURL =
+  //   "https://cms.farmbay.co.zw/wp-json/contact-form-7/v1/contact-forms/5/feedback";
+
   let apiURL =
-    "https://cms.farmbay.co.zw/wp-json/contact-form-7/v1/contact-forms/5/feedback";
+    "https://clc.org.zw/wp-json/contact-form-7/v1/contact-forms/82/feedback";
 
   async function sendForm() {
     ready = false;

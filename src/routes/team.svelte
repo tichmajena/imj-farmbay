@@ -2,6 +2,27 @@
   import { browser, dev } from "$app/env";
   export const prerender = true;
   export const router = browser;
+
+  export const load = async ({ fetch }) => {
+    const res = await fetch("/teamm");
+
+    console.log(res);
+
+    if (res.ok) {
+      const jsonData = await res.json();
+      const teams = await jsonData;
+
+      return {
+        props: { teams },
+      };
+    }
+
+    const { message } = await res.json();
+
+    return {
+      error: new Error(message),
+    };
+  };
 </script>
 
 <script>
@@ -18,8 +39,21 @@
   import IconCard from "$lib/components/IconCard.svelte";
   import brain from "$lib/icons/Brain-icon.svg";
   import people from "$lib/icons/threepeople-icon.svg";
+  import Carousel from "$lib/components/Carousel.svelte";
 
   let pic = "https://dummyimage.com/200x200";
+
+  export let teams;
+  console.log(teams);
+
+  const items = teams.map((props, i) => ({
+    props: {
+      name: props.title.rendered,
+      position: props.position,
+      fimg_url: props.fimg_url,
+    },
+    component: TeamCard,
+  }));
 </script>
 
 <Animate>
@@ -92,37 +126,29 @@
               An experienced management team leads our operations
             </p>
           </div>
+          <!-- 
+          {#each teams as team}
+            <div>Hi I am Team</div>
+            {team.title.rendered}
+          {/each} 
+        
+          {#each teams as team}
+              <TeamCard pic={team.link}
+                ><span slot="name">{team.title.rendered}</span><span
+                  slot="position">Agronomist</span
+                ></TeamCard
+              >
+            {/each}
+        -->
+
           <div class="flex flex-wrap justify-center w-full">
-            <TeamCard pic={ronnie}
-              ><span slot="name">Ronnie Chigombe</span><span slot="position"
-                >Agronomist</span
-              ></TeamCard
-            >
-            <TeamCard pic={hazel}
-              ><span slot="name">Hazel Masvanhise</span><span slot="position"
-                >International Commodity Trade Facilitation</span
-              ></TeamCard
-            >
-            <TeamCard pic={califinos}
-              ><span slot="name">Califinos K. Guvi</span><span slot="position"
-                >Corporate Legal Affairs</span
-              ></TeamCard
-            >
-            <TeamCard pic={yeukai}
-              ><span slot="name">Yeukai Chikakano</span><span slot="position"
-                >Strategy and Marketing</span
-              ></TeamCard
-            >
-            <TeamCard pic={tino}
-              ><span slot="name">Tinotenda B. H. Feshete</span><span
-                slot="position">Non-Executive Director</span
-              ></TeamCard
-            >
-            <TeamCard
-              ><span slot="name">Rutendo Mahute</span><span slot="position"
-                >Product Development and Export
-              </span></TeamCard
-            >
+            {#each teams as team}
+              <TeamCard pic={team.fimg_url}>
+                <span slot="name">{team.title.rendered}</span><span
+                  slot="position">{team.position}</span
+                ></TeamCard
+              >
+            {/each}
           </div>
         </div>
       </div>

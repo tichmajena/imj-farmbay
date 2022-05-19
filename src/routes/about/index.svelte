@@ -60,6 +60,12 @@
             </p>
           </div>
 
+          <div>
+            <button class="bg-brandgold text-2xl py-8 px-3">
+              VIEW OUR PROFILE
+            </button>
+          </div>
+
           <div class="m-8">
             <h2 class=" text-xl mb-4">Vision</h2>
             <p class=" font-light mt-8">

@@ -1,6 +1,6 @@
 {
   ".svelte-kit/runtime/client/start.js": {
-    "file": "start-9b09ac17.js",
+    "file": "start-f7280670.js",
     "src": ".svelte-kit/runtime/client/start.js",
     "isEntry": true,
     "imports": [
@@ -90,32 +90,30 @@
     ]
   },
   "src/routes/blog/[slug]/index.svelte": {
-    "file": "pages/blog/_slug_/index.svelte-e2b3521b.js",
+    "file": "pages/blog/_slug_/index.svelte-04cfcfd4.js",
     "src": "src/routes/blog/[slug]/index.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_index-5561fe64.js",
       "_navigation-d566aa24.js",
-      "_env-6d58f0dd.js",
       "_Header-350f0c07.js",
       "_singletons-d1fb5791.js"
     ]
   },
   "src/routes/blog/index.svelte": {
-    "file": "pages/blog/index.svelte-276e6a97.js",
+    "file": "pages/blog/index.svelte-420971b2.js",
     "src": "src/routes/blog/index.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_index-5561fe64.js",
-      "_env-6d58f0dd.js",
       "_Header-350f0c07.js",
       "_farmbay-bg-01-9737d217.js"
     ]
   },
   "src/routes/contact.svelte": {
-    "file": "pages/contact.svelte-e2836489.js",
+    "file": "pages/contact.svelte-f9b64767.js",
     "src": "src/routes/contact.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -168,13 +166,12 @@
     ]
   },
   "src/routes/service/index.svelte": {
-    "file": "pages/service/index.svelte-931906d6.js",
+    "file": "pages/service/index.svelte-072ed7f7.js",
     "src": "src/routes/service/index.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
       "_index-5561fe64.js",
-      "_env-6d58f0dd.js",
       "_Animate-139222e4.js",
       "_Header-350f0c07.js",
       "_Gallery-dc8255d2.js",

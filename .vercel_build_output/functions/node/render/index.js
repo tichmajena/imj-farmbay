@@ -1600,10 +1600,10 @@ var init_install_fetch = __esm({
           [PullSteps](readRequest) {
             const stream = this._controlledReadableByteStream;
             if (this._queueTotalSize > 0) {
-              const entry7 = this._queue.shift();
-              this._queueTotalSize -= entry7.byteLength;
+              const entry9 = this._queue.shift();
+              this._queueTotalSize -= entry9.byteLength;
               ReadableByteStreamControllerHandleQueueDrain(this);
-              const view = new Uint8Array(entry7.buffer, entry7.byteOffset, entry7.byteLength);
+              const view = new Uint8Array(entry9.buffer, entry9.byteOffset, entry9.byteLength);
               readRequest._chunkSteps(view);
               return;
             }
@@ -5517,7 +5517,7 @@ function create_ssr_component(fn) {
       return {
         html,
         css: {
-          code: Array.from(result.css).map((css8) => css8.code).join("\n"),
+          code: Array.from(result.css).map((css10) => css10.code).join("\n"),
           map: null
         },
         head: result.title + result.head
@@ -5935,8 +5935,8 @@ var init_Gallery_273d963d = __esm({
         slides = [...slides.slice(1), slides[0]];
       }
       let ix = index;
-      function slidyIndex(id) {
-        while (ix > id) {
+      function slidyIndex(id2) {
+        while (ix > id2) {
           transition = options.duration;
           if (options.loop) {
             pos += size.last;
@@ -5945,7 +5945,7 @@ var init_Gallery_273d963d = __esm({
           }
           ix--;
         }
-        while (ix < id) {
+        while (ix < id2) {
           transition = options.duration;
           if (options.loop) {
             pos -= size.first;
@@ -6305,31 +6305,353 @@ var init__4 = __esm({
   }
 });
 
-// .svelte-kit/output/server/chunks/env-838bf73b.js
-var browser;
-var init_env_838bf73b = __esm({
-  ".svelte-kit/output/server/chunks/env-838bf73b.js"() {
-    browser = false;
+// .svelte-kit/output/server/entries/pages/blog/index.svelte.js
+var index_svelte_exports3 = {};
+__export(index_svelte_exports3, {
+  default: () => Blog,
+  load: () => load4
+});
+var load4, Blog;
+var init_index_svelte3 = __esm({
+  ".svelte-kit/output/server/entries/pages/blog/index.svelte.js"() {
+    init_index_ed7fa5a2();
+    init_Header_e86d1691();
+    init_farmbay_bg_01_9737d217();
+    load4 = async ({ fetch: fetch3 }) => {
+      const res = await fetch3("/blog.json");
+      console.log(res);
+      const json = await res.json();
+      if (res.ok) {
+        const posts = json;
+        return { props: { posts } };
+      }
+      const { message } = await res.json();
+      return { error: new Error(message) };
+    };
+    Blog = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+      let { posts } = $$props;
+      if ($$props.posts === void 0 && $$bindings.posts && posts !== void 0)
+        $$bindings.posts(posts);
+      return `<section class="${"w-full"}">${validate_component(Header, "Header").$$render($$result, { background: image }, {}, {
+        default: () => {
+          return `<span class="${"text-white"}">BLOG</span>`;
+        }
+      })}</section>
+
+<section class="${"w-full"}"><div class="${"container mx-auto"}">${each(posts, (post3) => {
+        return `<div class="${"container px-5 py-24 mx-auto"}"><div class="${"-my-8 divide-y-2 divide-gray-100"}"><div class="${"py-8 flex flex-wrap md:flex-nowrap"}"><div class="${"md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col"}"><span class="${"font-semibold title-font text-gray-700"}">${escape(post3._embedded["wp:term"][0][0].name)}</span>
+              <span class="${"text-sm text-gray-500"}">${escape(post3.date)}</span></div>
+            <div class="${"md:flex-grow"}"><h2 class="${"text-2xl font-medium text-gray-900 title-font mb-2"}">${escape(post3.title.rendered)}</h2>
+              <p class="${"leading-relaxed"}"><!-- HTML_TAG_START -->${post3.excerpt.rendered}<!-- HTML_TAG_END --></p>
+              <a class="${"text-indigo-500 inline-flex items-center mt-4"}" sveltekit:prefetch href="${"/blog/" + escape(post3.slug)}">Learn More
+                <svg class="${"w-4 h-4 ml-2"}" viewBox="${"0 0 24 24"}" stroke="${"currentColor"}" stroke-width="${"2"}" fill="${"none"}" stroke-linecap="${"round"}" stroke-linejoin="${"round"}"><path d="${"M5 12h14"}"></path><path d="${"M12 5l7 7-7 7"}"></path></svg>
+              </a></div>
+          </div></div>
+      </div>`;
+      })}</div></section>
+
+`;
+    });
+  }
+});
+
+// .svelte-kit/output/server/nodes/6.js
+var __exports5 = {};
+__export(__exports5, {
+  css: () => css6,
+  entry: () => entry5,
+  js: () => js5,
+  module: () => index_svelte_exports3
+});
+var entry5, js5, css6;
+var init__5 = __esm({
+  ".svelte-kit/output/server/nodes/6.js"() {
+    init_index_svelte3();
+    entry5 = "pages/blog/index.svelte-420971b2.js";
+    js5 = ["pages/blog/index.svelte-420971b2.js", "chunks/index-5561fe64.js", "chunks/Header-350f0c07.js", "chunks/farmbay-bg-01-9737d217.js"];
+    css6 = [];
+  }
+});
+
+// .svelte-kit/output/server/chunks/IconCard-d676663e.js
+var IconCard;
+var init_IconCard_d676663e = __esm({
+  ".svelte-kit/output/server/chunks/IconCard-d676663e.js"() {
+    init_index_ed7fa5a2();
+    IconCard = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+      return `<div class="${"p-4 md:w-1/3 flex flex-col text-center items-center"}"><div class="${"w-32 h-32 inline-flex items-center justify-center rounded-full bg-brandgold text-indigo-500 flex-shrink-0"}">${slots.icon ? slots.icon({}) : ``}</div>
+
+  <div class="${"flex-grow"}"><h2 class="${"text-gray-900 text-lg title-font font-medium mb-3"}">${slots.title ? slots.title({}) : ``}</h2></div></div>`;
+    });
+  }
+});
+
+// .svelte-kit/output/server/entries/pages/service/index.svelte.js
+var index_svelte_exports4 = {};
+__export(index_svelte_exports4, {
+  default: () => Service,
+  load: () => load5
+});
+var tractor_ic, farm_ic, certification_ic, irrigation_ic, id, org, load5, Service;
+var init_index_svelte4 = __esm({
+  ".svelte-kit/output/server/entries/pages/service/index.svelte.js"() {
+    init_index_ed7fa5a2();
+    init_Animate_01badede();
+    init_Header_e86d1691();
+    init_Gallery_273d963d();
+    init_farmbay_bg_01_9737d217();
+    init_IconCard_d676663e();
+    tractor_ic = "/_app/assets/farm-tractor-9a46c9b7.svg";
+    farm_ic = "/_app/assets/farm-22b08df0.svg";
+    certification_ic = "/_app/assets/certificate-medal-quality-554da182.svg";
+    irrigation_ic = "/_app/assets/agriculture-irrigation-de0558b4.svg";
+    id = "/_app/assets/id-icon-315b42b3.svg";
+    org = "/_app/assets/org-icon-b99ba9d7.svg";
+    load5 = async ({ fetch: fetch3 }) => {
+      const res = await fetch3("/service.json");
+      const json = await res.json();
+      if (res.ok) {
+        let rawArray = json.pictures;
+        console.log(rawArray);
+        const images = rawArray.map((imageObj) => {
+          return { id: imageObj.ID, src: imageObj.guid };
+        });
+        console.log(images);
+        return { props: { images } };
+      }
+      const { message } = await res.json();
+      return { error: new Error(message) };
+    };
+    Service = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+      let { images } = $$props;
+      if ($$props.images === void 0 && $$bindings.images && images !== void 0)
+        $$bindings.images(images);
+      return `${validate_component(Animate, "Animate").$$render($$result, {}, {}, {
+        default: () => {
+          return `<section>${validate_component(Header, "Header").$$render($$result, { background: image }, {}, {
+            default: () => {
+              return `<span class="${"text-gray-200"}">AGRO BUSINESS</span>`;
+            }
+          })}</section>
+  <section class="${"bg-gray-200 text-gray-600 body-font"}"><div class="${"container px-5 py-24 mx-auto"}"><div class="${"flex items-center lg:w-3/5 mx-auto border-b pb-10 mb-10 border-gray-200 sm:flex-row flex-col"}"><div class="${"sm:w-32 sm:h-32 h-32 w-32 sm:mr-10 inline-flex items-center justify-center rounded-full bg-brandgold text-indigo-500 flex-shrink-0"}"><img${add_attribute("src", farm_ic, 0)} class="${"sm:w-16 sm:h-16 w-16 h-16"}" alt="${""}"></div>
+        <div class="${"flex-grow sm:text-left text-center mt-6 sm:mt-0"}"><h2 class="${"text-gray-900 text-lg title-font font-medium mb-2"}">Operations
+          </h2>
+          <p class="${"leading-relaxed text-base"}">Farm Bay is uniquely situated 35km from Harare...Our operations are
+            situated on a 124 ha with two 40m boreholes, two tractors, sizeable
+            workforce and drip irrigation.
+          </p></div></div>
+      <div class="${"flex items-center lg:w-3/5 mx-auto border-b pb-10 mb-10 border-gray-200 sm:flex-row flex-col"}"><div class="${"flex-grow sm:text-left text-center mt-6 sm:mt-0"}"><h2 class="${"text-gray-900 text-lg title-font font-medium mb-2"}">Production
+          </h2>
+          <p class="${"leading-relaxed text-base"}">Farm Bay produces peas, fresh &amp; dried tomatoes on a sizeable
+            hectarage and a further 30ha is strategically set aside and
+            projected to produce garlic, ginger, shelling &amp; export peas, all
+            pepper varieties, courgettes, red and yellow onions and watermelons.
+          </p>
+          <p class="${"leading-relaxed text-base"}">We have also embarked on a project that has seen 15 hectares being
+            dedicated for floriculture, such as chrysanthemums production which
+            is on a small scale as a pilot project. As a member of the Export
+            Flower Growers Association of Zimbabwe, this gives us an opportunity
+            to tap into the cut flower global producers market with our core
+            flower bouquets ranging from; Roses, Solidago, Gypsohila, Tuberosa,
+            Asters, Burplerium and Leatrice
+          </p></div>
+        <div class="${"sm:w-32 sm:order-none order-first sm:h-32 h-32 w-32 sm:ml-10 inline-flex items-center justify-center rounded-full bg-brandgold text-indigo-500 flex-shrink-0"}"><img${add_attribute("src", tractor_ic, 0)} class="${"sm:w-16 sm:h-16 w-16 h-16"}" alt="${""}"></div></div>
+      <div class="${"flex items-center mb-32 lg:w-3/5 mx-auto sm:flex-row flex-col"}"><div class="${"sm:w-32 sm:h-32 h-32 w-32 sm:mr-10 inline-flex items-center justify-center rounded-full bg-brandgold text-indigo-500 flex-shrink-0"}"><img${add_attribute("src", irrigation_ic, 0)} class="${"sm:w-16 sm:h-16 w-16 h-16"}" alt="${""}"></div>
+        <div class="${"flex-grow sm:text-left text-center mt-6 sm:mt-0"}"><h2 class="${"text-gray-900 text-lg title-font font-medium mb-2"}">Sustainability
+          </h2>
+          <p class="${"leading-relaxed text-base"}">We have and are still reinforcing our Sustainable horticultural
+            practices in order to reduce production input, reduce environmental
+            impact, increase resource use efficiency, and improve water body and
+            soil biodiversity
+          </p></div></div></div></section>
+  <section class="${"w-full "}"><div class="${"w-full max-w-screen-xl mx-auto "}"><div class="${"flex flex-col md:w-8/12 my-8 mx-auto p-8"}"><div class="${"mb-14"}"><h2 class="${"lg:text-8xl md:text-7xl sm:text-6xl text-5xl font-bold mb-4 text-gray-300"}">Agro Processing
+          </h2>
+          <div class="${"pl-24"}"><h3 class="${"text-gray-300 sm:text-4xl md:text-6xl mt-4"}">EXTRAS</h3>
+            <ul class="${"text-2xl"}"><li class="${"text-gray-500"}">Mawuyu</li>
+              <li class="${"text-gray-500"}">Mopane Worms</li>
+              <li class="${"text-gray-500"}">Tumeric</li></ul>
+
+            <h3 class="${"text-gray-300 sm:text-3xl md:text-3xl mt-4"}">ORGANIC &amp; NATURAL PRODUCTS
+            </h3>
+
+            <h3 class="${"text-gray-700 text-lg font-medium mt-4"}">TEAS</h3>
+            <ul class="${"text-2xl"}"><li class="${"text-gray-500"}">Ressurection Herbal Tea</li>
+              <li class="${"text-gray-500"}">Rosella Tea</li>
+              <li class="${"text-gray-500"}">Zumbani Tea</li></ul>
+
+            <h3 class="${"text-gray-700 text-lg font-medium mt-4"}">HERBS AND SPICES
+            </h3>
+            <ul class="${"text-2xl"}"><li class="${"text-gray-500"}">Lavender fresh or dried</li>
+              <li class="${"text-gray-500"}">Lemon grass fresh or dried</li>
+              <li class="${"text-gray-500"}">ZLemon flakes or powder</li>
+              <li class="${"text-gray-500"}">Ginger flakes or powder or fresh</li>
+              <li class="${"text-gray-500"}">Rosemary fresh or dried</li>
+              <li class="${"text-gray-500"}">Marjorum fresh or dried</li>
+              <li class="${"text-gray-500"}">Mallow fresh or dried</li>
+              <li class="${"text-gray-500"}">Artemisia fresh or dried</li>
+              <li class="${"text-gray-500"}">Fever few fresh or dried</li>
+              <li class="${"text-gray-500"}">Mint fresh or dried</li>
+              <li class="${"text-gray-500"}">Catnip fresh or dried</li>
+              <li class="${"text-gray-500"}">Gotu kola fresh or dried</li>
+              <li class="${"text-gray-500"}">Oregano fresh or dried</li>
+              <li class="${"text-gray-500"}">Cayenne pepper raw dried or powder</li>
+              <li class="${"text-gray-500"}">ZGreat plantain fresh or dried</li>
+              <li class="${"text-gray-500"}">Milk thistle fresh or dried</li>
+              <li class="${"text-gray-500"}">Thyme fresh or dried</li>
+              <li class="${"text-gray-500"}">Nettle fresh or dried</li>
+              <li class="${"text-gray-500"}">Worm wood fresh or dried</li>
+              <li class="${"text-gray-500"}">Soap wort fresh or dried</li>
+              <li class="${"text-gray-500"}">Basil fresh or dried</li>
+              <li class="${"text-gray-500"}">Alfafa fresh or dried</li>
+              <li class="${"text-gray-500"}">Tarragon fresh or dried</li>
+              <li class="${"text-gray-500"}">Garlic flakes or powder</li>
+              <li class="${"text-gray-500"}">Resurrection bush powder</li>
+              <li class="${"text-gray-500"}">Makoni bush flakes</li>
+              <li class="${"text-gray-500"}">Avocado seed powder</li>
+              <li class="${"text-gray-500"}">Sorrel fresh</li>
+              <li class="${"text-gray-500"}">Dandelion fresh or dried</li>
+              <li class="${"text-gray-500"}">Moringa bark powder</li>
+              <li class="${"text-gray-500"}">Chilli flakes and powder</li>
+              <li class="${"text-gray-500"}">Aloe fresh and dried</li>
+              <li class="${"text-gray-500"}">Onion powder</li>
+              <li class="${"text-gray-500"}">Carrot flakes or powder</li>
+              <li class="${"text-gray-500"}">Parsley fresh and dried</li>
+              <li class="${"text-gray-500"}">Celery fresh and dried</li>
+              <li class="${"text-gray-500"}">French marigold fresh and dried</li>
+              <li class="${"text-gray-500"}">Calendula fresh and dried</li>
+              <li class="${"text-gray-500"}">Rosella</li>
+              <li class="${"text-gray-500"}">Garlic chive fresh</li></ul>
+            <h3 class="${"text-gray-300 sm:text-3xl md:text-3xl mt-4"}">BAOBAB PRODUCTS
+            </h3>
+            <ul class="${"text-2xl"}"><li class="${"text-gray-500"}">Baobab Juice</li>
+              <li class="${"text-gray-500"}">Baobab Powder</li>
+              <li class="${"text-gray-500"}">Baobab Fruits</li></ul>
+
+            <h2 class="${"text-gray-300 sm:text-3xl md:text-3xl mt-4"}">BUTTER</h2>
+            <ul class="${"text-2xl"}"><li class="${"text-gray-500"}">Peanut Butter</li>
+              <li class="${"text-gray-500"}">Tahini Butter</li></ul>
+
+            <h2 class="${"text-gray-300 sm:text-3xl md:text-3xl mt-4"}">SESAME PRODUCTS
+            </h2>
+            <ul class="${"text-2xl"}"><li class="${"text-gray-500"}">Sesame Oil</li>
+              <li class="${"text-gray-500"}">Sesame Seeds Black and White</li>
+              <li class="${"text-gray-500"}">Sesame Natural seed</li>
+              <li class="${"text-gray-500"}">Sesame Dehulled Seed</li></ul>
+
+            <h2 class="${"text-gray-300 sm:text-3xl md:text-3xl mt-4"}">MACADAMIA
+            </h2>
+            <ul class="${"text-2xl"}"><li class="${"text-gray-500"}">Macadamia nuts</li>
+              <li class="${"text-gray-500"}">Macadamia oil</li>
+              <li class="${"text-gray-500"}">Macademia Nuts</li></ul></div>
+
+          <div class="${"mb-14"}"><h2 class="${"lg:text-8xl md:text-7xl sm:text-6xl text-5xl font-bold mb-4 text-gray-300"}">Fruits
+            </h2>
+            <div class="${"pl-24"}"><ul class="${"text-2xl"}"><li class="${"text-gray-500"}">Strawberries</li>
+                <li class="${"text-gray-500"}">Watermellon</li>
+                <li class="${"text-gray-500"}">Paw Paw</li>
+                <li class="${"text-gray-500"}">Mangos</li>
+                <li class="${"text-gray-500"}">Granadilla (Passion Fruit)</li>
+                <li class="${"text-gray-500"}">Berries</li></ul>
+              <h3 class="${"text-gray-700 text-lg font-medium mt-4"}">DRIED FRUITS
+              </h3>
+              <ul class="${"text-2xl"}"><li class="${"text-gray-500"}">Dried Pineapple.</li>
+                <li class="${"text-gray-500"}">Dried Bananas.</li>
+                <li class="${"text-gray-500"}">Flavored Banana Chips.</li>
+                <li class="${"text-gray-500"}">Pineapple Dried fruit.</li>
+                <li class="${"text-gray-500"}">Apple dried fruit.</li>
+                <li class="${"text-gray-500"}">Mango dried fruit.</li>
+                <li class="${"text-gray-500"}">Banana Dried fruit.</li></ul></div></div></div>
+
+        <div class="${"mb-14"}"><h2 class="${"lg:text-8xl md:text-7xl sm:text-6xl text-5xl font-bold mb-4 text-gray-300"}">Vegetables
+          </h2>
+          <div class="${"pl-24"}"><ul class="${"text-2xl"}"><li class="${"text-gray-500"}">Tomatoes</li>
+              <li class="${"text-gray-500"}">Peas</li>
+              <li class="${"text-gray-500"}">Carrots</li>
+              <li class="${"text-gray-500"}">Onions</li>
+              <li class="${"text-gray-500"}">Rape</li>
+              <li class="${"text-gray-500"}">Garlic</li>
+              <li class="${"text-gray-500"}">Brocccoli</li>
+              <li class="${"text-gray-500"}">Cauflower</li>
+              <li class="${"text-gray-500"}">Potatoes</li>
+              <li class="${"text-gray-500"}">Green Beans</li>
+              <li class="${"text-gray-500"}">Ginger</li>
+              <li class="${"text-gray-500"}">Yellow Green Red Peppers</li>
+              <li class="${"text-gray-500"}">Asparagus</li></ul></div></div></div></div></section>
+
+  <section class="${"w-full bg-brandblue"}"><div class="${"container px-5 py-24 mx-auto"}"><div class="${"flex items-center text-white mb-32 lg:w-3/5 mx-auto sm:flex-row flex-col"}"><div class="${"sm:w-32 sm:h-32 h-20 w-20 sm:mr-10 inline-flex items-center justify-center rounded-full bg-brandgold text-indigo-500 flex-shrink-0"}">${validate_component(IconCard, "IconCard").$$render($$result, {}, {}, {
+            icon: () => {
+              return `<span slot="${"icon"}"><img${add_attribute("src", org, 0)} alt="${""}" class="${"w-16 h-16"}"></span>`;
+            }
+          })}</div>
+        <div class="${"flex-grow sm:text-left text-center mt-6 sm:mt-0"}"><h2 class="${"text-white text-lg title-font font-medium mb-2"}">Market</h2>
+          <p class="${"leading-relaxed text-base"}">We used the value chain development approach of starting from
+            understanding what the market wants then using information gathered
+            to inform the Farm Bay Strategy of the horticultural produce for
+            production and processing This approach is underpinned by market
+            -led production concept . Our study results highlighted
+            opportunities for Farm Bay to be a competitive agro business in
+            Zimbabwe .
+          </p></div></div>
+
+      <div class="${"flex items-center text-white lg:w-3/5 mx-auto sm:flex-row flex-col"}"><div class="${"sm:w-32 sm:h-32 h-20 w-20 sm:mr-10 inline-flex items-center justify-center rounded-full bg-brandgold text-indigo-500 flex-shrink-0"}">${validate_component(IconCard, "IconCard").$$render($$result, {}, {}, {
+            icon: () => {
+              return `<span slot="${"icon"}"><img${add_attribute("src", id, 0)} alt="${""}" class="${"w-16 h-16"}"></span>`;
+            }
+          })}</div>
+        <div class="${"flex-grow sm:text-left text-center mt-6 sm:mt-0"}"><h2 class="${"text-white text-lg title-font font-medium mb-2"}">Quality Control
+          </h2>
+          <p class="${"leading-relaxed text-base"}">Our Crop Production serves as the first port of call in our Value
+            Chain hence mechanisms such as Pesticide Control, use of Control
+            Charts, Crop Production and Processing guidelines are essential to
+            Farm Bay .
+          </p></div></div></div></section>
+
+  <section class="${"p-8"}"><div class="${"h-96 w-full"}">${validate_component(Gallery, "Gallery").$$render($$result, { pictures: images }, {}, {})}</div></section>
+
+  <section class="${"bg-brandgold p-8"}"><div class="${"w-full max-w-screen-xl mx-auto"}"><div class="${"text-center md:w-8/12 mx-auto m-8"}"><div class="${"h-16 w-16 mx-auto mb-8 text-red-400"}"><img${add_attribute("src", certification_ic, 0)} alt="${""}"></div>
+        <h2 class="${"text-2xl mb-4 text-brandblue"}">Certification</h2>
+        <p class="${"text-brandblue mb-4 mt-2"}">Our Agro-Business aspiring to being a BRC Global Standards (version 7)
+          &amp; Global Gap Standards accredited. It will also adhere to USFDA FSMA
+          regulations. BRC certification is expected by 2022.We are also
+          targeting the Kosher &amp; Organic certification to be attained by March
+          2022.
+        </p></div></div></section>`;
+        }
+      })}`;
+    });
+  }
+});
+
+// .svelte-kit/output/server/nodes/9.js
+var __exports6 = {};
+__export(__exports6, {
+  css: () => css7,
+  entry: () => entry6,
+  js: () => js6,
+  module: () => index_svelte_exports4
+});
+var entry6, js6, css7;
+var init__6 = __esm({
+  ".svelte-kit/output/server/nodes/9.js"() {
+    init_index_svelte4();
+    entry6 = "pages/service/index.svelte-072ed7f7.js";
+    js6 = ["pages/service/index.svelte-072ed7f7.js", "chunks/index-5561fe64.js", "chunks/Animate-139222e4.js", "chunks/Header-350f0c07.js", "chunks/Gallery-dc8255d2.js", "chunks/farmbay-bg-01-9737d217.js", "chunks/IconCard-40d69628.js"];
+    css7 = ["assets/Gallery-33f3a4bb.css"];
   }
 });
 
 // .svelte-kit/output/server/entries/pages/blog/_slug_/index.svelte.js
-var index_svelte_exports3 = {};
-__export(index_svelte_exports3, {
+var index_svelte_exports5 = {};
+__export(index_svelte_exports5, {
   default: () => U5Bslugu5D,
-  load: () => load4,
-  prerender: () => prerender,
-  router: () => router
+  load: () => load6
 });
-var prerender, router, load4, U5Bslugu5D;
-var init_index_svelte3 = __esm({
+var load6, U5Bslugu5D;
+var init_index_svelte5 = __esm({
   ".svelte-kit/output/server/entries/pages/blog/_slug_/index.svelte.js"() {
     init_index_ed7fa5a2();
-    init_env_838bf73b();
     init_Header_e86d1691();
-    prerender = true;
-    router = browser;
-    load4 = async ({ params, fetch: fetch3 }) => {
+    load6 = async ({ params, fetch: fetch3 }) => {
       const res = await fetch3(`/blog/${params.slug}.json`);
       if (res.ok) {
         const data = await res.json();
@@ -6355,7 +6677,7 @@ var init_index_svelte3 = __esm({
           </span>
           <span class="${"text-gray-400 inline-flex items-center leading-none text-sm"}"><svg class="${"w-4 h-4 mr-1"}" stroke="${"currentColor"}" stroke-width="${"2"}" fill="${"none"}" stroke-linecap="${"round"}" stroke-linejoin="${"round"}" viewBox="${"0 0 24 24"}"><path d="${"M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"}"></path></svg>6
           </span></div>
-        <a class="${"inline-flex items-center"}"><img alt="${"blog"}" src="${"https://dummyimage.com/104x104"}" class="${"w-12 h-12 rounded-full flex-shrink-0 object-cover object-center"}">
+        <a href="${"/"}" class="${"inline-flex items-center"}"><img alt="${"blog"}" src="${"https://dummyimage.com/104x104"}" class="${"w-12 h-12 rounded-full flex-shrink-0 object-cover object-center"}">
           <span class="${"flex-grow flex flex-col pl-4"}"><span class="${"title-font font-medium text-gray-900"}">${escape(post3._embedded["author"][0].name)}</span>
             <span class="${"text-gray-400 text-xs capitalize tracking-widest mt-0.5"}">${escape(post3._embedded["author"][0].description)}</span></span></a></div></div></div></section>`;
     });
@@ -6363,20 +6685,28 @@ var init_index_svelte3 = __esm({
 });
 
 // .svelte-kit/output/server/nodes/5.js
-var __exports5 = {};
-__export(__exports5, {
-  css: () => css6,
-  entry: () => entry5,
-  js: () => js5,
-  module: () => index_svelte_exports3
+var __exports7 = {};
+__export(__exports7, {
+  css: () => css8,
+  entry: () => entry7,
+  js: () => js7,
+  module: () => index_svelte_exports5
 });
-var entry5, js5, css6;
-var init__5 = __esm({
+var entry7, js7, css8;
+var init__7 = __esm({
   ".svelte-kit/output/server/nodes/5.js"() {
-    init_index_svelte3();
-    entry5 = "pages/blog/_slug_/index.svelte-e2b3521b.js";
-    js5 = ["pages/blog/_slug_/index.svelte-e2b3521b.js", "chunks/index-5561fe64.js", "chunks/navigation-d566aa24.js", "chunks/singletons-d1fb5791.js", "chunks/env-6d58f0dd.js", "chunks/Header-350f0c07.js"];
-    css6 = [];
+    init_index_svelte5();
+    entry7 = "pages/blog/_slug_/index.svelte-04cfcfd4.js";
+    js7 = ["pages/blog/_slug_/index.svelte-04cfcfd4.js", "chunks/index-5561fe64.js", "chunks/navigation-d566aa24.js", "chunks/singletons-d1fb5791.js", "chunks/Header-350f0c07.js"];
+    css8 = [];
+  }
+});
+
+// .svelte-kit/output/server/chunks/env-838bf73b.js
+var browser;
+var init_env_838bf73b = __esm({
+  ".svelte-kit/output/server/chunks/env-838bf73b.js"() {
+    browser = false;
   }
 });
 
@@ -6384,19 +6714,19 @@ var init__5 = __esm({
 var edit_svelte_exports = {};
 __export(edit_svelte_exports, {
   default: () => Edit,
-  load: () => load5,
-  prerender: () => prerender2,
-  router: () => router2
+  load: () => load7,
+  prerender: () => prerender,
+  router: () => router
 });
-var prerender2, router2, load5, Edit;
+var prerender, router, load7, Edit;
 var init_edit_svelte = __esm({
   ".svelte-kit/output/server/entries/pages/blog/_slug_/edit.svelte.js"() {
     init_index_ed7fa5a2();
     init_env_838bf73b();
     init_Header_e86d1691();
-    prerender2 = true;
-    router2 = browser;
-    load5 = async ({ page: page2, fetch: fetch3 }) => {
+    prerender = true;
+    router = browser;
+    load7 = async ({ page: page2, fetch: fetch3 }) => {
       console.log(page2.params.slug);
       const res = await fetch3(`/blog/${page2.params.slug}.json`);
       if (res.ok) {
@@ -6428,20 +6758,20 @@ var init_edit_svelte = __esm({
 });
 
 // .svelte-kit/output/server/nodes/4.js
-var __exports6 = {};
-__export(__exports6, {
-  css: () => css7,
-  entry: () => entry6,
-  js: () => js6,
+var __exports8 = {};
+__export(__exports8, {
+  css: () => css9,
+  entry: () => entry8,
+  js: () => js8,
   module: () => edit_svelte_exports
 });
-var entry6, js6, css7;
-var init__6 = __esm({
+var entry8, js8, css9;
+var init__8 = __esm({
   ".svelte-kit/output/server/nodes/4.js"() {
     init_edit_svelte();
-    entry6 = "pages/blog/_slug_/edit.svelte-d60d71a5.js";
-    js6 = ["pages/blog/_slug_/edit.svelte-d60d71a5.js", "chunks/preload-helper-e4860ae8.js", "chunks/index-5561fe64.js", "chunks/navigation-d566aa24.js", "chunks/singletons-d1fb5791.js", "chunks/env-6d58f0dd.js", "chunks/Header-350f0c07.js"];
-    css7 = [];
+    entry8 = "pages/blog/_slug_/edit.svelte-d60d71a5.js";
+    js8 = ["pages/blog/_slug_/edit.svelte-d60d71a5.js", "chunks/preload-helper-e4860ae8.js", "chunks/index-5561fe64.js", "chunks/navigation-d566aa24.js", "chunks/singletons-d1fb5791.js", "chunks/env-6d58f0dd.js", "chunks/Header-350f0c07.js"];
+    css9 = [];
   }
 });
 
@@ -7236,12 +7566,12 @@ function devalue(value) {
   }
   walk(value);
   var names = /* @__PURE__ */ new Map();
-  Array.from(counts).filter(function(entry7) {
-    return entry7[1] > 1;
+  Array.from(counts).filter(function(entry9) {
+    return entry9[1] > 1;
   }).sort(function(a, b) {
     return b[1] - a[1];
-  }).forEach(function(entry7, i2) {
-    names.set(entry7[0], getName(i2));
+  }).forEach(function(entry9, i2) {
+    names.set(entry9[0], getName(i2));
   });
   function stringify(thing) {
     if (names.has(thing)) {
@@ -7656,8 +7986,8 @@ var Csp = class {
   #directives;
   #script_src;
   #style_src;
-  constructor({ mode, directives }, { dev, prerender: prerender3, needs_nonce }) {
-    this.#use_hashes = mode === "hash" || mode === "auto" && prerender3;
+  constructor({ mode, directives }, { dev, prerender: prerender2, needs_nonce }) {
+    this.#use_hashes = mode === "hash" || mode === "auto" && prerender2;
     this.#directives = dev ? __spreadValues({}, directives) : directives;
     this.#dev = dev;
     const d = this.#directives;
@@ -8597,12 +8927,12 @@ async function load_node({
     uses_credentials
   };
 }
-async function load_shadow_data(route, event, options, prerender3) {
+async function load_shadow_data(route, event, options, prerender2) {
   if (!route.shadow)
     return {};
   try {
     const mod = await route.shadow();
-    if (prerender3 && (mod.post || mod.put || mod.del || mod.patch)) {
+    if (prerender2 && (mod.post || mod.put || mod.del || mod.patch)) {
       throw new Error("Cannot prerender pages that have endpoints with mutative methods");
     }
     const method = normalize_request_method(event);
@@ -9286,14 +9616,16 @@ var manifest = {
   assets: /* @__PURE__ */ new Set(["favicon.png", "robots.txt"]),
   mimeTypes: { ".png": "image/png", ".txt": "text/plain" },
   _: {
-    entry: { "file": "start-9b09ac17.js", "js": ["start-9b09ac17.js", "chunks/index-5561fe64.js", "chunks/preload-helper-e4860ae8.js", "chunks/singletons-d1fb5791.js"], "css": [] },
+    entry: { "file": "start-f7280670.js", "js": ["start-f7280670.js", "chunks/index-5561fe64.js", "chunks/preload-helper-e4860ae8.js", "chunks/singletons-d1fb5791.js"], "css": [] },
     nodes: [
       () => Promise.resolve().then(() => (init__(), __exports)),
       () => Promise.resolve().then(() => (init__2(), __exports2)),
       () => Promise.resolve().then(() => (init__3(), __exports3)),
       () => Promise.resolve().then(() => (init__4(), __exports4)),
       () => Promise.resolve().then(() => (init__5(), __exports5)),
-      () => Promise.resolve().then(() => (init__6(), __exports6))
+      () => Promise.resolve().then(() => (init__6(), __exports6)),
+      () => Promise.resolve().then(() => (init__7(), __exports7)),
+      () => Promise.resolve().then(() => (init__8(), __exports8))
     ],
     routes: [
       {
@@ -9351,6 +9683,28 @@ var manifest = {
         b: [1]
       },
       {
+        type: "page",
+        id: "blog",
+        pattern: /^\/blog\/?$/,
+        names: [],
+        types: [],
+        path: "/blog",
+        shadow: null,
+        a: [0, 4],
+        b: [1]
+      },
+      {
+        type: "page",
+        id: "service",
+        pattern: /^\/service\/?$/,
+        names: [],
+        types: [],
+        path: "/service",
+        shadow: null,
+        a: [0, 5],
+        b: [1]
+      },
+      {
         type: "endpoint",
         id: "auth/login",
         pattern: /^\/auth\/login\/?$/,
@@ -9374,7 +9728,7 @@ var manifest = {
         types: [null],
         path: null,
         shadow: null,
-        a: [0, 4],
+        a: [0, 6],
         b: [1]
       },
       {
@@ -9385,7 +9739,7 @@ var manifest = {
         types: [null],
         path: null,
         shadow: null,
-        a: [0, 5],
+        a: [0, 7],
         b: [1]
       }
     ],

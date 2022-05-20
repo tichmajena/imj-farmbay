@@ -1,0 +1,295 @@
+{
+  ".svelte-kit/runtime/client/start.js": {
+    "file": "start-9b09ac17.js",
+    "src": ".svelte-kit/runtime/client/start.js",
+    "isEntry": true,
+    "imports": [
+      "_index-5561fe64.js",
+      "_preload-helper-e4860ae8.js",
+      "_singletons-d1fb5791.js"
+    ],
+    "dynamicImports": [
+      "src/routes/__layout.svelte",
+      ".svelte-kit/runtime/components/error.svelte",
+      "src/routes/about/index.svelte",
+      "src/routes/auth/index.svelte",
+      "src/routes/blog/[slug]/edit.svelte",
+      "src/routes/blog/[slug]/index.svelte",
+      "src/routes/blog/index.svelte",
+      "src/routes/contact.svelte",
+      "src/routes/index.svelte",
+      "src/routes/service/index.svelte",
+      "src/routes/team.svelte"
+    ]
+  },
+  "src/routes/__layout.svelte": {
+    "file": "pages/__layout.svelte-1d455f73.js",
+    "src": "src/routes/__layout.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_index-5561fe64.js",
+      "_Animate-139222e4.js"
+    ],
+    "css": [
+      "assets/pages/__layout.svelte-783f086b.css"
+    ],
+    "assets": [
+      "assets/farm-bay-logo-591ead15.svg"
+    ]
+  },
+  ".svelte-kit/runtime/components/error.svelte": {
+    "file": "error.svelte-217b35c6.js",
+    "src": ".svelte-kit/runtime/components/error.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_index-5561fe64.js"
+    ]
+  },
+  "src/routes/about/index.svelte": {
+    "file": "pages/about/index.svelte-b1853186.js",
+    "src": "src/routes/about/index.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_index-5561fe64.js",
+      "_Animate-139222e4.js",
+      "_Gallery-dc8255d2.js",
+      "_Header-350f0c07.js",
+      "_farmbay-bg-01-9737d217.js"
+    ]
+  },
+  "src/routes/auth/index.svelte": {
+    "file": "pages/auth/index.svelte-2d7d3a22.js",
+    "src": "src/routes/auth/index.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_index-5561fe64.js",
+      "_Animate-139222e4.js"
+    ]
+  },
+  "src/routes/blog/[slug]/edit.svelte": {
+    "file": "pages/blog/_slug_/edit.svelte-d60d71a5.js",
+    "src": "src/routes/blog/[slug]/edit.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_preload-helper-e4860ae8.js",
+      "_index-5561fe64.js",
+      "_navigation-d566aa24.js",
+      "_env-6d58f0dd.js",
+      "_Header-350f0c07.js",
+      "_singletons-d1fb5791.js"
+    ],
+    "dynamicImports": [
+      "_editor-9795eba8.js",
+      "_bundle-d0e05167.js",
+      "_bundle-0d1e390f.js"
+    ]
+  },
+  "src/routes/blog/[slug]/index.svelte": {
+    "file": "pages/blog/_slug_/index.svelte-e2b3521b.js",
+    "src": "src/routes/blog/[slug]/index.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_index-5561fe64.js",
+      "_navigation-d566aa24.js",
+      "_env-6d58f0dd.js",
+      "_Header-350f0c07.js",
+      "_singletons-d1fb5791.js"
+    ]
+  },
+  "src/routes/blog/index.svelte": {
+    "file": "pages/blog/index.svelte-276e6a97.js",
+    "src": "src/routes/blog/index.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_index-5561fe64.js",
+      "_env-6d58f0dd.js",
+      "_Header-350f0c07.js",
+      "_farmbay-bg-01-9737d217.js"
+    ]
+  },
+  "src/routes/contact.svelte": {
+    "file": "pages/contact.svelte-e2836489.js",
+    "src": "src/routes/contact.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_index-5561fe64.js",
+      "_env-6d58f0dd.js",
+      "_Animate-139222e4.js"
+    ],
+    "assets": [
+      "assets/image1-9e336ecf.jpeg",
+      "assets/mail-solid-3d7e1683.svg",
+      "assets/phone-solid-5f23ad96.svg",
+      "assets/place-solid-f3fa7cbb.svg"
+    ]
+  },
+  "src/routes/index.svelte": {
+    "file": "pages/index.svelte-d978c854.js",
+    "src": "src/routes/index.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_index-5561fe64.js",
+      "_env-6d58f0dd.js",
+      "_FaraiRChinomona-fa19a124.js",
+      "_Animate-139222e4.js",
+      "_IconCard-40d69628.js"
+    ],
+    "css": [
+      "assets/pages/index.svelte-bd0c2c74.css"
+    ],
+    "assets": [
+      "assets/fresh_tomatoes-e5dd554a.jpg",
+      "assets/dried_tomatoes-2b4df2e7.jpg",
+      "assets/broccoli-b01654b6.jpg",
+      "assets/cauliflower-b6fe90ec.jpg",
+      "assets/red_onions-fba9d125.jpg",
+      "assets/peas-f9ec5140.jpg",
+      "assets/mangetout-e8ccb11b.jpg",
+      "assets/sugarsnap-1-38e38213.jpg",
+      "assets/carrots-9efb8406.jpg",
+      "assets/watermelon-2e93bb78.jpg",
+      "assets/farm-bay-hero-1efb8de2.jpg",
+      "assets/tomato-vegetable-c40a426f.svg",
+      "assets/mango-2d704c0c.svg",
+      "assets/farm-bay-motif-white-01-1f2a56eb.svg",
+      "assets/Farmec-Logo-289db590.svg",
+      "assets/Fresh-co-d5ca95e7.png",
+      "assets/Mlambo-holdings-a47e9f35.png",
+      "assets/ZFC-ltd-logo-c96c8287.png"
+    ]
+  },
+  "src/routes/service/index.svelte": {
+    "file": "pages/service/index.svelte-931906d6.js",
+    "src": "src/routes/service/index.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_index-5561fe64.js",
+      "_env-6d58f0dd.js",
+      "_Animate-139222e4.js",
+      "_Header-350f0c07.js",
+      "_Gallery-dc8255d2.js",
+      "_farmbay-bg-01-9737d217.js",
+      "_IconCard-40d69628.js"
+    ],
+    "assets": [
+      "assets/farm-tractor-9a46c9b7.svg",
+      "assets/farm-22b08df0.svg",
+      "assets/certificate-medal-quality-554da182.svg",
+      "assets/agriculture-irrigation-de0558b4.svg",
+      "assets/id-icon-315b42b3.svg",
+      "assets/org-icon-b99ba9d7.svg"
+    ]
+  },
+  "src/routes/team.svelte": {
+    "file": "pages/team.svelte-e22974a6.js",
+    "src": "src/routes/team.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_index-5561fe64.js",
+      "_env-6d58f0dd.js",
+      "_Animate-139222e4.js",
+      "_FaraiRChinomona-fa19a124.js",
+      "_farmbay-bg-01-9737d217.js",
+      "_Header-350f0c07.js",
+      "_IconCard-40d69628.js"
+    ],
+    "css": [
+      "assets/pages/team.svelte-fd031a72.css"
+    ],
+    "assets": [
+      "assets/Brain-icon-5f481c52.svg"
+    ]
+  },
+  "_index-5561fe64.js": {
+    "file": "chunks/index-5561fe64.js"
+  },
+  "_singletons-d1fb5791.js": {
+    "file": "chunks/singletons-d1fb5791.js"
+  },
+  "_preload-helper-e4860ae8.js": {
+    "file": "chunks/preload-helper-e4860ae8.js"
+  },
+  "_Animate-139222e4.js": {
+    "file": "chunks/Animate-139222e4.js",
+    "imports": [
+      "_index-5561fe64.js"
+    ]
+  },
+  "_Gallery-dc8255d2.js": {
+    "file": "chunks/Gallery-dc8255d2.js",
+    "imports": [
+      "_index-5561fe64.js"
+    ],
+    "css": [
+      "assets/Gallery-33f3a4bb.css"
+    ]
+  },
+  "_Header-350f0c07.js": {
+    "file": "chunks/Header-350f0c07.js",
+    "imports": [
+      "_index-5561fe64.js"
+    ]
+  },
+  "_farmbay-bg-01-9737d217.js": {
+    "file": "chunks/farmbay-bg-01-9737d217.js",
+    "assets": [
+      "assets/farmbay-bg-01-26ed08fa.jpg"
+    ]
+  },
+  "_navigation-d566aa24.js": {
+    "file": "chunks/navigation-d566aa24.js",
+    "imports": [
+      "_singletons-d1fb5791.js"
+    ]
+  },
+  "_env-6d58f0dd.js": {
+    "file": "chunks/env-6d58f0dd.js"
+  },
+  "_FaraiRChinomona-fa19a124.js": {
+    "file": "chunks/FaraiRChinomona-fa19a124.js",
+    "assets": [
+      "assets/FaraiRChinomona-f4c0558c.jpg"
+    ]
+  },
+  "_IconCard-40d69628.js": {
+    "file": "chunks/IconCard-40d69628.js",
+    "imports": [
+      "_index-5561fe64.js"
+    ]
+  },
+  "_editor-9795eba8.js": {
+    "file": "chunks/editor-9795eba8.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "__commonjsHelpers-1337bd3f.js"
+    ]
+  },
+  "__commonjsHelpers-1337bd3f.js": {
+    "file": "chunks/_commonjsHelpers-1337bd3f.js"
+  },
+  "_bundle-d0e05167.js": {
+    "file": "chunks/bundle-d0e05167.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "__commonjsHelpers-1337bd3f.js"
+    ]
+  },
+  "_bundle-0d1e390f.js": {
+    "file": "chunks/bundle-0d1e390f.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "__commonjsHelpers-1337bd3f.js"
+    ]
+  }
+}

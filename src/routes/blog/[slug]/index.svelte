@@ -89,7 +89,7 @@
             </svg>6
           </span>
         </div>
-        <a class="inline-flex items-center">
+        <a href="/" class="inline-flex items-center">
           <img
             alt="blog"
             src="https://dummyimage.com/104x104"

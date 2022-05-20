@@ -131,7 +131,7 @@
               <img src={place_ic} loading="lazy" alt="" class="w-full" />
             </div>
             <div class="flex flex-col">
-              <a href="" class="link ml-3 text-sm"
+              <a href="/" class="link ml-3 text-sm"
                 >Farm Bay Pvt Reedbuck Farm Acturus, Goromonzi.</a
               >
             </div>

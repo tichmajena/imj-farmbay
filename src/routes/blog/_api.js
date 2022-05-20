@@ -21,25 +21,23 @@ export async function getJSON(request, resource, data) {
   // /todos page, rather than showing the response
 
   let dataJSON = await res.json();
-  console.log("API Header: ", res.ok, request.method, request.headers);
-  console.log("API DATA:", dataJSON);
 
-  if (
-    res.ok &&
-    request.method !== "Post" &&
-    request.headers.accept !== "application/json"
-  ) {
-    return {
-      status: 303,
-      headers: {
-        location: "/blog",
-      },
-      body: "", // TODO https://github.com/sveltejs/kit/issues/1047
-    };
-  }
+  // if (
+  //   res.ok &&
+  //   request.method !== "Post" &&
+  //   request.headers.accept !== "application/json"
+  // ) {
+  //   return {
+  //     status: 303,
+  //     headers: {
+  //       location: "/blog",
+  //     },
+  //     body: "", // TODO https://github.com/sveltejs/kit/issues/1047
+  //   };
+  // }
 
   return {
     status: res.status,
-    body: await res.json(),
+    body: dataJSON,
   };
 }

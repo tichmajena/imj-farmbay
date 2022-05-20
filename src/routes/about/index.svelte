@@ -1,10 +1,11 @@
 <script context="module">
   import { browser } from "$app/env";
-  export const prerender = true;
-  export const router = browser;
+  // export const prerender = true;
+  // export const router = browser;
 
   export const load = async ({ fetch }) => {
     //! This should be the name of the route, in this case  it's 'blog'
+
     const res = await fetch("/about.json");
 
     const json = await res.json();

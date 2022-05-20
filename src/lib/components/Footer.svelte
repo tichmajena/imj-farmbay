@@ -63,7 +63,7 @@
             <ul class="flex flex-col">
               <a class="font-light" href="/">
                 <li
-                  class:text-brandgold={$page.path === "/"}
+                  class:text-brandgold={$page.url.pathname === "/"}
                   class="mr-5 hover:text-brandgold "
                 >
                   Home
@@ -71,7 +71,7 @@
               >
               <a class="font-light" href="/about">
                 <li
-                  class:text-brandgold={$page.path === "/about"}
+                  class:text-brandgold={$page.url.pathname === "/about"}
                   class="mr-5 hover:text-brandgold "
                 >
                   About
@@ -79,7 +79,7 @@
               >
               <a class="font-light" href="/service">
                 <li
-                  class:text-brandgold={$page.path === "/service"}
+                  class:text-brandgold={$page.url.pathname === "/service"}
                   class="mr-5 hover:text-brandgold"
                 >
                   Service
@@ -87,7 +87,7 @@
               >
               <a class="font-light" href="/team">
                 <li
-                  class:text-brandgold={$page.path === "/team"}
+                  class:text-brandgold={$page.url.pathname === "/team"}
                   class="mr-5 hover:text-brandgold "
                 >
                   Team
@@ -96,7 +96,7 @@
 
               <a class="font-light" href="/blog">
                 <li
-                  class:text-brandgold={$page.path === "/blog"}
+                  class:text-brandgold={$page.url.pathname === "/blog"}
                   class="mr-5 hover:text-brandgold "
                 >
                   Blog
@@ -105,7 +105,7 @@
 
               <a class="font-light" href="/contact">
                 <li
-                  class:text-brandgold={$page.path === "/contact"}
+                  class:text-brandgold={$page.url.pathname === "/contact"}
                   class="mr-5 hover:text-brandgold"
                 >
                   Contact

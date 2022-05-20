@@ -30,7 +30,7 @@
           <ul class="flex">
             <a class="" href="/">
               <li
-                class:text-brandgold={$page.path === "/"}
+                class:text-brandgold={$page.url.pathname === "/"}
                 class="mr-5 hover:text-gray-900 py-6 px-2 font-medium"
               >
                 Home
@@ -38,7 +38,7 @@
             >
             <a class="" href="/about">
               <li
-                class:text-brandgold={$page.path === "/about"}
+                class:text-brandgold={$page.url.pathname === "/about"}
                 class="mr-5 hover:text-brandgold py-6 px-3 "
               >
                 About
@@ -46,7 +46,7 @@
             >
             <a class="" href="/service">
               <li
-                class:text-brandgold={$page.path === "/service"}
+                class:text-brandgold={$page.url.pathname === "/service"}
                 class="mr-5 hover:text-brandgold py-6 px-3 inline-block"
               >
                 AgroBusiness
@@ -54,7 +54,7 @@
             >
             <a class="" href="/team">
               <li
-                class:text-brandgold={$page.path === "/team"}
+                class:text-brandgold={$page.url.pathname === "/team"}
                 class="mr-5 hover:text-brandgold py-6 px-3 "
               >
                 Team
@@ -63,7 +63,7 @@
 
             <a class="" href="/blog">
               <li
-                class:text-brandgold={$page.path === "/blog"}
+                class:text-brandgold={$page.url.pathname === "/blog"}
                 class="mr-5 hover:text-brandgold py-6 px-3 "
               >
                 Blog
@@ -72,7 +72,7 @@
 
             <a class="" href="/contact">
               <li
-                class:text-brandgold={$page.path === "/contact"}
+                class:text-brandgold={$page.url.pathname === "/contact"}
                 class="mr-5 hover:text-brandgold py-6 px-3"
               >
                 Contact

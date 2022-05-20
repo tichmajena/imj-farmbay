@@ -1,19 +1,16 @@
 <script context="module">
-    import { browser } from "$app/env";
+  import { browser } from "$app/env";
   export const prerender = true;
   export const router = browser;
   // see https://kit.svelte.dev/docs#loading
   import { goto, prefetch, invalidate } from "$app/navigation";
 
-  export const load = async ({ page, fetch }) => {
-    const res = await fetch(`/blog/${page.params.slug}.json`);
+  export const load = async ({ params, fetch }) => {
+    const res = await fetch(`/blog/${params.slug}.json`);
 
     if (res.ok) {
-      console.log("res is ok");
       const data = await res.json();
       const post = await data[0];
-
-      console.log(post);
 
       return {
         props: { post },

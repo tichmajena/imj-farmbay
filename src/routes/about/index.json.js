@@ -1,6 +1,6 @@
 import { getJSON } from "./_api";
 
-export const get = async (request) => {
+export const get = async (event) => {
   //   if (!request.context.userid) {
   //     // the user has never visited the site before
   //     // and so doesn't yet have a userid, which is
@@ -11,7 +11,7 @@ export const get = async (request) => {
   //const response = await getJSON(request, `tutor/v1/quiz-question-answer/11/`);
 
   try {
-    const response = await getJSON(request, `wp/v2/gallery/21`);
+    const response = await getJSON(event.request, `wp/v2/gallery/21`);
     if (response.status === 404) {
       console.log("404 panoo");
       // the user has visited before, but hasn't yet
@@ -21,5 +21,7 @@ export const get = async (request) => {
     }
 
     return response;
-  } catch (error) {}
+  } catch (error) {
+    throw new Error(error);
+  }
 };

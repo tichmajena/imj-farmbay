@@ -1,12 +1,11 @@
 import { getJSON } from "../_api";
 import { api } from "./_rest";
 
-export const get = async (request) => {
-  console.log("", request.params.slug);
+export const get = async (event) => {
   //const response = await getJSON(request, `tutor/v1/quiz-question-answer/11/`);
   const response = await getJSON(
-    request,
-    `wp/v2/posts/?slug=${request.params.slug}&_embed=1`
+    event.request,
+    `wp/v2/posts/?slug=${event.params.slug}&_embed=1`
   );
 
   if (response.status === 404) {
@@ -21,8 +20,6 @@ export const get = async (request) => {
 };
 
 export const post = async (request) => {
-  console.log("request.body");
-
   const response = await api(request, `wp/v2/posts`, request.body);
   if (response.status >= 400) {
     console.log("404 pano");
@@ -39,11 +36,10 @@ export const post = async (request) => {
   };
 };
 
-export const put = async (request) => {
-  console.log("PUTING");
+export const put = async (event) => {
   const response = await api(
-    request,
-    `wp/v2/posts/?slug=${request.params.slug}`,
+    event.request,
+    `wp/v2/posts/?slug=${event.params.slug}`,
     request.body
   );
   if (response.status > 400) {
@@ -57,14 +53,8 @@ export const put = async (request) => {
   };
 };
 
-export const del = async (request) => {
-  console.log("DELETING");
-  console.log(request);
-
-  const response = await api(
-    request,
-    `wp/v2/posts/?slug=${request.params.slug}`
-  );
+export const del = async (event) => {
+  const response = await api(request, `wp/v2/posts/?slug=${event.params.slug}`);
   if (response.status < 400) {
     console.log("404 pano");
 

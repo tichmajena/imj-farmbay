@@ -20,7 +20,7 @@
     "svelte-slidy": "^2.7.1",
     "tailwindcss": "^2.2.7"
   },
-  "type ": "module",
+  "type": "module",
   "dependencies": {
     "@editorjs/editorjs": "^2.22.2",
     "@editorjs/header": "^2.6.1",

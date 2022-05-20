@@ -6,8 +6,6 @@
   export const load = async ({ fetch }) => {
     const res = await fetch("/teamm");
 
-    console.log(res);
-
     if (res.ok) {
       const jsonData = await res.json();
       const teams = await jsonData;
@@ -44,7 +42,6 @@
   let pic = "https://dummyimage.com/200x200";
 
   export let teams;
-  console.log(teams);
 
   const items = teams.map((props, i) => ({
     props: {

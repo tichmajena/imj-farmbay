@@ -13,12 +13,10 @@
     if (res.ok) {
       //const jsonData = await res.json();
       let rawArray = json.pictures;
-      console.log(rawArray);
       // .map works like for each
       const images = rawArray.map((imageObj) => {
         return { id: imageObj.ID, src: imageObj.guid };
       });
-      console.log(images);
 
       // When you return a prop the name should be the same as the one in "export let ..." in the script section
       return {

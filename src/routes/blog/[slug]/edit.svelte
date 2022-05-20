@@ -6,15 +6,11 @@
   import { goto, prefetch, invalidate } from "$app/navigation";
 
   export const load = async ({ page, fetch }) => {
-    console.log(page.params.slug);
     const res = await fetch(`/blog/${page.params.slug}.json`);
 
     if (res.ok) {
-      console.log("res is ok");
       const data = await res.json();
       const post = await data[0];
-
-      console.log(post);
 
       return {
         props: { post },
@@ -39,7 +35,6 @@
   getPosts();
 
   export let post;
-  console.log(post);
 
   let EditorJS;
   let editor;
@@ -90,9 +85,7 @@
   });
 
   function saveContent() {
-    editor.save().then((savedData) => {
-      console.log(savedData);
-    });
+    editor.save().then((savedData) => {});
   }
 
   async function createPosts() {
@@ -101,9 +94,6 @@
       method: "PUT",
     });
     const data = await res.json();
-
-    console.log(res);
-    console.log(data);
   }
 
   async function editPost() {
@@ -112,9 +102,6 @@
       method: "PUT",
     });
     const data = await res.json();
-
-    console.log(res);
-    console.log(data);
   }
 </script>
 

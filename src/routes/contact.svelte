@@ -55,7 +55,6 @@
     } else {
       sending = false;
       failed = true;
-      console.log(message);
       msg = message.message;
     }
   }

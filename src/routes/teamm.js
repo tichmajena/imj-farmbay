@@ -19,9 +19,9 @@ export const get = async (event) => {
   }
 
   return {
-    headers: {
-      "cache-control": "public, max-age=3600",
-    },
+    // headers: {
+    //   "cache-control": "public, max-age=3600",
+    // },
     status: response.status,
     body: response.body,
   };

@@ -61,14 +61,14 @@
               </li></a
             >
 
-            <a class="" href="/blog">
+            <!-- <a class="" href="/blog">
               <li
                 class:text-brandgold={$page.url.pathname === "/blog"}
                 class="mr-5 hover:text-brandgold py-6 px-3 "
               >
                 Blog
               </li></a
-            >
+            > -->
 
             <a class="" href="/contact">
               <li
@@ -196,9 +196,9 @@
       <a href="/team" class="block py-2 px-4 text-sm hover:bg-yellow-500"
         >Team</a
       >
-      <a href="/blog" class="block py-2 px-4 text-sm hover:bg-yellow-500"
+      <!-- <a href="/blog" class="block py-2 px-4 text-sm hover:bg-yellow-500"
         >Blog</a
-      >
+      > -->
       <a href="/contact" class="block py-2 px-4 text-sm hover:bg-yellow-500"
         >Contact</a
       >

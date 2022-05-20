@@ -94,14 +94,14 @@
                 </li></a
               >
 
-              <a class="font-light" href="/blog">
+              <!-- <a class="font-light" href="/blog">
                 <li
                   class:text-brandgold={$page.url.pathname === "/blog"}
                   class="mr-5 hover:text-brandgold "
                 >
                   Blog
                 </li></a
-              >
+              > -->
 
               <a class="font-light" href="/contact">
                 <li

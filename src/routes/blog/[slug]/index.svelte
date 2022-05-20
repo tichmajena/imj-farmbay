@@ -1,7 +1,7 @@
 <script context="module">
   import { browser } from "$app/env";
-  export const prerender = true;
-  export const router = browser;
+  // export const prerender = true;
+  // export const router = browser;
   // see https://kit.svelte.dev/docs#loading
   import { goto, prefetch, invalidate } from "$app/navigation";
 

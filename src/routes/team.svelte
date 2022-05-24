@@ -42,6 +42,7 @@
   let pic = "https://dummyimage.com/200x200";
 
   export let teams;
+  //console.log(teams);
 
   const items = teams.map((props, i) => ({
     props: {

@@ -33,8 +33,12 @@ export async function getJSON(request, resource, data) {
     };
   }
 
+  let dataa = await res.json();
+
+  console.log(dataa);
+
   return {
     status: res.status,
-    body: await res.json(),
+    body: await dataa,
   };
 }
